@@ -8,19 +8,20 @@ evidence_commit: 4a3424b2f4891d52a56b12d8d5028d967435c912
 checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
-header: missing
+header: pr-open
+header_pr: https://github.com/kody-w/hive-hub-mcp/pull/1
 ---
 
 # hive-hub-mcp: certified
 
 ![RAPP/1: certified](https://kody-w.github.io/rapp-hive-public/portfolio/badges/hive-hub-mcp.svg)
 
-**Certified:** rapp-1's own checker gave **CLEAN** for [`kody-w/hive-hub-mcp` at `4a3424b2f4`](https://github.com/kody-w/hive-hub-mcp/tree/4a3424b2f4891d52a56b12d8d5028d967435c912).
+**Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
 - Evidence: [`kody-w/hive-hub-mcp` at `4a3424b2f4`](https://github.com/kody-w/hive-hub-mcp/tree/4a3424b2f4891d52a56b12d8d5028d967435c912) on `main`, checked 2026-09-25.
-- Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**, 0 finding(s), 0 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `585097cf904567020078e303f4317f652f4cbad7787e124dfcd18cb1c6f5a993`.
+- Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `585097cf904567020078e303f4317f652f4cbad7787e124dfcd18cb1c6f5a993`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
-- Network header: not yet added.
+- Network header: PR open (https://github.com/kody-w/hive-hub-mcp/pull/1).
 
 ## Check it yourself
 

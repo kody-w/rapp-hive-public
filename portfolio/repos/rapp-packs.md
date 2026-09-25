@@ -15,10 +15,10 @@ header: missing
 
 ![RAPP/1: certified](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-packs.svg)
 
-**Certified:** rapp-1's own checker gave **CLEAN** for [`kody-w/rapp-packs` at `19cb75f4a6`](https://github.com/kody-w/rapp-packs/tree/19cb75f4a644a973f5d167c1701cc61f190d9a9a).
+**Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
 - Evidence: [`kody-w/rapp-packs` at `19cb75f4a6`](https://github.com/kody-w/rapp-packs/tree/19cb75f4a644a973f5d167c1701cc61f190d9a9a) on `main`, checked 2026-09-25.
-- Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**, 0 finding(s), 0 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `bc54dfebed0de35a8e275bacee83dcd59c219099a82ee2464877dc068402c747`.
+- Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `bc54dfebed0de35a8e275bacee83dcd59c219099a82ee2464877dc068402c747`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
 

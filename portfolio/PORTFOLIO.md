@@ -14,37 +14,39 @@ Every public RAPP repo, each with an **earned** RAPP/1 status. RAPP/1 is the LTS
 
 Each repo's README carries one marked line: its badge (served from this folder by GitHub Pages, so the URL never changes) and a link to [Start here](https://github.com/kody-w/rapp-installer#start-here) for anyone without a Brainstem yet. "experimental" mentions are tracked here as a metric; they are not a gate yet.
 
+A Hive holds only markdown, so each badge is `badges/<repo>.svg.md`: its front matter tells GitHub Pages to serve it as `https://kody-w.github.io/rapp-hive-public/portfolio/badges/<repo>.svg` (image/svg+xml).
+
 ## Wave 1: the RAPP/1 stack (15)
 
 ### hive (7)
 
 | Repo | Status | Verdict | Commit | Checked | "experimental" | Header |
 |---|---|---|---|---|---|---|
-| [hive-hub](repos/hive-hub.md) | certified | CLEAN | 1db94d2 | 2026-09-25 | 5 | not yet added |
-| [hive-hub-join](repos/hive-hub-join.md) | certified | CLEAN | 4c7620c | 2026-09-25 | 0 | not yet added |
-| [hive-hub-mcp](repos/hive-hub-mcp.md) | certified | CLEAN | 4a3424b | 2026-09-25 | 0 | not yet added |
-| [rapp-hive-hub](repos/rapp-hive-hub.md) | certified | COMPLIANT | e579f9c | 2026-09-25 | 7 | not yet added |
-| [rapp-hive-hub-join](repos/rapp-hive-hub-join.md) | certified | CLEAN | d99fc58 | 2026-09-25 | 0 | not yet added |
-| [rapp-hive-public](repos/rapp-hive-public.md) | certified | CLEAN | f12a66c | 2026-09-25 | 41 | not yet added |
-| [rapp-model-hive](repos/rapp-model-hive.md) | not yet | DRIFT | 83e039f | 2026-09-25 | 16 | not yet added |
+| [hive-hub](repos/hive-hub.md) | certified | CLEAN | 1db94d2 | 2026-09-25 | 5 | PR open |
+| [hive-hub-join](repos/hive-hub-join.md) | certified | CLEAN | 4c7620c | 2026-09-25 | 0 | PR open |
+| [hive-hub-mcp](repos/hive-hub-mcp.md) | certified | CLEAN | 4a3424b | 2026-09-25 | 0 | PR open |
+| [rapp-hive-hub](repos/rapp-hive-hub.md) | certified | COMPLIANT | e579f9c | 2026-09-25 | 7 | PR open |
+| [rapp-hive-hub-join](repos/rapp-hive-hub-join.md) | certified | CLEAN | d99fc58 | 2026-09-25 | 0 | PR open |
+| [rapp-hive-public](repos/rapp-hive-public.md) | certified | CLEAN | 849c775 | 2026-09-25 | 372 | present |
+| [rapp-model-hive](repos/rapp-model-hive.md) | not yet | DRIFT | 83e039f | 2026-09-25 | 16 | PR open |
 
 ### rapp1-core (7)
 
 | Repo | Status | Verdict | Commit | Checked | "experimental" | Header |
 |---|---|---|---|---|---|---|
-| [lisppy](repos/lisppy.md) | certified | CLEAN | 5e3a2e3 | 2026-09-25 | 1 | not yet added |
-| [RAPP](repos/RAPP.md) | not yet | DRIFT | 8afc973 | 2026-09-25 | 144 | not yet added |
-| [rapp-1](repos/rapp-1.md) | certified | COMPLIANT | 591e014 | 2026-09-25 | 0 | not yet added |
-| [rapp-drift-lint](repos/rapp-drift-lint.md) | certified | CLEAN | de1c664 | 2026-09-25 | 0 | not yet added |
-| [rapp-installer](repos/rapp-installer.md) | certified | CLEAN | 49db80c | 2026-09-25 | 11 | not yet added |
-| [rapp-work](repos/rapp-work.md) | certified | COMPLIANT | 29ead23 | 2026-09-25 | 0 | not yet added |
-| [rapp-workspace](repos/rapp-workspace.md) | certified | COMPLIANT | 52d4f19 | 2026-09-25 | 50 | not yet added |
+| [lisppy](repos/lisppy.md) | certified | CLEAN | 5e3a2e3 | 2026-09-25 | 1 | PR open |
+| [RAPP](repos/RAPP.md) | not yet | DRIFT | 8afc973 | 2026-09-25 | 144 | PR open |
+| [rapp-1](repos/rapp-1.md) | certified | COMPLIANT | 591e014 | 2026-09-25 | 0 | PR open |
+| [rapp-drift-lint](repos/rapp-drift-lint.md) | certified | CLEAN | de1c664 | 2026-09-25 | 0 | PR open |
+| [rapp-installer](repos/rapp-installer.md) | certified | CLEAN | 49db80c | 2026-09-25 | 11 | PR open |
+| [rapp-work](repos/rapp-work.md) | certified | COMPLIANT | 29ead23 | 2026-09-25 | 0 | PR open |
+| [rapp-workspace](repos/rapp-workspace.md) | certified | COMPLIANT | 52d4f19 | 2026-09-25 | 50 | held back |
 
 ### rar-registry (1)
 
 | Repo | Status | Verdict | Commit | Checked | "experimental" | Header |
 |---|---|---|---|---|---|---|
-| [RAR](repos/RAR.md) | not yet | DRIFT | ecf5f52 | 2026-09-25 | 161 | not yet added |
+| [RAR](repos/RAR.md) | not yet | DRIFT | ecf5f52 | 2026-09-25 | 161 | PR open |
 
 ## Wave 2: the rest of the RAPP family (300)
 

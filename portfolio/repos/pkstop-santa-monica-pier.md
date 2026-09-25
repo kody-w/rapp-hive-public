@@ -15,10 +15,10 @@ header: missing
 
 ![RAPP/1: certified](https://kody-w.github.io/rapp-hive-public/portfolio/badges/pkstop-santa-monica-pier.svg)
 
-**Certified:** rapp-1's own checker gave **COMPLIANT** for [`kody-w/pkstop-santa-monica-pier` at `d6a176fa32`](https://github.com/kody-w/pkstop-santa-monica-pier/tree/d6a176fa3221b8f7f02d0d745cbc76592a236ba8).
+**Certified:** rapp-1's own checker gave **COMPLIANT** (every RAPP artifact passes) at the evidence commit.
 
 - Evidence: [`kody-w/pkstop-santa-monica-pier` at `d6a176fa32`](https://github.com/kody-w/pkstop-santa-monica-pier/tree/d6a176fa3221b8f7f02d0d745cbc76592a236ba8) on `main`, checked 2026-09-25.
-- Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **COMPLIANT**, 0 finding(s), 1 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `0f524a989ccb634034216b08264d7136d0236ec468735f7bd11bf55ffe99ec8c`.
+- Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **COMPLIANT**, 1 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `0f524a989ccb634034216b08264d7136d0236ec468735f7bd11bf55ffe99ec8c`.
 - "experimental" mentions: 1 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
 
