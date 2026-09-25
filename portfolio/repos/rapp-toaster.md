@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-toaster
-family: rapp-projects
+family: agents-rar
+line: Agents (RAR)
 wave: 2
 status: certified
 verdict: CLEAN
@@ -9,6 +10,10 @@ checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: missing
+links_to:
+  - RAPP
+  - rapp-1
+  - rapp-skills
 ---
 
 # rapp-toaster: certified
@@ -21,6 +26,15 @@ header: missing
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `491d3b1969e00d32eacfe100391536eeb5b23b8059cde7c398631680a72abd7f`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
+
+On the map: the **Agents (RAR)** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 3 portfolio repo(s): [RAPP](RAPP.md) (markdown), [rapp-1](rapp-1.md) (markdown), [rapp-skills](rapp-skills.md) (markdown).
+Linked from 7: [rapp-copilot-in-chrome](rapp-copilot-in-chrome.md), [rapp-copilot-in-edge](rapp-copilot-in-edge.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rapp-petri](rapp-petri.md), [rapp-skill](rapp-skill.md), [rapp-tower](rapp-tower.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

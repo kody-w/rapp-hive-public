@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-ratchet
-family: rapp-projects
+family: twins
+line: Twins
 wave: 2
 status: certified
 verdict: CLEAN
@@ -9,6 +10,10 @@ checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: missing
+links_to:
+  - rapp-1
+  - rapp-map
+  - rapp-overwatch
 ---
 
 # rapp-ratchet: certified
@@ -21,6 +26,15 @@ header: missing
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `f2e3ecbfa313127f64aeeb0bed901712be8e97cfaa0e6a57a0d760e2e91ff078`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
+
+On the map: the **Twins** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 3 portfolio repo(s): [rapp-1](rapp-1.md) (markdown), [rapp-map](rapp-map.md) (markdown), [rapp-overwatch](rapp-overwatch.md) (markdown).
+Linked from 3: [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rapp-sentinel](rapp-sentinel.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

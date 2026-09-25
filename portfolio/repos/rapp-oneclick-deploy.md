@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-oneclick-deploy
-family: rapp-projects
+family: tools
+line: Tools & Apps
 wave: 2
 status: not yet
 verdict: DRIFT
@@ -25,6 +26,14 @@ header: missing
 ## Findings (1)
 
 - `api/v1/egg/copilot_studio_deploy.egg` · §9 egg · not a conformant rapp/1-egg (schema=?; parse: ZIP local and central UTF-8 flags must match exactly)
+
+On the map: the **Tools & Apps** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Linked from 3: [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rapp-spine](rapp-spine.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

@@ -1,6 +1,7 @@
 ---
 repo: kody-w/RAPP_Store
-family: rapp-projects
+family: agents-rar
+line: Agents (RAR)
 wave: 2
 status: not yet
 verdict: DRIFT
@@ -9,6 +10,18 @@ checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 76
 header: missing
+links_to:
+  - RAPP
+  - rapp-1
+  - rapp-brainstem-sdk
+  - rapp-commons
+  - rapp-egg-hub
+  - rapp-god-forum
+  - rapp-mcp
+  - rapp-neighborhood-protocol
+  - rapp-zoo
+  - RAPP_Sense_Store
+  - RAR
 ---
 
 # RAPP_Store: not yet
@@ -37,6 +50,15 @@ header: missing
 - `api/v1/egg/markdown_medic.egg` · §9 egg · not a conformant rapp/1-egg (schema=?; parse: ZIP local and central UTF-8 flags must match exactly)
 - `api/v1/egg/novell.egg` · §9 egg · not a conformant rapp/1-egg (schema=?; parse: ZIP local and central UTF-8 flags must match exactly)
 - … and 14 more in the raw output
+
+On the map: the **Agents (RAR)** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 11 portfolio repo(s): [RAPP](RAPP.md) (markdown), [rapp-1](rapp-1.md) (markdown), [rapp-brainstem-sdk](rapp-brainstem-sdk.md) (markdown), [rapp-commons](rapp-commons.md) (markdown), [rapp-egg-hub](rapp-egg-hub.md) (markdown), [rapp-god-forum](rapp-god-forum.md) (markdown), [rapp-mcp](rapp-mcp.md) (markdown), [rapp-neighborhood-protocol](rapp-neighborhood-protocol.md) (markdown), [rapp-zoo](rapp-zoo.md) (markdown), [RAPP_Sense_Store](RAPP_Sense_Store.md) (markdown), [RAR](RAR.md) (markdown).
+Linked from 20: [cowork-cookbook-rapp](cowork-cookbook-rapp.md), [echo-brainstem](echo-brainstem.md), [lumen-brainstem](lumen-brainstem.md), [microsoft-se-team-neighborhood](microsoft-se-team-neighborhood.md), [RAPP](RAPP.md), [RAPP-Bible](RAPP-Bible.md), [rapp-brainfreeze-studio](rapp-brainfreeze-studio.md), [rapp-carts](rapp-carts.md), [rapp-egg-hub](rapp-egg-hub.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rapp-skill](rapp-skill.md), [rapp-spine](rapp-spine.md), [rapp-store-archive](rapp-store-archive.md), [rapp-tools](rapp-tools.md), [RAPP_Desktop](RAPP_Desktop.md), [RAPP_Hub](RAPP_Hub.md), [RAPP_Sense_Store](RAPP_Sense_Store.md), [RAR](RAR.md), [tide-brainstem](tide-brainstem.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

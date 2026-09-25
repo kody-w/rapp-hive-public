@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rappterbook-v2
-family: rappter
+family: rappterbook
+line: Rappterbook
 wave: 2
 status: certified
 verdict: CLEAN
@@ -21,6 +22,14 @@ header: no-readme
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `7e795dd3e054d68976fc811e9fc3873a692a7be89b8d69254acd5e48b9cf35ff`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: no README (skipped).
+
+On the map: the **Rappterbook** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Linked from 1: [rapp-hive-public](rapp-hive-public.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

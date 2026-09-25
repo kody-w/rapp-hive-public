@@ -1,6 +1,7 @@
 ---
 repo: kody-w/dynamics365-business-process-api
-family: rapp-related
+family: tools
+line: Tools & Apps
 wave: 2
 status: certified
 verdict: CLEAN
@@ -21,6 +22,14 @@ header: missing
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `6c2087d4389a0576fa02024ac938ce91f4d5cf57c9019db789f68225a089accd`.
 - "experimental" mentions: 1 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
+
+On the map: the **Tools & Apps** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Linked from 1: [rapp-hive-public](rapp-hive-public.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

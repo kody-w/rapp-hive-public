@@ -1,6 +1,7 @@
 ---
 repo: kody-w/openrappter
-family: rappter
+family: openrappter
+line: OpenRappter
 wave: 2
 status: certified
 verdict: CLEAN
@@ -21,6 +22,14 @@ header: missing
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `82c06915a0e51916f422eff0c315ab085a1b24cd0dc1e98d8686bf4b33bad2ee`.
 - "experimental" mentions: 1 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
+
+On the map: the **OpenRappter** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Linked from 14: [openrappter-alpha](openrappter-alpha.md), [openrappter-release-train](openrappter-release-train.md), [RAPP-Bible](RAPP-Bible.md), [rapp-docs](rapp-docs.md), [rapp-hive-public](rapp-hive-public.md), [rapp-messaging](rapp-messaging.md), [rapp-monorepo](rapp-monorepo.md), [rapp-sentinel](rapp-sentinel.md), [rapp-spine](rapp-spine.md), [rapp-stack-cubby](rapp-stack-cubby.md), [rappter-plays-palworld](rappter-plays-palworld.md), [rappterbook](rappterbook.md), [rappterbook-agent](rappterbook-agent.md), [rappterhub](rappterhub.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

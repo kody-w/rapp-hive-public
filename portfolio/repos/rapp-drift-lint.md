@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-drift-lint
 family: rapp1-core
+line: RAPP/1 Core
 wave: 1
 status: certified
 verdict: CLEAN
@@ -22,6 +23,14 @@ header_pr: https://github.com/kody-w/rapp-drift-lint/pull/2
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `bd2fbdb226333db8a5a33dcb8339cb4d54c6a1050949ec15674a367effcff571`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: PR open (https://github.com/kody-w/rapp-drift-lint/pull/2).
+
+On the map: the **RAPP/1 Core** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Linked from 3: [RAPP](RAPP.md), [rapp-egg-hub](rapp-egg-hub.md), [rapp-hive-public](rapp-hive-public.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

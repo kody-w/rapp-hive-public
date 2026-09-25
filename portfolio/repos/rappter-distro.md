@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rappter-distro
-family: rappter
+family: rappterverse
+line: Rappterverse
 wave: 2
 status: not yet
 verdict: DRIFT
@@ -9,6 +10,10 @@ checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 29
 header: missing
+links_to:
+  - RAPP
+  - rapp-commons
+  - rapp-installer
 ---
 
 # rappter-distro: not yet
@@ -28,6 +33,15 @@ header: missing
 - `rapp-zoo/starters/journal.egg` · §9 egg · not a conformant rapp/1-egg (schema=?; parse: ZIP local and central UTF-8 flags must match exactly)
 - `rapp-zoo/starters/playtime.egg` · §9 egg · not a conformant rapp/1-egg (schema=?; parse: ZIP local and central UTF-8 flags must match exactly)
 - `rapp-zoo/starters/workday.egg` · §9 egg · not a conformant rapp/1-egg (schema=?; parse: ZIP local and central UTF-8 flags must match exactly)
+
+On the map: the **Rappterverse** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 3 portfolio repo(s): [RAPP](RAPP.md) (markdown), [rapp-commons](rapp-commons.md) (markdown), [rapp-installer](rapp-installer.md) (markdown).
+Linked from 5: [RAPP](RAPP.md), [RAPP-Bible](RAPP-Bible.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [RAR](RAR.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

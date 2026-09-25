@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-work
 family: rapp1-core
+line: RAPP/1 Core
 wave: 1
 status: certified
 verdict: COMPLIANT
@@ -10,6 +11,11 @@ checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: pr-open
 header_pr: https://github.com/kody-w/rapp-work/pull/3
+links_to:
+  - RAPP
+  - rapp-1
+  - rapp-workspace
+  - rapp-workspace-manager
 ---
 
 # rapp-work: certified
@@ -22,6 +28,15 @@ header_pr: https://github.com/kody-w/rapp-work/pull/3
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **COMPLIANT**, 1 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `7077263db5435c026db9c50353292240f116308bac08afe6ba8a3012134395cb`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: PR open (https://github.com/kody-w/rapp-work/pull/3).
+
+On the map: the **RAPP/1 Core** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 4 portfolio repo(s): [RAPP](RAPP.md) (pin), [rapp-1](rapp-1.md) (markdown, pin), [rapp-workspace](rapp-workspace.md) (markdown), [rapp-workspace-manager](rapp-workspace-manager.md) (markdown).
+Linked from 6: [hive-hub](hive-hub.md), [rapp-brainstem-plugin](rapp-brainstem-plugin.md), [rapp-hive-hub](rapp-hive-hub.md), [rapp-hive-public](rapp-hive-public.md), [rapp-lab-kit](rapp-lab-kit.md), [rapp-monorepo](rapp-monorepo.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

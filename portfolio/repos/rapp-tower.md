@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-tower
-family: rapp-projects
+family: estate
+line: Estate & Ops
 wave: 2
 status: certified
 verdict: CLEAN
@@ -9,6 +10,14 @@ checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 4
 header: missing
+links_to:
+  - rapp-canary
+  - rapp-installer
+  - rapp-map
+  - rapp-roadmap
+  - rapp-second-brain
+  - rapp-toaster
+  - rapp-train
 ---
 
 # rapp-tower: certified
@@ -21,6 +30,15 @@ header: missing
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `89a8c03ddda979f689f284c985fad888fe032ecb87b89d6918e55a02443cfe08`.
 - "experimental" mentions: 4 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
+
+On the map: the **Estate & Ops** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 7 portfolio repo(s): [rapp-canary](rapp-canary.md) (markdown), [rapp-installer](rapp-installer.md) (markdown), [rapp-map](rapp-map.md) (workflow), [rapp-roadmap](rapp-roadmap.md) (markdown), [rapp-second-brain](rapp-second-brain.md) (markdown), [rapp-toaster](rapp-toaster.md) (markdown), [rapp-train](rapp-train.md) (markdown).
+Linked from 1: [rapp-hive-public](rapp-hive-public.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

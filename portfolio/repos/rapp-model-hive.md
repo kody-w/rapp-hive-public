@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-model-hive
 family: hive
+line: Hive
 wave: 1
 status: not yet
 verdict: DRIFT
@@ -10,6 +11,11 @@ checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 16
 header: pr-open
 header_pr: https://github.com/kody-w/rapp-model-hive/pull/1
+also_on:
+  - rapp1-core
+links_to:
+  - rapp-1
+  - rapp-workspace
 ---
 
 # rapp-model-hive: not yet
@@ -38,6 +44,15 @@ header_pr: https://github.com/kody-w/rapp-model-hive/pull/1
 - `model/hive/streams/avery-laptop.manifest.121f71337e33/00000000.json` · §10 signature verification unavailable · detached signature was not checked because no trusted verifier/anchor was supplied (unverified)
 - `model/before/streams/avery-laptop.tasks.121f71337e33/00000000.json, model/hive/streams/avery-laptop.tasks.121f71337e33/00000000.json` · §7.6 duplicate position · stream rappid:@contoso/avery-laptop:121f71337e335720c65dc4f7b459c92aea6197460224401810721765fabea47b:tasks has 2 frames at seq 0
 - … and 23 more in the raw output
+
+On the map: the **Hive** line, and also RAPP/1 Core ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 2 portfolio repo(s): [rapp-1](rapp-1.md) (markdown), [rapp-workspace](rapp-workspace.md) (markdown).
+Linked from 2: [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

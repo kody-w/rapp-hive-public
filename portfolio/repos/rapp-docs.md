@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-docs
-family: rapp-projects
+family: learn
+line: Learn & Docs
 wave: 2
 status: certified
 verdict: CLEAN
@@ -9,6 +10,16 @@ checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 3
 header: missing
+links_to:
+  - openrappter
+  - rapp-1
+  - rapp-flight-deck
+  - rapp-installer
+  - rapp-keyring
+  - rapp-light
+  - rapp-rings
+  - rapp-train
+  - rapp-twin
 ---
 
 # rapp-docs: certified
@@ -21,6 +32,15 @@ header: missing
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `25cfe3b0e2dff3466805679f2aefd04ed2c7883780fcc75aec972cf822d5aef3`.
 - "experimental" mentions: 3 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
+
+On the map: the **Learn & Docs** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 9 portfolio repo(s): [openrappter](openrappter.md) (markdown), [rapp-1](rapp-1.md) (markdown), [rapp-flight-deck](rapp-flight-deck.md) (markdown), [rapp-installer](rapp-installer.md) (markdown), [rapp-keyring](rapp-keyring.md) (markdown), [rapp-light](rapp-light.md) (markdown), [rapp-rings](rapp-rings.md) (markdown), [rapp-train](rapp-train.md) (markdown), [rapp-twin](rapp-twin.md) (markdown).
+Linked from 1: [rapp-hive-public](rapp-hive-public.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rappter-site
-family: rappter
+family: rappterverse
+line: Rappterverse
 wave: 2
 status: not yet
 verdict: DRIFT
@@ -25,6 +26,14 @@ header: no-readme
 ## Findings (1)
 
 - `mesh/rappid.json` · §12 schema label · schema='?', not 'rapp/1'
+
+On the map: the **Rappterverse** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Linked from 1: [rapp-hive-public](rapp-hive-public.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

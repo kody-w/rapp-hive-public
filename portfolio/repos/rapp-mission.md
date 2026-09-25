@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-mission
-family: rapp-projects
+family: learn
+line: Learn & Docs
 wave: 2
 status: certified
 verdict: CLEAN
@@ -9,6 +10,9 @@ checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: missing
+links_to:
+  - rapp-skills
+  - vbrainstem
 ---
 
 # rapp-mission: certified
@@ -21,6 +25,15 @@ header: missing
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `0d43881b94ad5b43f561fd3c7cf0d9770517c49a4f876281349707e6f2f80070`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
+
+On the map: the **Learn & Docs** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 2 portfolio repo(s): [rapp-skills](rapp-skills.md) (markdown), [vbrainstem](vbrainstem.md) (markdown).
+Linked from 5: [learn-brainstem](learn-brainstem.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rapp-skills](rapp-skills.md), [vbrainstem](vbrainstem.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

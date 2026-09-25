@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-commons
-family: rapp-projects
+family: dogg
+line: DOGG & Commons
 wave: 2
 status: not yet
 verdict: DRIFT
@@ -9,6 +10,12 @@ checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: missing
+links_to:
+  - RAPP
+  - RAPP-Bible
+  - rapp-mcp
+  - rapp-neighborhood-protocol
+  - rapp-static-apis
 ---
 
 # rapp-commons: not yet
@@ -25,6 +32,15 @@ header: missing
 ## Findings (1)
 
 - `.well-known/neighborhood.egg` · §9 egg · not a conformant rapp/1-egg (schema=rapp/1-egg; §10: invite verification requires estate_owner_rappid)
+
+On the map: the **DOGG & Commons** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 5 portfolio repo(s): [RAPP](RAPP.md) (markdown), [RAPP-Bible](RAPP-Bible.md) (markdown), [rapp-mcp](rapp-mcp.md) (markdown), [rapp-neighborhood-protocol](rapp-neighborhood-protocol.md) (markdown), [rapp-static-apis](rapp-static-apis.md) (markdown).
+Linked from 17: [double-jump](double-jump.md), [RAPP](RAPP.md), [RAPP-Bible](RAPP-Bible.md), [rapp-claude-skills](rapp-claude-skills.md), [rapp-god-forum](rapp-god-forum.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rapp-neighborhood-protocol](rapp-neighborhood-protocol.md), [rapp-resident](rapp-resident.md), [rapp-spine](rapp-spine.md), [rapp-vneighborhood](rapp-vneighborhood.md), [RAPP_Store](RAPP_Store.md), [rappter-distro](rappter-distro.md), [rappterbook-commons](rappterbook-commons.md), [RAR](RAR.md), [vneighborhood-design-studio](vneighborhood-design-studio.md), [vneighborhood-research-lab](vneighborhood-research-lab.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

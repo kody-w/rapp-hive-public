@@ -1,6 +1,7 @@
 ---
 repo: kody-w/double-jump
-family: brainstem
+family: worlds
+line: Worlds & Play
 wave: 2
 status: certified
 verdict: CLEAN
@@ -9,6 +10,10 @@ checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 17
 header: missing
+links_to:
+  - rapp-commons
+  - rapp-hologram
+  - rapp-moment
 ---
 
 # double-jump: certified
@@ -21,6 +26,15 @@ header: missing
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `765692c1e8d48907c4f5c9bfc0afc3573f64e8176d995cf6e6c208affb06d396`.
 - "experimental" mentions: 17 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
+
+On the map: the **Worlds & Play** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 3 portfolio repo(s): [rapp-commons](rapp-commons.md) (markdown), [rapp-hologram](rapp-hologram.md) (markdown), [rapp-moment](rapp-moment.md) (markdown).
+Linked from 1: [rapp-hive-public](rapp-hive-public.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

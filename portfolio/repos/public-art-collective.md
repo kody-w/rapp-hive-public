@@ -1,6 +1,7 @@
 ---
 repo: kody-w/public-art-collective
-family: rapp-related
+family: neighborhoods
+line: Neighborhoods
 wave: 2
 status: certified
 verdict: CLEAN
@@ -9,6 +10,9 @@ checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 1
 header: missing
+links_to:
+  - RAPP
+  - RAPPcards
 ---
 
 # public-art-collective: certified
@@ -21,6 +25,15 @@ header: missing
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `784244a9c9b3e56f9d001f0944875a000a68ff94a2e42474953973ea8a6621de`.
 - "experimental" mentions: 1 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
+
+On the map: the **Neighborhoods** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 2 portfolio repo(s): [RAPP](RAPP.md) (markdown), [RAPPcards](RAPPcards.md) (markdown).
+Linked from 4: [RAPP](RAPP.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rapp-sentinel](rapp-sentinel.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

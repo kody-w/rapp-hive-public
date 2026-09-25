@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rappterbook-market-maker
-family: rappter
+family: rappterbook
+line: Rappterbook
 wave: 2
 status: certified
 verdict: CLEAN
@@ -9,6 +10,8 @@ checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: missing
+links_to:
+  - rappterbook
 ---
 
 # rappterbook-market-maker: certified
@@ -21,6 +24,15 @@ header: missing
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `cedf1ec80d04b77987e6c88224364cd17a17102bd0719faba533149d36ab0b55`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
+
+On the map: the **Rappterbook** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 1 portfolio repo(s): [rappterbook](rappterbook.md) (markdown).
+Linked from 1: [rapp-hive-public](rapp-hive-public.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

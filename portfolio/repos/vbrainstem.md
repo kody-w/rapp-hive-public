@@ -1,6 +1,7 @@
 ---
 repo: kody-w/vbrainstem
 family: brainstem
+line: Brainstem
 wave: 2
 status: not yet
 verdict: DRIFT
@@ -9,6 +10,16 @@ checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 2
 header: missing
+links_to:
+  - CommunityRAPP
+  - dogg
+  - rapp-1
+  - rapp-brainstem
+  - rapp-installer
+  - rapp-mission
+  - rapp-personpower
+  - rapp-skills
+  - RAR
 ---
 
 # vbrainstem: not yet
@@ -25,6 +36,15 @@ header: missing
 ## Findings (1)
 
 - `vbrainstem-setup/FRAME.json` · §7.4 chain gap · stream rappid:@kody-w/vbrainstem-setup:228be404333c42b53ecd48fae5e4d9f3a2e10fc459da19065b3f91adce70d228 expected seq 0, found 5
+
+On the map: the **Brainstem** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 9 portfolio repo(s): [CommunityRAPP](CommunityRAPP.md) (markdown), [dogg](dogg.md) (markdown), [rapp-1](rapp-1.md) (markdown, pin), [rapp-brainstem](rapp-brainstem.md) (markdown), [rapp-installer](rapp-installer.md) (markdown), [rapp-mission](rapp-mission.md) (markdown), [rapp-personpower](rapp-personpower.md) (markdown), [rapp-skills](rapp-skills.md) (markdown), [RAR](RAR.md) (markdown).
+Linked from 14: [chat](chat.md), [RAPP](RAPP.md), [RAPP-Bible](RAPP-Bible.md), [rapp-brainstem-sdk](rapp-brainstem-sdk.md), [rapp-brainstem-walkthrough](rapp-brainstem-walkthrough.md), [rapp-doorman](rapp-doorman.md), [rapp-hive-public](rapp-hive-public.md), [rapp-kite](rapp-kite.md), [rapp-mission](rapp-mission.md), [rapp-monorepo](rapp-monorepo.md), [rapp-neighborhood-protocol](rapp-neighborhood-protocol.md), [rapp-petri](rapp-petri.md), [rapp-skills](rapp-skills.md), [RAR](RAR.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

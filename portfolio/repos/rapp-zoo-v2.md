@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-zoo-v2
-family: rapp-projects
+family: worlds
+line: Worlds & Play
 wave: 2
 status: not yet
 verdict: DRIFT
@@ -25,6 +26,14 @@ header: missing
 ## Findings (1)
 
 - `rappter-6be4a324.egg` · §9 egg · not a conformant rapp/1-egg (schema=?; parse: Expecting value: line 1 column 1 (char 0))
+
+On the map: the **Worlds & Play** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Linked from 2: [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

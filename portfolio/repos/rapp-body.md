@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-body
-family: rapp-projects
+family: organism
+line: Organism & Platform
 wave: 2
 status: certified
 verdict: COMPLIANT
@@ -21,6 +22,14 @@ header: missing
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **COMPLIANT**, 3 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `888f725b70b375c1c55a416bb1fe30b705c0532eef5b417a4c9e5375a0e6a464`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
+
+On the map: the **Organism & Platform** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Linked from 2: [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

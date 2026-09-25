@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-sentinel
-family: rapp-projects
+family: estate
+line: Estate & Ops
 wave: 2
 status: certified
 verdict: CLEAN
@@ -9,6 +10,15 @@ checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 1
 header: missing
+links_to:
+  - openrappter
+  - public-art-collective
+  - rapp-1
+  - rapp-overwatch
+  - rapp-ratchet
+  - rapp-sentinel-hub
+  - rapp-vision
+  - sentinel
 ---
 
 # rapp-sentinel: certified
@@ -21,6 +31,15 @@ header: missing
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `ed5680a1db0aba4cf17b75edec433d01c98c3992bbbe5d5882fb4addbc44455a`.
 - "experimental" mentions: 1 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
+
+On the map: the **Estate & Ops** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 8 portfolio repo(s): [openrappter](openrappter.md) (markdown), [public-art-collective](public-art-collective.md) (markdown), [rapp-1](rapp-1.md) (markdown), [rapp-overwatch](rapp-overwatch.md) (markdown), [rapp-ratchet](rapp-ratchet.md) (markdown), [rapp-sentinel-hub](rapp-sentinel-hub.md) (markdown), [rapp-vision](rapp-vision.md) (markdown), [sentinel](sentinel.md) (markdown).
+Linked from 9: [rapp-hive-public](rapp-hive-public.md), [rapp-imessage-launchpad](rapp-imessage-launchpad.md), [rapp-monorepo](rapp-monorepo.md), [rapp-overwatch](rapp-overwatch.md), [rapp-sentinel-hub](rapp-sentinel-hub.md), [rapp-vision-neighborhood](rapp-vision-neighborhood.md), [rappterverse](rappterverse.md), [RAR](RAR.md), [sentinel](sentinel.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

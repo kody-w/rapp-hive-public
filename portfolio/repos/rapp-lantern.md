@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-lantern
-family: rapp-projects
+family: worlds
+line: Worlds & Play
 wave: 2
 status: not yet
 verdict: DRIFT
@@ -9,6 +10,8 @@ checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: missing
+links_to:
+  - rapp-static-apis
 ---
 
 # rapp-lantern: not yet
@@ -32,6 +35,15 @@ header: missing
 - `eggs/moon.egg` · §9 egg · not a conformant rapp/1-egg (schema=?; parse: ZIP local and central UTF-8 flags must match exactly)
 - `eggs/original-frenzy.egg` · §9 egg · not a conformant rapp/1-egg (schema=?; parse: ZIP local and central UTF-8 flags must match exactly)
 - `eggs/weather-huila.egg` · §9 egg · not a conformant rapp/1-egg (schema=?; parse: ZIP local and central UTF-8 flags must match exactly)
+
+On the map: the **Worlds & Play** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 1 portfolio repo(s): [rapp-static-apis](rapp-static-apis.md) (markdown).
+Linked from 5: [RaGo](RaGo.md), [rapp-basket](rapp-basket.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rapp-snap](rapp-snap.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

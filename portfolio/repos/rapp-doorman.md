@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-doorman
-family: rapp-projects
+family: tools
+line: Tools & Apps
 wave: 2
 status: certified
 verdict: CLEAN
@@ -9,6 +10,12 @@ checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: missing
+links_to:
+  - rapp-kite
+  - rapp-mcp
+  - rapp-neighborhood-protocol
+  - rapp-sealed
+  - vbrainstem
 ---
 
 # rapp-doorman: certified
@@ -21,6 +28,15 @@ header: missing
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `6f86339e0e10cd5bf339b396ee01bc8f093c6c39eff8d344e6efead389aba7e8`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
+
+On the map: the **Tools & Apps** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 5 portfolio repo(s): [rapp-kite](rapp-kite.md) (markdown), [rapp-mcp](rapp-mcp.md) (markdown), [rapp-neighborhood-protocol](rapp-neighborhood-protocol.md) (markdown), [rapp-sealed](rapp-sealed.md) (markdown), [vbrainstem](vbrainstem.md) (markdown).
+Linked from 4: [RAPP](RAPP.md), [RAPP-Bible](RAPP-Bible.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

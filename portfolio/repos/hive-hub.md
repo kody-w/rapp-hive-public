@@ -1,6 +1,7 @@
 ---
 repo: kody-w/hive-hub
 family: hive
+line: Hive
 wave: 1
 status: certified
 verdict: CLEAN
@@ -10,6 +11,9 @@ checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 5
 header: pr-open
 header_pr: https://github.com/kody-w/hive-hub/pull/11
+links_to:
+  - rapp-1
+  - rapp-work
 ---
 
 # hive-hub: certified
@@ -22,6 +26,15 @@ header_pr: https://github.com/kody-w/hive-hub/pull/11
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `3c1a8f19436ce7f8cb819da088d7c72f2cc29ff7213fe9c47bcdf6c574eff1db`.
 - "experimental" mentions: 5 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: PR open (https://github.com/kody-w/hive-hub/pull/11).
+
+On the map: the **Hive** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 2 portfolio repo(s): [rapp-1](rapp-1.md) (pin, workflow), [rapp-work](rapp-work.md) (pin, workflow).
+Linked from 6: [hive-showcase](hive-showcase.md), [rapp-hive-hub](rapp-hive-hub.md), [rapp-hive-public](rapp-hive-public.md), [rapp-lab-kit](rapp-lab-kit.md), [rapp-monorepo](rapp-monorepo.md), [rapp-skills](rapp-skills.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

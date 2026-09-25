@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-roadside
-family: rapp-projects
+family: estate
+line: Estate & Ops
 wave: 2
 status: not yet
 verdict: DRIFT
@@ -25,6 +26,14 @@ header: missing
 ## Findings (1)
 
 - `rev-13-frame.json, roadside-frame.json` · §7.6 duplicate position · stream rappid:@kody-w/rar-installer-troubleshooter:296872e9cd739d0549707b5c22abfd3654c3667652ea55dedaa5621b9e5f733b has 2 frames at seq 0
+
+On the map: the **Estate & Ops** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Linked from 3: [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [RAR](RAR.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-map
-family: rapp-projects
+family: learn
+line: Learn & Docs
 wave: 2
 status: not yet
 verdict: DRIFT
@@ -25,6 +26,14 @@ header: missing
 ## Findings (1)
 
 - `spine/vertebrae/estate-2026-07-25.egg` · §9 egg · not a conformant rapp/1-egg (schema=?; parse: ZIP local and central UTF-8 flags must match exactly)
+
+On the map: the **Learn & Docs** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Linked from 20: [brainstem-harness](brainstem-harness.md), [RAPP-Bible](RAPP-Bible.md), [rapp-brainstem-sdk](rapp-brainstem-sdk.md), [rapp-demos](rapp-demos.md), [rapp-hive-public](rapp-hive-public.md), [rapp-kite](rapp-kite.md), [rapp-kited-twin](rapp-kited-twin.md), [rapp-local-install](rapp-local-install.md), [rapp-monorepo](rapp-monorepo.md), [rapp-omarchy](rapp-omarchy.md), [rapp-overwatch](rapp-overwatch.md), [rapp-ratchet](rapp-ratchet.md), [rapp-release-train](rapp-release-train.md), [rapp-roadmap](rapp-roadmap.md), [rapp-second-brain](rapp-second-brain.md), [rapp-skill](rapp-skill.md), [rapp-spine](rapp-spine.md), [rapp-static-apis](rapp-static-apis.md), [rapp-tower](rapp-tower.md), [rio](rio.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

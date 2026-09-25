@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-hatchery
-family: grail
+family: agents-rar
+line: Agents (RAR)
 wave: 2
 status: certified
 verdict: CLEAN
@@ -9,6 +10,10 @@ checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 4
 header: missing
+links_to:
+  - rapp-brainfreeze
+  - rapp-brainfreeze-studio
+  - rapp-installer
 ---
 
 # rapp-hatchery: certified
@@ -21,6 +26,15 @@ header: missing
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `f4d41c5b71be473ec729ef0e00299fcee514fd3f4895d4c9e5e5fd104339317f`.
 - "experimental" mentions: 4 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
+
+On the map: the **Agents (RAR)** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 3 portfolio repo(s): [rapp-brainfreeze](rapp-brainfreeze.md) (markdown), [rapp-brainfreeze-studio](rapp-brainfreeze-studio.md) (markdown), [rapp-installer](rapp-installer.md) (markdown).
+Linked from 1: [rapp-hive-public](rapp-hive-public.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-brainstem-foundation
 family: brainstem
+line: Brainstem
 wave: 2
 status: unchecked
 verdict: none
@@ -15,4 +16,6 @@ header: unknown
 
 ![RAPP/1: unchecked](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-brainstem-foundation.svg)
 
-**Unchecked:** the repository is empty: there is no commit to check.
+**Unchecked:** the repository is empty: GitHub holds no commit to clone or check.
+
+On the map: the **Brainstem** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).

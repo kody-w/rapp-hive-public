@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-neighborhood-protocol
 family: neighborhoods
+line: Neighborhoods
 wave: 2
 status: certified
 verdict: CLEAN
@@ -9,6 +10,15 @@ checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: missing
+links_to:
+  - RAPP
+  - rapp-commons
+  - rapp-kited-twin
+  - rapp-mcp
+  - rapp-sealed
+  - rapp-vneighborhood
+  - RAR
+  - vbrainstem
 ---
 
 # rapp-neighborhood-protocol: certified
@@ -21,6 +31,15 @@ header: missing
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `34521206d8475a622fd41afb8b0adc571d81f50c7bbc2487e3cc142eb040c0a1`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
+
+On the map: the **Neighborhoods** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 8 portfolio repo(s): [RAPP](RAPP.md) (markdown), [rapp-commons](rapp-commons.md) (markdown), [rapp-kited-twin](rapp-kited-twin.md) (markdown), [rapp-mcp](rapp-mcp.md) (markdown), [rapp-sealed](rapp-sealed.md) (markdown), [rapp-vneighborhood](rapp-vneighborhood.md) (markdown), [RAR](RAR.md) (markdown), [vbrainstem](vbrainstem.md) (markdown).
+Linked from 22: [cowork-cookbook-rapp](cowork-cookbook-rapp.md), [microsoft-se-team-neighborhood](microsoft-se-team-neighborhood.md), [racon](racon.md), [RAPP](RAPP.md), [RAPP-Bible](RAPP-Bible.md), [rapp-carts](rapp-carts.md), [rapp-commons](rapp-commons.md), [rapp-demos](rapp-demos.md), [rapp-doorman](rapp-doorman.md), [rapp-hive-public](rapp-hive-public.md), [rapp-kite](rapp-kite.md), [rapp-monorepo](rapp-monorepo.md), [rapp-sealed](rapp-sealed.md), [rapp-spine](rapp-spine.md), [rapp-stack-cubby](rapp-stack-cubby.md), [rapp-test-neighbor](rapp-test-neighbor.md), [rapp-vneighborhood](rapp-vneighborhood.md), [rapp-work-cubbies](rapp-work-cubbies.md), [RAPP_Store](RAPP_Store.md), [RAR](RAR.md), [vneighborhood-design-studio](vneighborhood-design-studio.md), [vneighborhood-research-lab](vneighborhood-research-lab.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

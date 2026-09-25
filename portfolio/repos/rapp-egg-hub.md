@@ -1,6 +1,7 @@
 ---
 repo: kody-w/rapp-egg-hub
-family: rapp-projects
+family: agents-rar
+line: Agents (RAR)
 wave: 2
 status: not yet
 verdict: DRIFT
@@ -9,6 +10,15 @@ checked: 2026-09-25
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 11
 header: missing
+links_to:
+  - RAPP
+  - rapp-1
+  - rapp-drift-lint
+  - rapp-installer
+  - rapp-moment
+  - RAPP_Store
+  - rappterbox
+  - RAR
 ---
 
 # rapp-egg-hub: not yet
@@ -30,6 +40,15 @@ header: missing
 - `eggs/rappterbook-cohesive.egg` · §9 egg · not a conformant rapp/1-egg (schema=?; parse: floats require full-JCS number serialization; use ints/strings)
 - `eggs/rock-tumbler.egg` · §9 egg · not a conformant rapp/1-egg (schema=?; parse: ZIP local and central UTF-8 flags must match exactly)
 - `eggs/wildhaven-ceo.egg` · §9 egg · not a conformant rapp/1-egg (schema=?; parse: ZIP local and central UTF-8 flags must match exactly)
+
+On the map: the **Agents (RAR)** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
+
+## Links
+
+Links to 8 portfolio repo(s): [RAPP](RAPP.md) (markdown), [rapp-1](rapp-1.md) (markdown), [rapp-drift-lint](rapp-drift-lint.md) (workflow), [rapp-installer](rapp-installer.md) (markdown), [rapp-moment](rapp-moment.md) (markdown), [RAPP_Store](RAPP_Store.md) (markdown), [rappterbox](rappterbox.md) (markdown), [RAR](RAR.md) (markdown).
+Linked from 12: [cowork-cookbook-rapp](cowork-cookbook-rapp.md), [RAPP](RAPP.md), [RAPP-Bible](RAPP-Bible.md), [rapp-brainfreeze-studio](rapp-brainfreeze-studio.md), [rapp-carts](rapp-carts.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rapp-rock-tumbler](rapp-rock-tumbler.md), [rapp-spine](rapp-spine.md), [rapp-vision-neighborhood](rapp-vision-neighborhood.md), [RAPP_Store](RAPP_Store.md), [RAR](RAR.md).
+
+Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 
