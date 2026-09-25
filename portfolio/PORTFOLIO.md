@@ -22,6 +22,8 @@ A Hive holds only markdown, so each badge is `badges/<repo>.svg.md`: its front m
 
 Lines are the families below; stations are repos, filled by status; the RAPP/1 Core line runs in layer order and ends at `rapp-installer`, the Start here terminal. It is drawn from these files by `rapp1_subway.py`, and the links between repos come from each file's `links_to`.
 
+**Version 1**, crawled 2026-09-25 18:16 UTC. Every crawl is one RAPP/1 frame, a `body.pulse` on the network's body stream `rappid:@kody-w/rapp1-network:71216534f9d362c7af054e773d546dfd996f769b08bd38c1b90b9e36760c2def`. The [timeline](https://kody-w.github.io/rapp-hive-public/portfolio/timeline.html) lists every version with its pulse hashes and what changed, and each version's maps stay under `versions/`.
+
 | Line | Stations | certified | not yet | unchecked |
 |---|---|---|---|---|
 | [RAPP/1 Core](lines/rapp1-core.md) | 7 | 6 | 1 | 0 |
@@ -66,7 +68,7 @@ Lines are the families below; stations are repos, filled by status; the RAPP/1 C
 | [hive-hub-mcp](repos/hive-hub-mcp.md) | certified | CLEAN | 4a3424b | 2026-09-25 | 0 | PR open |
 | [rapp-hive-hub](repos/rapp-hive-hub.md) | certified | COMPLIANT | e579f9c | 2026-09-25 | 7 | PR open |
 | [rapp-hive-hub-join](repos/rapp-hive-hub-join.md) | certified | CLEAN | d99fc58 | 2026-09-25 | 0 | PR open |
-| [rapp-hive-public](repos/rapp-hive-public.md) | certified | CLEAN | 021b75c | 2026-09-25 | 372 | present |
+| [rapp-hive-public](repos/rapp-hive-public.md) | certified | CLEAN | b0dfc8f | 2026-09-25 | 378 | present |
 | [rapp-model-hive](repos/rapp-model-hive.md) | not yet | DRIFT | 83e039f | 2026-09-25 | 16 | PR open |
 
 ### Agents (RAR) (1)
@@ -82,7 +84,7 @@ Lines are the families below; stations are repos, filled by status; the RAPP/1 C
 | Repo | Status | Verdict | Commit | Checked | "experimental" | Header |
 |---|---|---|---|---|---|---|
 | [hive-showcase](repos/hive-showcase.md) | certified | CLEAN | 331fb28 | 2026-09-25 | 7 | not yet added |
-| [rapp-hive-app](repos/rapp-hive-app.md) | certified | CLEAN | d59d23f | 2026-09-25 | 0 | not yet added |
+| [rapp-hive-app](repos/rapp-hive-app.md) | certified | CLEAN | 20880d5 | 2026-09-25 | 0 | not yet added |
 
 ### Agents (RAR) (21)
 
@@ -128,7 +130,7 @@ Lines are the families below; stations are repos, filled by status; the RAPP/1 C
 | [rapp-light](repos/rapp-light.md) | certified | CLEAN | 01a7e1b | 2026-09-25 | 5 | not yet added |
 | [rapp-petri](repos/rapp-petri.md) | certified | CLEAN | b1f953c | 2026-09-25 | 0 | not yet added |
 | [rapp-quests](repos/rapp-quests.md) | certified | CLEAN | d2eb2e2 | 2026-09-25 | 0 | not yet added |
-| [rapp-static-brainstem](repos/rapp-static-brainstem.md) | certified | CLEAN | 1e13539 | 2026-09-25 | 0 | not yet added |
+| [rapp-static-brainstem](repos/rapp-static-brainstem.md) | certified | CLEAN | 35cbd49 | 2026-09-25 | 0 | not yet added |
 | [rapp-vscode-extension](repos/rapp-vscode-extension.md) | certified | CLEAN | 774e9f4 | 2026-09-25 | 0 | no README (skipped) |
 | [skillstem](repos/skillstem.md) | certified | CLEAN | 385e40e | 2026-09-25 | 0 | not yet added |
 | [stemcell](repos/stemcell.md) | certified | CLEAN | 7cc90dd | 2026-09-25 | 6 | not yet added |
@@ -197,7 +199,7 @@ Lines are the families below; stations are repos, filled by status; the RAPP/1 C
 | [rapp-installer-dev](repos/rapp-installer-dev.md) | certified | CLEAN | 2deafae | 2026-09-25 | 8 | not yet added |
 | [rapp-mirror-releases](repos/rapp-mirror-releases.md) | certified | CLEAN | f10ff84 | 2026-09-25 | 0 | not yet added |
 | [rapp-nightly](repos/rapp-nightly.md) | certified | CLEAN | 27d6261 | 2026-09-25 | 12 | not yet added |
-| [rapp-release-train](repos/rapp-release-train.md) | certified | CLEAN | 5575c6e | 2026-09-25 | 6 | not yet added |
+| [rapp-release-train](repos/rapp-release-train.md) | certified | CLEAN | bd0e893 | 2026-09-25 | 6 | not yet added |
 | [rapp-rings](repos/rapp-rings.md) | certified | CLEAN | 4eb4fca | 2026-09-25 | 1 | not yet added |
 | [rapp-shape-aibast](repos/rapp-shape-aibast.md) | certified | CLEAN | e8a66b0 | 2026-09-25 | 21 | not yet added |
 | [rapp-train](repos/rapp-train.md) | certified | CLEAN | d271983 | 2026-09-25 | 0 | not yet added |
@@ -221,7 +223,7 @@ Lines are the families below; stations are repos, filled by status; the RAPP/1 C
 |---|---|---|---|---|---|---|
 | [mars-barn](repos/mars-barn.md) | certified | CLEAN | 2203505 | 2026-09-25 | 14 | not yet added |
 | [rappbook-admin](repos/rappbook-admin.md) | certified | CLEAN | 33f9f0d | 2026-09-25 | 0 | not yet added |
-| [rappterbook](repos/rappterbook.md) | not yet | DRIFT | cdb246a | 2026-09-25 | 4103 | not yet added |
+| [rappterbook](repos/rappterbook.md) | not yet | DRIFT | b9d5a0f | 2026-09-25 | 4123 | not yet added |
 | [rappterbook-agent](repos/rappterbook-agent.md) | certified | CLEAN | 8d15842 | 2026-09-25 | 2 | not yet added |
 | [rappterbook-agent-dna](repos/rappterbook-agent-dna.md) | certified | CLEAN | b054f18 | 2026-09-25 | 0 | not yet added |
 | [rappterbook-agent-exchange](repos/rappterbook-agent-exchange.md) | certified | CLEAN | ff0f726 | 2026-09-25 | 4 | not yet added |
@@ -363,10 +365,10 @@ Lines are the families below; stations are repos, filled by status; the RAPP/1 C
 
 | Repo | Status | Verdict | Commit | Checked | "experimental" | Header |
 |---|---|---|---|---|---|---|
-| [dogg](repos/dogg.md) | not yet | DRIFT | c47e4d6 | 2026-09-25 | 0 | not yet added |
+| [dogg](repos/dogg.md) | not yet | DRIFT | 6d42d63 | 2026-09-25 | 0 | not yet added |
 | [dogg-canon](repos/dogg-canon.md) | certified | COMPLIANT | 7bdae25 | 2026-09-25 | 0 | not yet added |
 | [dogg-markets](repos/dogg-markets.md) | certified | COMPLIANT | 52401ce | 2026-09-25 | 0 | not yet added |
-| [dogg-planet](repos/dogg-planet.md) | certified | COMPLIANT | d9875a4 | 2026-09-25 | 0 | not yet added |
+| [dogg-planet](repos/dogg-planet.md) | certified | COMPLIANT | d4511bc | 2026-09-25 | 0 | not yet added |
 | [rapp-commons](repos/rapp-commons.md) | not yet | DRIFT | 560eacc | 2026-09-25 | 0 | not yet added |
 | [rapp-dog-hub](repos/rapp-dog-hub.md) | certified | CLEAN | 7d72114 | 2026-09-25 | 0 | no README (skipped) |
 | [rapp-frame-net](repos/rapp-frame-net.md) | certified | CLEAN | ad6f248 | 2026-09-25 | 0 | not yet added |

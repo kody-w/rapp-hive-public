@@ -1,0 +1,65 @@
+---
+permalink: /portfolio/timeline.html
+layout: null
+---
+{::nomarkdown}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'sha256-EdLbDBprUsQ/fyUmX2gpSAQB7ULPqVwLstG/hJ3S3nw='; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>RAPP/1 network: timeline of 1 version(s)</title>
+<style>body{margin:0;background:#f6f8fa;color:#1b1f24;font:16px/1.5 Helvetica,Arial,sans-serif}
+header{background:#fff;border-bottom:1px solid #d0d7de;padding:14px 24px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+header h1{font-size:22px;margin:0;flex:1}
+a{color:#0969da;text-decoration:none}
+main{max-width:1040px;margin:0 auto;padding:20px 24px 60px}
+section,article{background:#fff;border:1px solid #d0d7de;border-radius:10px;padding:16px 20px;margin:0 0 16px}
+h2{font-size:19px;margin:0 0 8px}
+h3{font-size:18px;margin:0 0 6px}
+code,pre{font:13px/1.45 Menlo,Consolas,monospace;overflow-wrap:anywhere}
+pre{white-space:pre-wrap;background:#f6f8fa;border-radius:6px;padding:10px 12px;margin:8px 0}
+dl{display:grid;grid-template-columns:130px 1fr;gap:6px 14px;margin:8px 0}
+dt{font-weight:700;color:#57606a}
+dd{margin:0}
+.totals span{display:inline-block;margin-right:14px}
+.c{color:#1a7f37;font-weight:700}.n{color:#9a6700;font-weight:700}.u{color:#57606a;font-weight:700}
+.seq{color:#57606a;font-weight:400;font-size:15px}
+.note{border-left:5px solid #dfb317}
+ul{margin:4px 0 8px 20px;padding:0}
+footer{color:#57606a;font-size:13px;margin-top:24px}</style>
+</head>
+<body>
+<header><h1>RAPP/1 network · timeline</h1><a href="https://kody-w.github.io/rapp-hive-public/portfolio/subway.html">Latest map</a><a href="https://github.com/kody-w/rapp-hive-public/blob/main/portfolio/PORTFOLIO.md">Portfolio</a><a href="https://github.com/kody-w/rapp-installer#start-here">Start here</a></header>
+<main>
+<section>
+<h2>One RAPP/1 frame per crawl</h2>
+<p>Each crawl of the RAPP/1 network is one pulse of its life: a RAPP/1 frame of the registered kind <code>body.pulse</code> on the network's body stream, chained to the pulse before it. Its payload holds the crawl time, the checker pin, the totals per status and per line, every repo's status, verdict and evidence commit, a digest of the links between repos, and the content hashes of that version's <code>PORTFOLIO.md</code> and maps.</p>
+<dl>
+<dt>Stream</dt><dd><code>rappid:@kody-w/rapp1-network:71216534f9d362c7af054e773d546dfd996f769b08bd38c1b90b9e36760c2def</code><br>Keyless, minted once (2026-09-25T17:36:08.797Z); <a href="https://kody-w.github.io/rapp-hive-public/portfolio/rappid.json">rappid.json</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/rapp-frame-index.json">frame index</a></dd>
+<dt>Genesis</dt><dd>payload_hash <code>15530d4785bea042a87b06c7dcfe15fec6ede0b0041299bbd4e80e9e8a5b0894</code><br>frame_hash <code>d765d2698582e937af9cf75e6cb2851d6d1c10e546db1b4e5fe640c591b8b833</code></dd>
+<dt>Head</dt><dd>version 1 (seq 0), payload_hash <code>15530d4785bea042a87b06c7dcfe15fec6ede0b0041299bbd4e80e9e8a5b0894</code></dd>
+<dt>Checked</dt><dd>Every pulse passes RAPP/1 §7.5 steps 1–5 with the reference <code>rapp.py</code>, and rapp-1's own <code>rapp_check.py</code> at <code>591e014</code> gives the chain COMPLIANT (1 frame(s) passing, no findings). The reference implementation passes rapp-1's <code>conformance.py</code> (22 controlled checks | 22 PASS | 0 FAIL).</dd>
+</dl>
+</section>
+<section class="note">
+<h2>Signing and anchoring</h2>
+<p>The pulses are unsigned (<code>sig: null</code>), which RAPP/1 §10 allows on a body stream. Their hashes prove integrity and order, not authorship: do not infer who wrote a pulse from the frame. Attribution comes from the RAPP Hive, which committed each pulse in a signed save and published it in a signed commit of <a href="https://github.com/kody-w/rapp-hive-public">kody-w/rapp-hive-public</a>. Anchoring comes later: the estate owner authorizes a signer (phase 4), and records this stream's creation genesis in the estate's signed registry (§13.3), with this entry:</p>
+<pre>{&quot;type&quot;: &quot;genesis&quot;, &quot;stream_id&quot;: &quot;rappid:@kody-w/rapp1-network:71216534f9d362c7af054e773d546dfd996f769b08bd38c1b90b9e36760c2def&quot;, &quot;frame_hash&quot;: &quot;d765d2698582e937af9cf75e6cb2851d6d1c10e546db1b4e5fe640c591b8b833&quot;, &quot;deprecated&quot;: false}</pre>
+<p>Where the pulses live: in public. Every pulse is served as JSON beside its maps, and rapp_check.py still certifies this public copy: CLEAN on its files as they are (the Hive holds only markdown) and COMPLIANT on the files as GitHub Pages serves them, where each unsigned pulse passes the §7 envelope, hash and chain checks (a body stream permits sig null).</p>
+</section>
+<h2>Versions (1)</h2>
+<article>
+<h3>Version 1 · 2026-09-25 18:16 UTC <span class="seq">seq 0</span></h3>
+<p class="totals"><span>317 stations</span><span class="c">291 certified</span><span class="n">25 not yet</span><span class="u">1 unchecked</span></p>
+<p>payload_hash <code>15530d4785bea042a87b06c7dcfe15fec6ede0b0041299bbd4e80e9e8a5b0894</code><br>frame_hash <code>d765d2698582e937af9cf75e6cb2851d6d1c10e546db1b4e5fe640c591b8b833</code><br>prev <code>null</code></p>
+<p><a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-25-0/subway.html">map</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-25-0/subway.pdf">poster</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-25-0/subway.svg">SVG</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-25-0/pulse.json">pulse</a> · published with this page</p>
+<p>Genesis: the first pulse, 317 repos. Nothing before it to compare.</p>
+</article>
+<footer>Generated from the pulse frames by rapp1_portfolio.py (source in <a href="https://github.com/kody-w/rapp-hive-public/blob/main/portfolio/tools">portfolio/tools</a>, SHA-256 <code>ef3317b1035e4d18799bd4cef20213c65b9eced2b8f930ef311b5dfb572cc26f</code>).</footer>
+</main>
+</body>
+</html>
+{:/}
