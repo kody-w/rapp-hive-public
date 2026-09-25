@@ -1,0 +1,27 @@
+---
+repo: kody-w/rapp-cli
+family: rapp-projects
+wave: 2
+status: certified
+verdict: CLEAN
+evidence_commit: df8cd1614c2c35b626f7cb8cc9b5a3283615ef5e
+checked: 2026-09-25
+checker: kody-w/rapp-1 rapp_check.py at 591e014
+experimental_mentions: 1
+header: missing
+---
+
+# rapp-cli: certified
+
+![RAPP/1: certified](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-cli.svg)
+
+**Certified:** rapp-1's own checker gave **CLEAN** for [`kody-w/rapp-cli` at `df8cd1614c`](https://github.com/kody-w/rapp-cli/tree/df8cd1614c2c35b626f7cb8cc9b5a3283615ef5e).
+
+- Evidence: [`kody-w/rapp-cli` at `df8cd1614c`](https://github.com/kody-w/rapp-cli/tree/df8cd1614c2c35b626f7cb8cc9b5a3283615ef5e) on `main`, checked 2026-09-25.
+- Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**, 0 finding(s), 0 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `df13f187f1c90d401c57f87ea5a9dad2ce9edeac74d79f0daeadc01b3cec3cc2`.
+- "experimental" mentions: 1 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
+- Network header: not yet added.
+
+## Check it yourself
+
+Clone `kody-w/rapp-cli` at `df8cd1614c` and `kody-w/rapp-1` at `591e014`, then run `python3 -B rapp-1/rapp_check.py rapp-cli --json` from the folder that holds both.
