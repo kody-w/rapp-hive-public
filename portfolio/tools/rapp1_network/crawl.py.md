@@ -2,7 +2,7 @@
 
 The crawl: every portfolio repo checked by rapp-1's own rapp_check.py at the canon pin, outside the Hive.
 
-Source: `rapp1_network/crawl.py` (rapp1-network 0.1.1). SHA-256 of the source below: `8eaf332aa230fc09f895270bd0b2ab2586da913f7395fcc50869d494a3421146` (30002 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/crawl.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/crawl.py` (rapp1-network 0.1.2). SHA-256 of the source below: `b43e7a829c5cb7ad291b54fa7744899d2cc765176014687c3a539c1767125994` (30592 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/crawl.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python
@@ -215,6 +215,7 @@ def _link_names(kind: str, patterns, text: str, self_name: str):
 
 
 NETWORK_FOLDERS = ("portfolio/", "members/", "notices/")  # the network's own, in its public copy (C10)
+NETWORK_CARD = ".rapp/member.md"  # the repo's card in the RAPP Hive, written from the portfolio (C11)
 
 def crawl_links(root, files, self_name: str, known: dict) -> dict[str, set[str]]:
     """{portfolio repo: {kinds}} this checkout references. `known` maps each portfolio repo's lower-case name to
@@ -227,12 +228,13 @@ def crawl_links(root, files, self_name: str, known: dict) -> dict[str, set[str]]
         submodule  .gitmodules URLs, absolute or relative (../<repo>.git sits beside this repo on GitHub)
 
     The network header block is left out: its links are the network's, not the repo's. So are the network's own
-    folders in its public copy (portfolio/, members/, notices/ and PUBLISHED.md in rapp-hive-public)."""
+    folders in its public copy (portfolio/, members/, notices/ and PUBLISHED.md in rapp-hive-public), and the
+    repo's network card `.rapp/member.md` (C11: its links are the network's; its Neighbors come from this crawl)."""
     found: dict[str, set[str]] = {}
     own = self_name.lower() == PUBLIC_REPO.lower()
     for rel_path in files:
         low = rel_path.lower()
-        if own and (low.startswith(NETWORK_FOLDERS) or low == "published.md"):
+        if low == NETWORK_CARD or (own and (low.startswith(NETWORK_FOLDERS) or low == "published.md")):
             continue
         base = low.rsplit("/", 1)[-1]
         stem, _, ext = base.rpartition(".")
@@ -270,10 +272,12 @@ def tracked(repo_dir, timeout: int = READ_TIMEOUT) -> list[str]:
     return [p for p in _git_read(repo_dir, "ls-files", "-z", timeout=timeout).split("\0") if p]
 
 
-def experimental_mentions(root, timeout: int = READ_TIMEOUT) -> int:
-    """How many times "experimental" appears (whole word, any case) in the tracked text files."""
-    return len(_git_read(root, "grep", "-I", "-i", "-o", "-w", "-e", "experimental", timeout=timeout,
-                         ok=(0, 1)).splitlines())
+def experimental_mentions(root, timeout: int = READ_TIMEOUT, *, public_copy: bool = False) -> int:
+    """How many times "experimental" appears (whole word, any case) in the tracked text files, leaving out the
+    network's own files: the repo's card (C11) and, in the network's public copy, its own folders (C10)."""
+    skip = [NETWORK_CARD, *((*NETWORK_FOLDERS, "PUBLISHED.md") if public_copy else ())]
+    return len(_git_read(root, "grep", "-I", "-i", "-o", "-w", "-e", "experimental", "--", ".",
+                         *(f":(exclude,icase){p}" for p in skip), timeout=timeout, ok=(0, 1)).splitlines())
 
 
 def _is_lfs_pointer(path: Path) -> bool:
@@ -456,7 +460,7 @@ def _check(settings: Settings, clone: Path, repo: str, commit: str, known: dict,
                      unverified=unverified),
             **({"version": version, "version_source": "VERSION"} if version else {}),
             "evidence_commit": commit,
-            "experimental_mentions": experimental_mentions(clone),
+            "experimental_mentions": experimental_mentions(clone, public_copy=repo.lower() == PUBLIC_REPO.lower()),
             "tracked_files": len(files),
             "links_to": sorted(links, key=str.lower),
             "links_kinds": {name: sorted(kinds) for name, kinds in sorted(links.items(), key=lambda kv: kv[0].lower())},

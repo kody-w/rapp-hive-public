@@ -2,7 +2,7 @@
 
 The timeline: every pulse of the network's body stream, newest first, with its hashes, totals, files and what changed since the pulse before it. One static page (no script, a strict CSP whose one style is pinned by hash), served by GitHub Pages as portfolio/timeline.html from the Hive's timeline.html.md.
 
-Source: `rapp1_network/timeline.py` (rapp1-network 0.1.1). SHA-256 of the source below: `72b87709165cbf8bd78867db551a7a1814cd4700cf0c4722723038732e48f904` (14830 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/timeline.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/timeline.py` (rapp1-network 0.1.2). SHA-256 of the source below: `72b87709165cbf8bd78867db551a7a1814cd4700cf0c4722723038732e48f904` (14830 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/timeline.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python

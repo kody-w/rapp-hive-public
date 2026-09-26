@@ -2,7 +2,7 @@
 
 The pinned release copy for the RAPP Hive's `portfolio/tools/`: the package's own sources, as data.
 
-Source: `rapp1_network/export.py` (rapp1-network 0.1.1). SHA-256 of the source below: `8ea18eca38dbf1c5c1fba486a228f4cc144048b33253a03397a9db5d55a99f18` (14652 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/export.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/export.py` (rapp1-network 0.1.2). SHA-256 of the source below: `4c33a9e4811ba26076f07b9a7da2d3bce1ce3894f91d61593d10274dc4d52c78` (16944 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/export.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python
@@ -30,6 +30,7 @@ from pathlib import Path
 from typing import Mapping
 
 from . import __version__
+from .constants import OWNER
 from .pulses import generator_for
 from .util import run, sha256
 from .wrapping import Refused
@@ -176,18 +177,56 @@ for md in sorted(pathlib.Path('.').glob('*.py.md')):
 PY"""
 
 
-def readme(release: Mapping) -> str:
+PUBLIC_TREE = f"https://github.com/{OWNER}/rapp-hive-public/tree"
+
+
+def _versions(numbers: list[int]) -> str:
+    return f"Version {numbers[0]}" if len(numbers) == 1 else f"Versions {numbers[0]} to {numbers[-1]}"
+
+
+def made_by(release: Mapping, history=None, current: Mapping | None = None) -> list[str]:
+    """Which tools made which version, from each pulse's `generator` (`history`: [(number, vid, generator,
+    public commit that first carried it or None)], oldest first, the version being cut last). Version 1's two files
+    stay here; the current release is this folder; an earlier release's copy is in the public copy's history."""
+    legacy = ("- **Version 1** (pulse 0) was made by the two single-file tools `rapp1_portfolio.py` and "
+              "`rapp1_subway.py`, kept here unchanged ([rapp1_portfolio.py.md](rapp1_portfolio.py.md), "
+              "[rapp1_subway.py.md](rapp1_subway.py.md)); version 1's pulse names their SHA-256 in `payload.generator`.")
+    this = (f"made by the package `{PACKAGE}` (rapp1-network {release['version']}), every source file of it in "
+            f"[{PACKAGE}/]({PACKAGE}/). [RELEASE.md](RELEASE.md) lists each file with its SHA-256 and size, the release "
+            "and its commit, and the `generator` each of its pulses records.")
+    if not history:
+        return [legacy, f"- **Package versions** are {this}"]
+    lines, groups = [], []
+    for number, _vid, gen, first in history:
+        if not any(str(name).startswith(f"{PACKAGE}/") for name in gen):
+            if not lines:
+                lines.append(legacy)
+            continue
+        if groups and groups[-1][1] == gen:
+            groups[-1][0].append(number)
+        else:
+            groups.append(([number], gen, first))
+    for k, (numbers, gen, first) in enumerate(groups):
+        if current is not None and gen == current and k == len(groups) - 1:
+            lines.append(f"- **Version {numbers[0]} onwards** are {this}")
+        elif first:
+            lines.append(f"- **{_versions(numbers)}** {'was' if len(numbers) == 1 else 'were'} made by an earlier release "
+                         f"of the package: its release copy is in this public copy's history at commit "
+                         f"[`{first[:7]}`]({PUBLIC_TREE}/{first}/portfolio/tools) (its RELEASE.md names the release), "
+                         "and each pulse names every file's SHA-256 in `payload.generator`.")
+        else:
+            lines.append(f"- **{_versions(numbers)}** {'was' if len(numbers) == 1 else 'were'} made by an earlier release "
+                         "of the package; each pulse names every file's SHA-256 in `payload.generator`.")
+    return lines
+
+
+def readme(release: Mapping, history=None, current: Mapping | None = None) -> str:
     return "\n".join([
         "# Tools", "",
         "The standard-library Python tools that made this portfolio, as data: a Hive holds only markdown, so each "
         "source file is one `.md` file with the source in a fenced block and its SHA-256 above it. Code in a Hive "
         "is never run from the Hive; copy it out first.", "",
-        "- **Version 1** (pulse 0) was made by the two single-file tools `rapp1_portfolio.py` and `rapp1_subway.py`, "
-        "kept here unchanged ([rapp1_portfolio.py.md](rapp1_portfolio.py.md), [rapp1_subway.py.md](rapp1_subway.py.md)); "
-        "version 1's pulse names their SHA-256 in `payload.generator`.",
-        f"- **Version 2 onwards** are made by the package `{PACKAGE}` (rapp1-network {release['version']}), every "
-        f"source file of it in [{PACKAGE}/]({PACKAGE}/). [RELEASE.md](RELEASE.md) lists each file with its SHA-256 and "
-        "size, the release and its commit, and the `generator` each of its pulses records.", "",
+        *made_by(release, history, current), "",
         "Rebuild the package from the markdown, check every file against its hash and RELEASE.md, and verify the "
         "published chain with it (run this in a clone of `kody-w/rapp-hive-public`, inside `portfolio/tools/`; it "
         "needs git and Python 3.12, writes the package to `release/`, and clones `kody-w/rapp-1` at the canon pin "
@@ -206,15 +245,17 @@ def readme(release: Mapping) -> str:
         "```bash", LEGACY_EXTRACTOR, "```", ""])
 
 
-def tool_files(files: Mapping[str, str] | None = None, *, release: Mapping | None = None) -> dict[str, str]:
+def tool_files(files: Mapping[str, str] | None = None, *, release: Mapping | None = None,
+               history=None) -> dict[str, str]:
     """{path in the portfolio room: text}: `tools/rapp1_network/<file>.md` for every package source,
     `tools/RELEASE.md` and `tools/README.md`. Version 1's two tool files are not among them: they stay as they are.
-    `files` defaults to the running package's sources, `release` to its provenance()."""
+    `files` defaults to the running package's sources, `release` to its provenance(); `history` (see made_by) lets
+    the README say which release made each version."""
     files = sources() if files is None else dict(files)
     release = {"version": __version__, "tag": None, "commit": None, "clean": None, **(release or {})}
     out = {f"{TOOLS}/{PACKAGE}/{md_name(name)}": source_file(name, text, release) for name, text in sorted(files.items())}
     out[f"{TOOLS}/RELEASE.md"] = release_md(files, release)
-    out[f"{TOOLS}/README.md"] = readme(release)
+    out[f"{TOOLS}/README.md"] = readme(release, history, generator(files))
     for rel_path in out:
         if any(rel_path == f"{TOOLS}/{name}.md" for name in LEGACY_TOOLS):
             raise Refused(f"{rel_path} is version 1's; it never changes")

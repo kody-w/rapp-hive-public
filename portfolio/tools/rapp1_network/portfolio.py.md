@@ -2,7 +2,7 @@
 
 The portfolio room (`<hive>/shared/organism/portfolio/`, published as `portfolio/`): one file per repo (`repos/<repo>.md`), its badge (`badges/<repo>.svg.md`), one file per line (`lines/<line>.md`) and `PORTFOLIO.md`, plus the public README's portfolio bullet. The subway map and the pulses are drawn from these files.
 
-Source: `rapp1_network/portfolio.py` (rapp1-network 0.1.1). SHA-256 of the source below: `f47181f380521df55c94394bbf9e7f43c57cf8103a2a2c36e203ce2b03846d18` (45251 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/portfolio.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/portfolio.py` (rapp1-network 0.1.2). SHA-256 of the source below: `6e2ef004eddb6c2bf8797f9c98beb4d68c47d19c00aa6b7d4b262ac6a324ec12` (46599 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/portfolio.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python
@@ -523,11 +523,37 @@ def version_cell(rec: dict) -> str:
     return " · ".join(parts)
 
 
+HEADER_COUNT_WORDS = (("present", "carry it"), ("pr-open", "in an open pull request"),
+                      ("merged", "merged, awaiting the next sweep"), ("held", "held"),
+                      ("missing", "waiting for their pull request (wave 2 waits for the owner's approval)"),
+                      ("no-readme", "without a README (skipped)"), ("not-markdown", "with a README that is not markdown "
+                                                                     "(skipped)"),
+                      ("unchecked", "not checked (they could not be cloned)"), ("unknown", "unknown until swept"))
+
+
+def _header_key(rec: dict, pr: dict | None, exceptions: dict | None) -> str:
+    state = header_state(rec, pr, exceptions)
+    return "unchecked" if state == "unknown" and rec.get("status") == "unchecked" and rec.get("reason") else state
+
+
+def header_counts(recs: dict, prs: dict, exceptions: dict | None) -> str:
+    """Edition 2: how many READMEs carry the header today and where the rest stand, in words."""
+    counts: dict[str, int] = {}
+    for r in recs.values():
+        key = _header_key(r, prs.get(r["repo"]), exceptions)
+        counts[key] = counts.get(key, 0) + 1
+    words = [f"{counts[key]} {phrase}" for key, phrase in HEADER_COUNT_WORDS if counts.get(key)]
+    return f"today, of {len(recs)}: " + ", ".join(words)
+
+
 def header_cell(rec: dict, pr: dict | None, exceptions: dict | None) -> str:
-    """The Header cell of edition 2: `held: <short>` for a held header with a short form."""
+    """The Header cell of edition 2: `held: <short>` for a held header with a short form; `none (not checked)` for a
+    repo that could not be cloned or checked."""
     state = header_state(rec, pr, exceptions)
     short = held_short((exceptions or {}).get(rec["repo"])) if state == "held" else None
-    return f"held: {cell(short)}" if short else HEADER_WORDS[state]
+    if short:
+        return f"held: {cell(short)}"
+    return "none (not checked)" if _header_key(rec, pr, exceptions) == "unchecked" else HEADER_WORDS[state]
 
 
 def lifecycle_counts(recs: dict, left: dict | None) -> dict[str, int]:
@@ -555,9 +581,8 @@ def portfolio_md2(recs: dict, prs: dict, exceptions: dict | None = None, version
         "publishes its LTS pins; the Version column shows `LTS` and its label); **newest**: no pin, so its newest "
         "commit is the one in use. **deprecated**, **superseded** and **archived** come first in the Status column; "
         "each repo's file says since when and why.\n"), 1)
-    carried = sum(header_state(r, prs.get(r["repo"]), exceptions) == "present" for r in recs.values())
-    text = text.replace("Each repo's README carries one marked line:", f"Each repo's README gets one marked line "
-                        f"({carried} of {len(recs)} carry it today; the header pull requests bring it to the rest):", 1)
+    text = text.replace("Each repo's README carries one marked line:",
+                        f"Each repo's README gets one marked line ({header_counts(recs, prs, exceptions)}):", 1)
     text = text.replace("stations are repos, filled by status;", "stations are repos, filled by status (hollow when "
                         "deprecated, superseded or archived);", 1)
     text = text.replace("It is drawn from these files by `rapp1_subway.py`, and the links",

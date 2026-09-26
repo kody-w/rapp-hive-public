@@ -10,7 +10,7 @@ layout: null
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'sha256-EdLbDBprUsQ/fyUmX2gpSAQB7ULPqVwLstG/hJ3S3nw='; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
-<title>RAPP/1 network: timeline of 3 version(s)</title>
+<title>RAPP/1 network: timeline of 4 version(s)</title>
 <style>body{margin:0;background:#f6f8fa;color:#1b1f24;font:16px/1.5 Helvetica,Arial,sans-serif}
 header{background:#fff;border-bottom:1px solid #d0d7de;padding:14px 24px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
 header h1{font-size:22px;margin:0;flex:1}
@@ -40,8 +40,8 @@ footer{color:#57606a;font-size:13px;margin-top:24px}</style>
 <dl>
 <dt>Stream</dt><dd><code>rappid:@kody-w/rapp1-network:71216534f9d362c7af054e773d546dfd996f769b08bd38c1b90b9e36760c2def</code><br>Keyless, minted once (2026-09-25T17:36:08.797Z); <a href="https://kody-w.github.io/rapp-hive-public/portfolio/rappid.json">rappid.json</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/rapp-frame-index.json">frame index</a></dd>
 <dt>Genesis</dt><dd>payload_hash <code>15530d4785bea042a87b06c7dcfe15fec6ede0b0041299bbd4e80e9e8a5b0894</code><br>frame_hash <code>d765d2698582e937af9cf75e6cb2851d6d1c10e546db1b4e5fe640c591b8b833</code></dd>
-<dt>Head</dt><dd>version 3 (seq 2), payload_hash <code>da8e4433a325f460f7b0864bc2a101d0eb97035fd0d2fd0ca1d1ab15d653b00c</code></dd>
-<dt>Checked</dt><dd>Every pulse passes RAPP/1 §7.5 steps 1–5 with the reference <code>rapp.py</code>, and rapp-1's own <code>rapp_check.py</code> at <code>591e014</code> gives the chain COMPLIANT (3 frame(s) passing, no findings). The reference implementation passes rapp-1's <code>conformance.py</code> (22 controlled checks | 22 PASS | 0 FAIL).</dd>
+<dt>Head</dt><dd>version 4 (seq 3), payload_hash <code>29c2f3e514133c2e1b17f2385a4721618de80fe2bf527a95fcb21b6ee62cdec2</code></dd>
+<dt>Checked</dt><dd>Every pulse passes RAPP/1 §7.5 steps 1–5 with the reference <code>rapp.py</code>, and rapp-1's own <code>rapp_check.py</code> at <code>591e014</code> gives the chain COMPLIANT (4 frame(s) passing, no findings). The reference implementation passes rapp-1's <code>conformance.py</code> (22 controlled checks | 22 PASS | 0 FAIL).</dd>
 </dl>
 </section>
 <section class="note">
@@ -50,12 +50,20 @@ footer{color:#57606a;font-size:13px;margin-top:24px}</style>
 <pre>{&quot;type&quot;: &quot;genesis&quot;, &quot;stream_id&quot;: &quot;rappid:@kody-w/rapp1-network:71216534f9d362c7af054e773d546dfd996f769b08bd38c1b90b9e36760c2def&quot;, &quot;frame_hash&quot;: &quot;d765d2698582e937af9cf75e6cb2851d6d1c10e546db1b4e5fe640c591b8b833&quot;, &quot;deprecated&quot;: false}</pre>
 <p>Where the pulses live: in public. Every pulse is served as JSON beside its maps, and rapp_check.py still certifies this public copy: CLEAN on its files as they are (the Hive holds only markdown) and COMPLIANT on the files as GitHub Pages serves them, where each unsigned pulse passes the §7 envelope, hash and chain checks (a body stream permits sig null).</p>
 </section>
-<h2>Versions (3)</h2>
+<h2>Versions (4)</h2>
+<article>
+<h3>Version 4 · 2026-09-26 04:22 UTC <span class="seq">seq 3</span></h3>
+<p class="totals"><span>317 stations</span><span class="c">291 certified</span><span class="n">25 not yet</span><span class="u">1 unchecked</span></p>
+<p>payload_hash <code>29c2f3e514133c2e1b17f2385a4721618de80fe2bf527a95fcb21b6ee62cdec2</code><br>frame_hash <code>b5846dddca1948876a0fa7828fa53733878f94d6c306564526d22f60c14b74f6</code><br>prev <code>da8e4433a325f460f7b0864bc2a101d0eb97035fd0d2fd0ca1d1ab15d653b00c</code></p>
+<p><a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-3/subway.html">map</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-3/subway.pdf">poster</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-3/subway.svg">SVG</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-3/pulse.json">pulse</a> · published with this page</p>
+<p><b>Since version 3:</b> 0 status change(s), 0 new repo(s), 0 removed, 4 repo(s) at a new commit.</p>
+<p>0 lifecycle change(s), 0 version change(s), 0 channel change(s), 0 repo(s) left the network.</p>
+</article>
 <article>
 <h3>Version 3 · 2026-09-26 03:00 UTC <span class="seq">seq 2</span></h3>
 <p class="totals"><span>317 stations</span><span class="c">291 certified</span><span class="n">25 not yet</span><span class="u">1 unchecked</span></p>
 <p>payload_hash <code>da8e4433a325f460f7b0864bc2a101d0eb97035fd0d2fd0ca1d1ab15d653b00c</code><br>frame_hash <code>9b614551b5345dbc9c8de2160fec5432c7ab800727e2ca8c7ed8e975e5bf9bc8</code><br>prev <code>3f27d1169b064044de344b30a4efad7b1330e1163f484b4b04967ff7c4a8b14f</code></p>
-<p><a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-2/subway.html">map</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-2/subway.pdf">poster</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-2/subway.svg">SVG</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-2/pulse.json">pulse</a> · published with this page</p>
+<p><a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-2/subway.html">map</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-2/subway.pdf">poster</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-2/subway.svg">SVG</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-2/pulse.json">pulse</a> · first published in <a href="https://github.com/kody-w/rapp-hive-public/commit/b684d17b84f525a541dabcce25d89e5771b8f73b">b684d17</a></p>
 <p><b>Since version 2:</b> 0 status change(s), 0 new repo(s), 0 removed, 6 repo(s) at a new commit.</p>
 <p>0 lifecycle change(s), 1 version change(s), 0 channel change(s), 0 repo(s) left the network.</p>
 <ul><li>rapp-static-brainstem: version v1.1.0 → v1.2.0</li></ul>

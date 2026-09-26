@@ -2,7 +2,7 @@
 
 The pipeline: cut the next version into the RAPP Hive, save it, publish it, check what Pages serves, and the one command that reruns it all (`crawl`: discover, sweep, cut, publish, the Pages check, status).
 
-Source: `rapp1_network/pipeline.py` (rapp1-network 0.1.1). SHA-256 of the source below: `24b1f872db5a4fe1bf274f428bb39b69f1e1ea673df99e1b0143a1fd41678f70` (40162 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/pipeline.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/pipeline.py` (rapp1-network 0.1.2). SHA-256 of the source below: `b2cf86ef1d379d4654da022bb4d672d3bea0f40b40902ad09336a4b1d629bc8f` (40344 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/pipeline.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python
@@ -291,8 +291,10 @@ def build(settings: Settings, hive: Hive, *, utc: str | None = None, printer=Non
                              pdf=True, printer=printer)
     room_matches(folder, recs, left, L)
     sources = export.sources()
-    tools = export.tool_files(sources, release=export.provenance())
     generator = export.generator(sources)
+    published = hive.published_commits(v for _, v in frames)
+    history = [(f["payload"]["version"], v, f["payload"]["generator"], published.get(v)) for f, v in frames]
+    tools = export.tool_files(sources, release=export.provenance(), history=history + [(number, vid, generator, None)])
     notices = folder / portfolio.NOTICES_MD
     artifacts = pulses.artifacts_for((folder / "PORTFOLIO.md").read_bytes(), files,
                                      notices.read_bytes() if pulses.schema_for(number) >= 2 else None)
@@ -302,7 +304,7 @@ def build(settings: Settings, hive: Hive, *, utc: str | None = None, printer=Non
     frames = frames + [(frame, vid)]
     chain = pulses.chain_files(sid, record, frames, chk)
     facts = {"chain": pulses.check_chain(chain, chk), "conformance": conformance or checker.conformance(chk),
-             "published": hive.published_commits(v for _, v in frames[:-1])}
+             "published": published}
     write_room(folder, {f"versions/{vid}/{name}": text for name, text in files.items()}, generated=())
     stable, _ = subway.render(folder, version, subway.nav_for(versions))
     stable["subway.pdf.md"] = files["subway.pdf.md"].replace(f"/{PORTFOLIO}/versions/{vid}/subway.pdf",
