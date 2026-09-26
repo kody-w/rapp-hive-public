@@ -2,7 +2,7 @@
 
 Versions, LTS pins, channels, lifecycles and notices: what portfolio edition 2 (version 2 onwards) says about each repo besides its earned RAPP/1 status. Pure functions of their inputs, except the crawl's two readers (a root VERSION file in a checkout, the latest GitHub release through gh) and the LTS pins file.
 
-Source: `rapp1_network/lifecycle.py` (rapp1-network 0.1.2). SHA-256 of the source below: `2660a8db6ef7ecd2948b4c1a458bc6b40ecbf60d9fe995431cbf0a1e655c67e7` (22409 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/lifecycle.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/lifecycle.py` (rapp1-network 0.1.3). SHA-256 of the source below: `2660a8db6ef7ecd2948b4c1a458bc6b40ecbf60d9fe995431cbf0a1e655c67e7` (22409 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/lifecycle.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python

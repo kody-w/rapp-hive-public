@@ -24,7 +24,7 @@ lifecycle: active
 
 - Evidence: [`kody-w/rappterbook-v2` at `ed4a91faa1`](https://github.com/kody-w/rappterbook-v2/tree/ed4a91faa1dd1ebf275a97966110a8e4b1c8828f) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `7e795dd3e054d68976fc811e9fc3873a692a7be89b8d69254acd5e48b9cf35ff`.
-- "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
+- "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: no README (skipped).
 
 On the map: the **Rappterbook** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).

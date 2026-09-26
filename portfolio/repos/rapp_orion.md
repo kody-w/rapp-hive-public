@@ -27,7 +27,7 @@ links_to:
 
 - Evidence: [`kody-w/rapp_orion` at `7ba9bd9d69`](https://github.com/kody-w/rapp_orion/tree/7ba9bd9d69812c3dc2d418dcd2029c49b379ffe3) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `1f2d80410bcae8d0f2a465ba39fc2ad07e5fb1a60e76ec2ee21a44a782688f41`.
-- "experimental" mentions: 8 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
+- "experimental" mentions: 8 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: not yet added.
 
 On the map: the **Worlds & Play** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).

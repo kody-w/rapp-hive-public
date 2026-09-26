@@ -76,7 +76,7 @@ links_to:
 
 - Evidence: [`kody-w/RAPP` at `e045fc3acd`](https://github.com/kody-w/RAPP/tree/e045fc3acd5febf9423ad4a41510e467e0160d52) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **DRIFT**, 3 finding(s), 6 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `717dfb4c96ffb882c8e44bb4c353a1e952348b678309375257c939ccb6b60ab8`.
-- "experimental" mentions: 160 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
+- "experimental" mentions: 160 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: present in `README.md`.
 
 ## Findings (3)

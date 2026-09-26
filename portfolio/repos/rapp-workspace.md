@@ -27,8 +27,8 @@ links_to:
 
 - Evidence: [`kody-w/rapp-workspace` at `52d4f19df8`](https://github.com/kody-w/rapp-workspace/tree/52d4f19df8f502218d77281c970eab3f4618fcbd) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **COMPLIANT**, 2 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `4f12470cbac262f6b6346046908c11b74d7e16eb37d510abdccfb54d6e4d8a16`.
-- "experimental" mentions: 50 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
-- Network header: held back: waiting on G24 (front door editable): its README bytes are part of the Workspace/1 core manifest (repository_evidence), whose SHA-256 is the frozen Workspace/1 identity that rapp-work-sdk/1 pins, so adding a line would change that identity. A successor identity that keeps the README out of the frozen bytes is being prepared; the header lands once the owner accepts it and the front door is editable..
+- "experimental" mentions: 50 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
+- Network header: held back: waiting on G24 (front door editable): its README bytes are part of the Workspace/1 core manifest (repository_evidence), whose SHA-256 is the frozen Workspace/1 identity that rapp-work-sdk/1 pins, so adding a line would change that identity. A successor identity that keeps the README out of the frozen bytes is being prepared; the header lands once the owner accepts it and the front door is editable.
 
 On the map: the **RAPP/1 Core** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
 

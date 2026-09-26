@@ -35,7 +35,7 @@ links_to:
 
 - Evidence: [`kody-w/rapp-egg-hub` at `4c49318fca`](https://github.com/kody-w/rapp-egg-hub/tree/4c49318fcafe526c56802c50131699006501e3e1) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **DRIFT**, 6 finding(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `31a4529db16f3bc6f8567b7d6873101dc7b365445742ebfdce9d026c9a1fdffa`.
-- "experimental" mentions: 11 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
+- "experimental" mentions: 11 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: not yet added.
 
 ## Findings (6)

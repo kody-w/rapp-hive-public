@@ -29,7 +29,7 @@ links_to:
 
 - Evidence: [`kody-w/pkstop-central-park-bandshell` at `42b79c0f4a`](https://github.com/kody-w/pkstop-central-park-bandshell/tree/42b79c0f4ace88a055dc4911bc665391d5eb77dd) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **COMPLIANT**, 1 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `bed9564b7048c920949971327be0c5b6d9b9f097d366e49034465fe375942f5e`.
-- "experimental" mentions: 1 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
+- "experimental" mentions: 1 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: not yet added.
 
 On the map: the **Neighborhoods** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).

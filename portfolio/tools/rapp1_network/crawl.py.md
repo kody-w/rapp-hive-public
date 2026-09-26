@@ -2,7 +2,7 @@
 
 The crawl: every portfolio repo checked by rapp-1's own rapp_check.py at the canon pin, outside the Hive.
 
-Source: `rapp1_network/crawl.py` (rapp1-network 0.1.2). SHA-256 of the source below: `b43e7a829c5cb7ad291b54fa7744899d2cc765176014687c3a539c1767125994` (30592 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/crawl.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/crawl.py` (rapp1-network 0.1.3). SHA-256 of the source below: `4312e35f39ca7bdc95d2b0ab426f9020b80980e6df3114da4f7fda953119ab62` (30828 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/crawl.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python
@@ -114,8 +114,12 @@ def _read_text(root, rel_path: str, limit: int = MAX_LINK_FILE) -> str | None:
         return None
 
 
+PATHSPEC_ENV = {"GIT_LITERAL_PATHSPECS": "0", "GIT_GLOB_PATHSPECS": "0", "GIT_NOGLOB_PATHSPECS": "0",
+                "GIT_ICASE_PATHSPECS": "0"}  # pathspec magic (the network's exclusions) whatever the device sets
+
+
 def _git_read(root, *args: str, timeout: int = READ_TIMEOUT, ok=(0,)) -> str:
-    done = util.run(*GIT, "-C", str(root), *args, timeout=timeout)
+    done = util.run(*GIT, "-C", str(root), *args, timeout=timeout, env=PATHSPEC_ENV)
     if done.returncode not in ok:
         raise RuntimeError(f"git {args[0]} failed (exit {done.returncode}): {clean(done.stderr, 160, last_line=True)}")
     return done.stdout

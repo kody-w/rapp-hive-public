@@ -2,7 +2,7 @@
 
 The notice board of the RAPP/1 network: every repo that is **deprecated**, **superseded** or **archived**, and every repo that **left** the network, with since when and why. Deprecated and superseded come only from a notice saved in the RAPP Hive by signed save; archived comes only from GitHub. Every crawl is one RAPP/1 `body.pulse` frame, and each pulse records these lifecycles, so the [timeline](https://kody-w.github.io/rapp-hive-public/portfolio/timeline.html) versions every notice.
 
-**Version 4**, crawled 2026-09-26 04:22 UTC: 317 active, 0 deprecated, 0 superseded, 0 archived, 0 left the network.
+**Version 5**, crawled 2026-09-26 05:17 UTC: 317 active, 0 deprecated, 0 superseded, 0 archived, 0 left the network.
 
 ## Not active (0)
 

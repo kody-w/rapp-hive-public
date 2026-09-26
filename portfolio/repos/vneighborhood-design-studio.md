@@ -28,7 +28,7 @@ links_to:
 
 - Evidence: [`kody-w/vneighborhood-design-studio` at `6d2770b11e`](https://github.com/kody-w/vneighborhood-design-studio/tree/6d2770b11ee17b9695491c03137550ebe1005d1d) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `91ce665dc5a77e1dc5d83f11462fe29f30c575c39dadeae84a4e5811b2a271a4`.
-- "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
+- "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: not yet added.
 
 On the map: the **Neighborhoods** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).

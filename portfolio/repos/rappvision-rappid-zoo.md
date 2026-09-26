@@ -29,7 +29,7 @@ links_to:
 
 - Evidence: [`kody-w/rappvision-rappid-zoo` at `34244eb16b`](https://github.com/kody-w/rappvision-rappid-zoo/tree/34244eb16b22389fa1e311c1689ecd6ee46f6c3b) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `cf045ad46d4ac221e646b75cc7f60a03edee9fdec39a8b684c6ae19f683e6867`.
-- "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
+- "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: not yet added.
 
 On the map: the **Rappvision** line, and also Worlds & Play ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).

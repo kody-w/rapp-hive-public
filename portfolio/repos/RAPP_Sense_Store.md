@@ -28,7 +28,7 @@ links_to:
 
 - Evidence: [`kody-w/RAPP_Sense_Store` at `36efba8f7c`](https://github.com/kody-w/RAPP_Sense_Store/tree/36efba8f7ca381f7fa39b6b08e5a0f06aec1d946) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `29b5ea55de3fc9c28c79ee09e902dc681045e7053ef03ed43b1880dc5d00130b`.
-- "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
+- "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: not yet added.
 
 On the map: the **Agents (RAR)** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).

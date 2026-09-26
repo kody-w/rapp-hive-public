@@ -2,7 +2,7 @@
 
 The portfolio room (`<hive>/shared/organism/portfolio/`, published as `portfolio/`): one file per repo (`repos/<repo>.md`), its badge (`badges/<repo>.svg.md`), one file per line (`lines/<line>.md`) and `PORTFOLIO.md`, plus the public README's portfolio bullet. The subway map and the pulses are drawn from these files.
 
-Source: `rapp1_network/portfolio.py` (rapp1-network 0.1.2). SHA-256 of the source below: `6e2ef004eddb6c2bf8797f9c98beb4d68c47d19c00aa6b7d4b262ac6a324ec12` (46599 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/portfolio.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/portfolio.py` (rapp1-network 0.1.3). SHA-256 of the source below: `d25ca5185c1073fabab01f6b8eae156406c9412b8bd3d940f66bc39b8fa1e913` (47140 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/portfolio.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python
@@ -462,6 +462,12 @@ def version_line(rec: dict) -> list[str]:
     return [text + f" **Channel:** `{channel}`: {CHANNEL_WORDS[channel]}.", ""]
 
 
+EXPERIMENTAL_WORDS_1 = "(whole word, any case, in tracked text files at the evidence commit; tracked, not a gate)"
+EXPERIMENTAL_WORDS_2 = ("(whole word, any case, in tracked text files at the evidence commit, leaving out the network's "
+                        "own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, "
+                        "`members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate)")
+
+
 def repo_body2(rec: dict, pr: dict | None, back=(), exceptions: dict | None = None) -> list[str]:
     """Edition 2's body: the notice first (when not active), then edition 1's body with the badge's words as its alt
     text and the Version line after the status."""
@@ -470,7 +476,8 @@ def repo_body2(rec: dict, pr: dict | None, back=(), exceptions: dict | None = No
     badge = f"![{label}]({PAGES}/badges/{quote(rec['repo'], safe='')}.svg)"
     at = body.index("") + 1  # after the title and its blank line: the badge, then the status lines
     status_end = at + 2 + len(_status_lines(rec))
-    return notice_quote(rec) + body[:at] + [badge, ""] + body[at + 2:status_end] + version_line(rec) + body[status_end:]
+    tail = [line.replace(EXPERIMENTAL_WORDS_1, EXPERIMENTAL_WORDS_2, 1) for line in body[status_end:]]
+    return notice_quote(rec) + body[:at] + [badge, ""] + body[at + 2:status_end] + version_line(rec) + tail
 
 
 def repo_file2(rec: dict, pr: dict | None, back=(), exceptions: dict | None = None) -> str:

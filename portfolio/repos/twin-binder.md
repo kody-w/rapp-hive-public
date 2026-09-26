@@ -28,7 +28,7 @@ links_to:
 
 - Evidence: [`kody-w/twin-binder` at `5e41cd9088`](https://github.com/kody-w/twin-binder/tree/5e41cd9088deee8394d22d5941f1fa8bc37b990f) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `ca1084777a00cb52ecf56f4e87174070700ce57a0be5700331709b84db1bc758`.
-- "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
+- "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: not yet added.
 
 On the map: the **Twins** line, and also Agents (RAR) ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).

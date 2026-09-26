@@ -29,7 +29,7 @@ links_to:
 
 - Evidence: [`kody-w/rapp-leviathan-hub` at `bfefc798b9`](https://github.com/kody-w/rapp-leviathan-hub/tree/bfefc798b9b3ce49c4b9c941830607e21aa8e623) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **DRIFT**, 2 finding(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `f11e3d00a7bfa59018076bf4f0d8bbf3ed7218a38b45719621a5dd579d028b56`.
-- "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
+- "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: not yet added.
 
 ## Findings (2)

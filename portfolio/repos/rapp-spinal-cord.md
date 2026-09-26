@@ -29,7 +29,7 @@ links_to:
 
 - Evidence: [`kody-w/rapp-spinal-cord` at `d6fcb9730b`](https://github.com/kody-w/rapp-spinal-cord/tree/d6fcb9730b463f236dd7d6fbaf68d8a86fa53412) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `12bf36d7d8d0f900d1183b3d7b7976e22439622843be4123d1be858587f8c5c2`.
-- "experimental" mentions: 1 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
+- "experimental" mentions: 1 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: not yet added.
 
 On the map: the **Organism & Platform** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).

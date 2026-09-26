@@ -2,7 +2,7 @@
 
 The pulse chain: every crawl of the RAPP/1 network is one RAPP/1 frame, a `body.pulse` on the network's body stream.
 
-Source: `rapp1_network/pulses.py` (rapp1-network 0.1.2). SHA-256 of the source below: `46fc947d7cd3b54a5ed2ba441ae1370b1aa85b5690adfd4415c7a6899dc31aef` (59077 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/pulses.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/pulses.py` (rapp1-network 0.1.3). SHA-256 of the source below: `46fc947d7cd3b54a5ed2ba441ae1370b1aa85b5690adfd4415c7a6899dc31aef` (59077 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/pulses.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python

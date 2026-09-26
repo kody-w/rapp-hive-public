@@ -9,7 +9,7 @@ evidence_commit: 49db80c8c6b6caa7647369beaf477d374a8f293c
 checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 11
-header: pr-open
+header: held
 header_pr: https://github.com/kody-w/rapp-installer/pull/48
 version: "v1.0.0"
 version_source: release
@@ -33,8 +33,8 @@ links_to:
 
 - Evidence: [`kody-w/rapp-installer` at `49db80c8c6`](https://github.com/kody-w/rapp-installer/tree/49db80c8c6b6caa7647369beaf477d374a8f293c) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `cc5f82f00d3b6c37e663e985ab947441b5460d676ab2bfd6e6104f2ea571f6b3`.
-- "experimental" mentions: 11 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
-- Network header: PR open (https://github.com/kody-w/rapp-installer/pull/48).
+- "experimental" mentions: 11 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
+- Network header: held back: the owner holds every change to kody-w/rapp-installer, the grail repo that carries the Brainstem kernel, so its header PR (https://github.com/kody-w/rapp-installer/pull/48) stays open and unmerged until the owner decides. Every other repo's Start here link still works: it opens the installer's README at the top.
 
 On the map: the **RAPP/1 Core** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
 

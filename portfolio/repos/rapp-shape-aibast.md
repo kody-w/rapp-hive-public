@@ -26,7 +26,7 @@ links_to:
 
 - Evidence: [`kody-w/rapp-shape-aibast` at `e8a66b055d`](https://github.com/kody-w/rapp-shape-aibast/tree/e8a66b055d20ec27141ea7d4e6095c6f338d6a8b) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `eda5d39a3e7e7f4c8032a7972a35de626a4d293eab21b7ab5d54a7305333feb9`.
-- "experimental" mentions: 21 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
+- "experimental" mentions: 21 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: not yet added.
 
 On the map: the **Release Channels** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).

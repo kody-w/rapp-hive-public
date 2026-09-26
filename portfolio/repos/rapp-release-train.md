@@ -5,7 +5,7 @@ line: Release Channels
 wave: 2
 status: certified
 verdict: CLEAN
-evidence_commit: 96693aa6bc1e45f1ae0cebd5d1480a5c9d59329f
+evidence_commit: 1f2b66af8b284bc656b7e9ab0ce6e9c491f514df
 checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 6
@@ -26,9 +26,9 @@ links_to:
 
 **Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
-- Evidence: [`kody-w/rapp-release-train` at `96693aa6bc`](https://github.com/kody-w/rapp-release-train/tree/96693aa6bc1e45f1ae0cebd5d1480a5c9d59329f) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/rapp-release-train` at `1f2b66af8b`](https://github.com/kody-w/rapp-release-train/tree/1f2b66af8b284bc656b7e9ab0ce6e9c491f514df) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `80398384c27f2b406b319a83f7aa247eb3750cd19a65757684b1b0bcc23487e9`.
-- "experimental" mentions: 6 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
+- "experimental" mentions: 6 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: not yet added.
 
 On the map: the **Release Channels** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
@@ -42,4 +42,4 @@ Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<
 
 ## Check it yourself
 
-Clone `kody-w/rapp-release-train` at `96693aa6bc` and `kody-w/rapp-1` at `591e014`, then run `python3 -B rapp-1/rapp_check.py rapp-release-train --json` from the folder that holds both.
+Clone `kody-w/rapp-release-train` at `1f2b66af8b` and `kody-w/rapp-1` at `591e014`, then run `python3 -B rapp-1/rapp_check.py rapp-release-train --json` from the folder that holds both.

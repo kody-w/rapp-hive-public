@@ -26,7 +26,7 @@ links_to:
 
 - Evidence: [`kody-w/brainstem-copilot` at `7f912fa2b9`](https://github.com/kody-w/brainstem-copilot/tree/7f912fa2b93e4b88c74a3db1e286f1a3e2d33d06) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `8551e1ecdc6351efdbb1da3cff55ac65ff00071c24f612924e0b63be52146987`.
-- "experimental" mentions: 4 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
+- "experimental" mentions: 4 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: not yet added.
 
 On the map: the **Brainstem** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).

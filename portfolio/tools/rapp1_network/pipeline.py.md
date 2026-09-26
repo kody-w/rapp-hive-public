@@ -2,7 +2,7 @@
 
 The pipeline: cut the next version into the RAPP Hive, save it, publish it, check what Pages serves, and the one command that reruns it all (`crawl`: discover, sweep, cut, publish, the Pages check, status).
 
-Source: `rapp1_network/pipeline.py` (rapp1-network 0.1.2). SHA-256 of the source below: `b2cf86ef1d379d4654da022bb4d672d3bea0f40b40902ad09336a4b1d629bc8f` (40344 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/pipeline.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/pipeline.py` (rapp1-network 0.1.3). SHA-256 of the source below: `6807003cd7e817dfff055cfd4a8daa8876175fd9694f7ad70c738a5c9fde0be8` (41498 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/pipeline.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python
@@ -293,7 +293,8 @@ def build(settings: Settings, hive: Hive, *, utc: str | None = None, printer=Non
     sources = export.sources()
     generator = export.generator(sources)
     published = hive.published_commits(v for _, v in frames)
-    history = [(f["payload"]["version"], v, f["payload"]["generator"], published.get(v)) for f, v in frames]
+    copies = release_copies(hive, frames, published)
+    history = [(f["payload"]["version"], v, f["payload"]["generator"], copies.get(v)) for f, v in frames]
     tools = export.tool_files(sources, release=export.provenance(), history=history + [(number, vid, generator, None)])
     notices = folder / portfolio.NOTICES_MD
     artifacts = pulses.artifacts_for((folder / "PORTFOLIO.md").read_bytes(), files,
@@ -331,6 +332,29 @@ def build(settings: Settings, hive: Hive, *, utc: str | None = None, printer=Non
             "placement": placement, "public": placement == "public", "facts": facts, "stations": len(L["repos"]),
             "interchanges": len(L["interchange"]), "room": room, "tools": written, "version": version,
             "left": sorted(left)}
+
+
+def release_copies(hive: Hive, frames, published: Mapping[str, str]) -> dict[str, str]:
+    """{vid: the public copy's commit that holds the release copy which made that version}: the commit that first
+    carried the version, kept only when its tools/RELEASE.md records exactly that version's `generator` (two versions
+    cut by different releases and published together would otherwise point at the later one)."""
+    try:
+        public = hive.public_dir()
+    except SystemExit:
+        return {}
+    out = {}
+    for frame, vid in frames:
+        commit, gen = published.get(vid), frame["payload"].get("generator") or {}
+        if not commit or not any(str(name).startswith(f"{export.PACKAGE}/") for name in gen):
+            continue
+        done = util.run("git", "-C", str(public), "show", f"{commit}:{PORTFOLIO}/tools/RELEASE.md")
+        try:
+            listed = json.loads(done.stdout.split("```json\n", 1)[1].split("```", 1)[0])
+        except (IndexError, ValueError):
+            continue
+        if done.returncode == 0 and listed == gen:
+            out[vid] = commit
+    return out
 
 
 def room_matches(folder: Path, recs: Mapping, left: Mapping, L: Mapping) -> None:

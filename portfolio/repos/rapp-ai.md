@@ -29,7 +29,7 @@ links_to:
 
 - Evidence: [`kody-w/rapp-ai` at `eaee484bf9`](https://github.com/kody-w/rapp-ai/tree/eaee484bf99a46127985cd9571b78e4c44916a40) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `106d77051caf3bf9d4128722832842ac1d1c17b0a6e46dd0b3b04ff2a9a5d98d`.
-- "experimental" mentions: 7 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
+- "experimental" mentions: 7 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: not yet added.
 
 On the map: the **Organism & Platform** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
