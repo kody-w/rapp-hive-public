@@ -1,8 +1,46 @@
 # Tools
 
-The two standard-library Python files that made this portfolio, exactly as they ran for the latest version. Each `.py.md` holds one source file in a fenced block, with its SHA-256 above it.
+The standard-library Python tools that made this portfolio, as data: a Hive holds only markdown, so each source file is one `.md` file with the source in a fenced block and its SHA-256 above it. Code in a Hive is never run from the Hive; copy it out first.
 
-Copy them out and check them (run this in a clone of `kody-w/rapp-hive-public`, inside `portfolio/tools/`):
+- **Version 1** (pulse 0) was made by the two single-file tools `rapp1_portfolio.py` and `rapp1_subway.py`, kept here unchanged ([rapp1_portfolio.py.md](rapp1_portfolio.py.md), [rapp1_subway.py.md](rapp1_subway.py.md)); version 1's pulse names their SHA-256 in `payload.generator`.
+- **Version 2 onwards** are made by the package `rapp1_network` (rapp1-network 0.1.0), every source file of it in [rapp1_network/](rapp1_network/). [RELEASE.md](RELEASE.md) lists each file with its SHA-256 and size, the release and its commit, and the `generator` each of its pulses records.
+
+Rebuild the package from the markdown, check every file against its hash and RELEASE.md, and verify the published chain with it (run this in a clone of `kody-w/rapp-hive-public`, inside `portfolio/tools/`; it needs git and Python 3.12, writes the package to `release/`, and clones `kody-w/rapp-1` at the canon pin into `release/checker/rapp-1` unless `RAPP1_CHECKER` names a checkout at the pin):
+
+```bash
+python3 - <<'PY'
+import hashlib, json, os, pathlib, re, subprocess, sys
+fence, tick, out = chr(96) * 5, chr(96), pathlib.Path('release')
+release = pathlib.Path('RELEASE.md').read_text(encoding='utf-8')
+listed = json.loads(release.split(tick * 3 + 'json\n', 1)[1].split(tick * 3, 1)[0])
+found = {}
+for md in sorted(pathlib.Path('rapp1_network').glob('*.md')):
+    text = md.read_text(encoding='utf-8')
+    data = text.split(fence + 'python\n', 1)[1].rsplit(fence + '\n', 1)[0].encode('utf-8')
+    path = re.search(r'^Source: .(rapp1_network/[^/ ]+?). ', text, re.M).group(1)
+    want, size = re.search(r'SHA-256 of the source below: .([0-9a-f]{64}). .([0-9]+) bytes.', text).groups()
+    assert hashlib.sha256(data).hexdigest() == want == listed.get(path) and len(data) == int(size), md.name
+    assert path not in found, path
+    found[path] = data
+assert sorted(found) == sorted(listed), 'the markdown files are not exactly the files RELEASE.md lists'
+for path, data in found.items():
+    (out / path).parent.mkdir(parents=True, exist_ok=True)
+    (out / path).write_bytes(data)
+    print('ok', path, listed[path])
+env = {**os.environ, 'PYTHONPATH': str(out.resolve())}
+sys.exit(subprocess.run([sys.executable, '-B', '-m', 'rapp1_network', 'verify', '..', '--work', str(out)], env=env).returncode)
+PY
+```
+
+`python -m rapp1_network verify ..` checks every pulse from the published genesis (RAPP/1 §7.5 steps 1-5 with rapp-1's reference `rapp.py`), rapp-1's own `rapp_check.py` on the chain, and each version's maps against the hashes its pulse recorded.
+
+Crawl again and cut the next version (needs git, a signed-in `gh`, Chrome, and a Hive with `hive_agent.py` from `kody-w/rapp-model-hive`):
+
+```bash
+PYTHONPATH=release python3 -B -m rapp1_network crawl --work <work folder> --hive-agent <path to hive_agent.py> [--denylist <private scanner>]
+```
+
+Version 1's two files, copied out and checked the way version 1's README said:
 
 ```bash
 python3 - <<'PY'
@@ -16,16 +54,4 @@ for md in sorted(pathlib.Path('.').glob('*.py.md')):
     pathlib.Path(md.name[:-3]).write_text(source, encoding='utf-8')
     print('ok', md.name[:-3], want)
 PY
-```
-
-Check the published chain (no Hive needed; it clones rapp-1 at the pin):
-
-```bash
-python3 -B rapp1_portfolio.py verify ../
-```
-
-Crawl again and cut the next version (needs git, a signed-in `gh`, Chrome, and a Hive with `hive_agent.py` from `kody-w/rapp-model-hive`):
-
-```bash
-python3 -B rapp1_portfolio.py crawl --hive-agent <path to hive_agent.py> [--denylist <private scanner>]
 ```

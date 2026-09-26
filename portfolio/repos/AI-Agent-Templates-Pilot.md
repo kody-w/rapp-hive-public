@@ -6,10 +6,12 @@ wave: 2
 status: certified
 verdict: CLEAN
 evidence_commit: 5bb20e2f46765294cda795688e0800ef56aa177f
-checked: 2026-09-25
+checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: missing
+channel: newest
+lifecycle: active
 ---
 
 # AI-Agent-Templates-Pilot: certified
@@ -18,7 +20,9 @@ header: missing
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-- Evidence: [`kody-w/AI-Agent-Templates-Pilot` at `5bb20e2f46`](https://github.com/kody-w/AI-Agent-Templates-Pilot/tree/5bb20e2f46765294cda795688e0800ef56aa177f) on `main`, checked 2026-09-25.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+
+- Evidence: [`kody-w/AI-Agent-Templates-Pilot` at `5bb20e2f46`](https://github.com/kody-w/AI-Agent-Templates-Pilot/tree/5bb20e2f46765294cda795688e0800ef56aa177f) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `9606736d4919d1ffdc5fb4d596e79ce4b97155755a5837151b92c2f38a9e6a70`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.

@@ -6,10 +6,12 @@ wave: 2
 status: certified
 verdict: CLEAN
 evidence_commit: 93e2514437ceecf4212fc6a6f05d12786fc432b7
-checked: 2026-09-25
+checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: missing
+channel: newest
+lifecycle: active
 links_to:
   - rapp-skills
   - vbrainstem
@@ -21,7 +23,9 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-- Evidence: [`kody-w/rapp-mission` at `93e2514437`](https://github.com/kody-w/rapp-mission/tree/93e2514437ceecf4212fc6a6f05d12786fc432b7) on `main`, checked 2026-09-25.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+
+- Evidence: [`kody-w/rapp-mission` at `93e2514437`](https://github.com/kody-w/rapp-mission/tree/93e2514437ceecf4212fc6a6f05d12786fc432b7) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `0d43881b94ad5b43f561fd3c7cf0d9770517c49a4f876281349707e6f2f80070`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.

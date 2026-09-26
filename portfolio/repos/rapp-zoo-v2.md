@@ -6,19 +6,25 @@ wave: 2
 status: not yet
 verdict: DRIFT
 evidence_commit: b394aa53aab5b2ec63b850fb4cf34f07c1965b41
-checked: 2026-09-25
+checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: missing
+version: "v0.1.0"
+version_source: release
+channel: newest
+lifecycle: active
 ---
 
 # rapp-zoo-v2: not yet
 
-![RAPP/1: not yet](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-zoo-v2.svg)
+![RAPP/1: not yet, version v0.1.0](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-zoo-v2.svg)
 
 **Not yet:** 1 finding(s) from rapp_check: §9 egg.
 
-- Evidence: [`kody-w/rapp-zoo-v2` at `b394aa53aa`](https://github.com/kody-w/rapp-zoo-v2/tree/b394aa53aab5b2ec63b850fb4cf34f07c1965b41) on `main`, checked 2026-09-25.
+**Version:** `v0.1.0`, from the tag of its latest GitHub release. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+
+- Evidence: [`kody-w/rapp-zoo-v2` at `b394aa53aa`](https://github.com/kody-w/rapp-zoo-v2/tree/b394aa53aab5b2ec63b850fb4cf34f07c1965b41) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **DRIFT**, 1 finding(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `165d6d67c59d3e748bd99e3cc61ca9a73913fc9593b0c8214ecff37311e2f225`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.

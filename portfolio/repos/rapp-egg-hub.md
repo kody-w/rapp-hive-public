@@ -6,10 +6,14 @@ wave: 2
 status: not yet
 verdict: DRIFT
 evidence_commit: 4c49318fcafe526c56802c50131699006501e3e1
-checked: 2026-09-25
+checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 11
 header: missing
+version: "v1.0.0"
+version_source: release
+channel: newest
+lifecycle: active
 links_to:
   - RAPP
   - rapp-1
@@ -23,11 +27,13 @@ links_to:
 
 # rapp-egg-hub: not yet
 
-![RAPP/1: not yet](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-egg-hub.svg)
+![RAPP/1: not yet, version v1.0.0](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-egg-hub.svg)
 
 **Not yet:** 6 finding(s) from rapp_check: §9 egg ×6.
 
-- Evidence: [`kody-w/rapp-egg-hub` at `4c49318fca`](https://github.com/kody-w/rapp-egg-hub/tree/4c49318fcafe526c56802c50131699006501e3e1) on `main`, checked 2026-09-25.
+**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+
+- Evidence: [`kody-w/rapp-egg-hub` at `4c49318fca`](https://github.com/kody-w/rapp-egg-hub/tree/4c49318fcafe526c56802c50131699006501e3e1) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **DRIFT**, 6 finding(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `31a4529db16f3bc6f8567b7d6873101dc7b365445742ebfdce9d026c9a1fdffa`.
 - "experimental" mentions: 11 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.

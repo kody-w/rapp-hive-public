@@ -6,10 +6,12 @@ wave: 2
 status: unchecked
 verdict: none
 evidence_commit: none
-checked: 2026-09-25
+checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: unknown
 header: unknown
+channel: newest
+lifecycle: active
 ---
 
 # rapp-brainstem-foundation: unchecked
@@ -17,5 +19,7 @@ header: unknown
 ![RAPP/1: unchecked](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-brainstem-foundation.svg)
 
 **Unchecked:** the repository is empty: GitHub holds no commit to clone or check.
+
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
 
 On the map: the **Brainstem** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).

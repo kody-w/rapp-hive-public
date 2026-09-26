@@ -6,19 +6,25 @@ wave: 2
 status: not yet
 verdict: DRIFT
 evidence_commit: 8082439a103572faf2d46fde204baa8eb4bb76de
-checked: 2026-09-25
+checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: missing
+version: "v1.0.0"
+version_source: release
+channel: newest
+lifecycle: active
 ---
 
 # rapp-roadside: not yet
 
-![RAPP/1: not yet](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-roadside.svg)
+![RAPP/1: not yet, version v1.0.0](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-roadside.svg)
 
 **Not yet:** 1 finding(s) from rapp_check: §7.6 duplicate position.
 
-- Evidence: [`kody-w/rapp-roadside` at `8082439a10`](https://github.com/kody-w/rapp-roadside/tree/8082439a103572faf2d46fde204baa8eb4bb76de) on `main`, checked 2026-09-25.
+**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+
+- Evidence: [`kody-w/rapp-roadside` at `8082439a10`](https://github.com/kody-w/rapp-roadside/tree/8082439a103572faf2d46fde204baa8eb4bb76de) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **DRIFT**, 1 finding(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `5b1932680a92ba249df95e59fea1177592792df542d0257fb6a7e0804c6ab393`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.

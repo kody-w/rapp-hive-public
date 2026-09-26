@@ -6,11 +6,18 @@ wave: 1
 status: certified
 verdict: CLEAN
 evidence_commit: 49db80c8c6b6caa7647369beaf477d374a8f293c
-checked: 2026-09-25
+checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 11
 header: pr-open
 header_pr: https://github.com/kody-w/rapp-installer/pull/48
+version: "v1.0.0"
+version_source: release
+lts_version: "brainstem-v0.6.9"
+lts_commit: bded0e1d5044d293f465e3850758f4b012d95078
+lts_source: known
+channel: rapp1-lts
+lifecycle: active
 links_to:
   - CommunityRAPP
   - RAR
@@ -18,11 +25,13 @@ links_to:
 
 # rapp-installer: certified
 
-![RAPP/1: certified](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-installer.svg)
+![RAPP/1: certified, version v1.0.0](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-installer.svg)
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-- Evidence: [`kody-w/rapp-installer` at `49db80c8c6`](https://github.com/kody-w/rapp-installer/tree/49db80c8c6b6caa7647369beaf477d374a8f293c) on `main`, checked 2026-09-25.
+**Version:** `v1.0.0`, from the tag of its latest GitHub release. **LTS:** [`brainstem-v0.6.9`](https://github.com/kody-w/rapp-installer/tree/bded0e1d5044d293f465e3850758f4b012d95078) (commit `bded0e1d50`, from the known pins RAPP/1 names in public). **Channel:** `rapp1-lts`: RAPP/1 names a long-term-support pin for it, so the network builds on that commit; its newer commits are the newest channel.
+
+- Evidence: [`kody-w/rapp-installer` at `49db80c8c6`](https://github.com/kody-w/rapp-installer/tree/49db80c8c6b6caa7647369beaf477d374a8f293c) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `cc5f82f00d3b6c37e663e985ab947441b5460d676ab2bfd6e6104f2ea571f6b3`.
 - "experimental" mentions: 11 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: PR open (https://github.com/kody-w/rapp-installer/pull/48).

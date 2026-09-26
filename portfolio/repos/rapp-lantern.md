@@ -6,10 +6,12 @@ wave: 2
 status: not yet
 verdict: DRIFT
 evidence_commit: 1af70befbe287f3dd7f6cb13806a7d8f845533f8
-checked: 2026-09-25
+checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: missing
+channel: newest
+lifecycle: active
 links_to:
   - rapp-static-apis
 ---
@@ -20,7 +22,9 @@ links_to:
 
 **Not yet:** 8 finding(s) from rapp_check: §9 egg ×8.
 
-- Evidence: [`kody-w/rapp-lantern` at `1af70befbe`](https://github.com/kody-w/rapp-lantern/tree/1af70befbe287f3dd7f6cb13806a7d8f845533f8) on `main`, checked 2026-09-25.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+
+- Evidence: [`kody-w/rapp-lantern` at `1af70befbe`](https://github.com/kody-w/rapp-lantern/tree/1af70befbe287f3dd7f6cb13806a7d8f845533f8) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **DRIFT**, 8 finding(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `b937e8adde523b8049938813263a808c911ea0f6b6f216b5602d48778104b665`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.

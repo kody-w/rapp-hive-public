@@ -6,10 +6,14 @@ wave: 2
 status: certified
 verdict: CLEAN
 evidence_commit: 44e0c6eb49d619932e645fb9d9b12a5fa37f71b1
-checked: 2026-09-25
+checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: missing
+version: "v1.0.0"
+version_source: release
+channel: newest
+lifecycle: active
 links_to:
   - RAPP
   - rapp-commons
@@ -23,11 +27,13 @@ links_to:
 
 # rapp-neighborhood-protocol: certified
 
-![RAPP/1: certified](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-neighborhood-protocol.svg)
+![RAPP/1: certified, version v1.0.0](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-neighborhood-protocol.svg)
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-- Evidence: [`kody-w/rapp-neighborhood-protocol` at `44e0c6eb49`](https://github.com/kody-w/rapp-neighborhood-protocol/tree/44e0c6eb49d619932e645fb9d9b12a5fa37f71b1) on `main`, checked 2026-09-25.
+**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+
+- Evidence: [`kody-w/rapp-neighborhood-protocol` at `44e0c6eb49`](https://github.com/kody-w/rapp-neighborhood-protocol/tree/44e0c6eb49d619932e645fb9d9b12a5fa37f71b1) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `34521206d8475a622fd41afb8b0adc571d81f50c7bbc2487e3cc142eb040c0a1`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.

@@ -5,12 +5,14 @@ line: Hive
 wave: 1
 status: certified
 verdict: COMPLIANT
-evidence_commit: e579f9cea54d7c577189f45ed2309da322911b54
-checked: 2026-09-25
+evidence_commit: c1b37758529c5d4841840162b20be5020510bab0
+checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 7
-header: pr-open
+header: present
 header_pr: https://github.com/kody-w/rapp-hive-hub/pull/6
+channel: newest
+lifecycle: active
 links_to:
   - hive-hub
   - rapp-1
@@ -24,10 +26,12 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **COMPLIANT** (every RAPP artifact passes) at the evidence commit.
 
-- Evidence: [`kody-w/rapp-hive-hub` at `e579f9cea5`](https://github.com/kody-w/rapp-hive-hub/tree/e579f9cea54d7c577189f45ed2309da322911b54) on `main`, checked 2026-09-25.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+
+- Evidence: [`kody-w/rapp-hive-hub` at `c1b3775852`](https://github.com/kody-w/rapp-hive-hub/tree/c1b37758529c5d4841840162b20be5020510bab0) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **COMPLIANT**, 12 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `cb999693c8270d70976c00776d4e8769721a0613a1e385f2955215cc6d42e84f`.
 - "experimental" mentions: 7 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
-- Network header: PR open (https://github.com/kody-w/rapp-hive-hub/pull/6).
+- Network header: present in `README.md`.
 
 On the map: the **Hive** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
 
@@ -40,4 +44,4 @@ Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<
 
 ## Check it yourself
 
-Clone `kody-w/rapp-hive-hub` at `e579f9cea5` and `kody-w/rapp-1` at `591e014`, then run `python3 -B rapp-1/rapp_check.py rapp-hive-hub --json` from the folder that holds both.
+Clone `kody-w/rapp-hive-hub` at `c1b3775852` and `kody-w/rapp-1` at `591e014`, then run `python3 -B rapp-1/rapp_check.py rapp-hive-hub --json` from the folder that holds both.

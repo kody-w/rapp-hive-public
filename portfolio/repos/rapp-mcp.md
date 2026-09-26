@@ -6,10 +6,12 @@ wave: 2
 status: certified
 verdict: CLEAN
 evidence_commit: 651ce8250b9569e890c03f6743f45a16675419c9
-checked: 2026-09-25
+checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 3
 header: missing
+channel: newest
+lifecycle: active
 links_to:
   - rapp-static-apis
 ---
@@ -20,7 +22,9 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-- Evidence: [`kody-w/rapp-mcp` at `651ce8250b`](https://github.com/kody-w/rapp-mcp/tree/651ce8250b9569e890c03f6743f45a16675419c9) on `main`, checked 2026-09-25.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+
+- Evidence: [`kody-w/rapp-mcp` at `651ce8250b`](https://github.com/kody-w/rapp-mcp/tree/651ce8250b9569e890c03f6743f45a16675419c9) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `ca7c5b2255a12be48ca7dbcb0be450c21be3efebc6ad96af194c1b74d633b811`.
 - "experimental" mentions: 3 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
