@@ -9,7 +9,8 @@ evidence_commit: 0242efba7d3e987528e450f2f5e74c4a88fd3cbb
 checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
-header: missing
+header: pr-open
+header_pr: https://github.com/kody-w/rapp-base-template/pull/1
 version: "v1.2.0"
 version_source: release
 channel: newest
@@ -29,7 +30,7 @@ links_to:
 - Evidence: [`kody-w/rapp-base-template` at `0242efba7d`](https://github.com/kody-w/rapp-base-template/tree/0242efba7d3e987528e450f2f5e74c4a88fd3cbb) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `c67a2961186994d1685385c1a5f7a7d4d4c845d54821e3962a2d53bfdd6a4a25`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
-- Network header: not yet added.
+- Network header: PR open (https://github.com/kody-w/rapp-base-template/pull/1).
 
 On the map: the **Organism & Platform** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
 

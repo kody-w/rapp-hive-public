@@ -10,6 +10,7 @@ checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: missing
+header_pr: https://github.com/kody-w/openrappter-canary/pull/7
 channel: newest
 lifecycle: active
 also_on:

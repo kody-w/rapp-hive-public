@@ -43,7 +43,7 @@ On the map: the **RAPP/1 Core** line ([subway map](https://kody-w.github.io/rapp
 ## Links
 
 Links to 4 portfolio repo(s): [RAPP](RAPP.md) (pin), [rapp-1](rapp-1.md) (markdown, pin), [rapp-workspace](rapp-workspace.md) (markdown), [rapp-workspace-manager](rapp-workspace-manager.md) (markdown).
-Linked from 8: [hive-hub](hive-hub.md), [rapp-brainstem-plugin](rapp-brainstem-plugin.md), [rapp-hive-hub](rapp-hive-hub.md), [rapp-hive-public](rapp-hive-public.md), [rapp-lab-kit](rapp-lab-kit.md), [rapp-model-hive](rapp-model-hive.md), [rapp-monorepo](rapp-monorepo.md), [rapp-skills](rapp-skills.md).
+Linked from 9: [hive-hub](hive-hub.md), [RAPP](RAPP.md), [rapp-brainstem-plugin](rapp-brainstem-plugin.md), [rapp-hive-hub](rapp-hive-hub.md), [rapp-hive-public](rapp-hive-public.md), [rapp-lab-kit](rapp-lab-kit.md), [rapp-model-hive](rapp-model-hive.md), [rapp-monorepo](rapp-monorepo.md), [rapp-skills](rapp-skills.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
