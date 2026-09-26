@@ -10,7 +10,7 @@ layout: null
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'sha256-EdLbDBprUsQ/fyUmX2gpSAQB7ULPqVwLstG/hJ3S3nw='; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
-<title>RAPP/1 network: timeline of 5 version(s)</title>
+<title>RAPP/1 network: timeline of 6 version(s)</title>
 <style>body{margin:0;background:#f6f8fa;color:#1b1f24;font:16px/1.5 Helvetica,Arial,sans-serif}
 header{background:#fff;border-bottom:1px solid #d0d7de;padding:14px 24px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
 header h1{font-size:22px;margin:0;flex:1}
@@ -40,8 +40,8 @@ footer{color:#57606a;font-size:13px;margin-top:24px}</style>
 <dl>
 <dt>Stream</dt><dd><code>rappid:@kody-w/rapp1-network:71216534f9d362c7af054e773d546dfd996f769b08bd38c1b90b9e36760c2def</code><br>Keyless, minted once (2026-09-25T17:36:08.797Z); <a href="https://kody-w.github.io/rapp-hive-public/portfolio/rappid.json">rappid.json</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/rapp-frame-index.json">frame index</a></dd>
 <dt>Genesis</dt><dd>payload_hash <code>15530d4785bea042a87b06c7dcfe15fec6ede0b0041299bbd4e80e9e8a5b0894</code><br>frame_hash <code>d765d2698582e937af9cf75e6cb2851d6d1c10e546db1b4e5fe640c591b8b833</code></dd>
-<dt>Head</dt><dd>version 5 (seq 4), payload_hash <code>92f562e7b3025e51bbdddaf50f071e59a112b2c2c5f2bd7cab10e5115e181c52</code></dd>
-<dt>Checked</dt><dd>Every pulse passes RAPP/1 §7.5 steps 1–5 with the reference <code>rapp.py</code>, and rapp-1's own <code>rapp_check.py</code> at <code>591e014</code> gives the chain COMPLIANT (5 frame(s) passing, no findings). The reference implementation passes rapp-1's <code>conformance.py</code> (22 controlled checks | 22 PASS | 0 FAIL).</dd>
+<dt>Head</dt><dd>version 6 (seq 5), payload_hash <code>be8e7ad5a9dcb03cdc87b0f858e681a734611a885f98279ab3c4246e9dc6ed02</code></dd>
+<dt>Checked</dt><dd>Every pulse passes RAPP/1 §7.5 steps 1–5 with the reference <code>rapp.py</code>, and rapp-1's own <code>rapp_check.py</code> at <code>591e014</code> gives the chain COMPLIANT (6 frame(s) passing, no findings). The reference implementation passes rapp-1's <code>conformance.py</code> (22 controlled checks | 22 PASS | 0 FAIL).</dd>
 </dl>
 </section>
 <section class="note">
@@ -50,12 +50,22 @@ footer{color:#57606a;font-size:13px;margin-top:24px}</style>
 <pre>{&quot;type&quot;: &quot;genesis&quot;, &quot;stream_id&quot;: &quot;rappid:@kody-w/rapp1-network:71216534f9d362c7af054e773d546dfd996f769b08bd38c1b90b9e36760c2def&quot;, &quot;frame_hash&quot;: &quot;d765d2698582e937af9cf75e6cb2851d6d1c10e546db1b4e5fe640c591b8b833&quot;, &quot;deprecated&quot;: false}</pre>
 <p>Where the pulses live: in public. Every pulse is served as JSON beside its maps, and rapp_check.py still certifies this public copy: CLEAN on its files as they are (the Hive holds only markdown) and COMPLIANT on the files as GitHub Pages serves them, where each unsigned pulse passes the §7 envelope, hash and chain checks (a body stream permits sig null).</p>
 </section>
-<h2>Versions (5)</h2>
+<h2>Versions (6)</h2>
+<article>
+<h3>Version 6 · 2026-09-26 12:13 UTC <span class="seq">seq 5</span></h3>
+<p class="totals"><span>317 stations</span><span class="c">293 certified</span><span class="n">23 not yet</span><span class="u">1 unchecked</span></p>
+<p>payload_hash <code>be8e7ad5a9dcb03cdc87b0f858e681a734611a885f98279ab3c4246e9dc6ed02</code><br>frame_hash <code>c1934aff8cc860fc9dac9981c2f48f4b422e64ee78299a7c4c41601dca04f5d7</code><br>prev <code>92f562e7b3025e51bbdddaf50f071e59a112b2c2c5f2bd7cab10e5115e181c52</code></p>
+<p><a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-5/subway.html">map</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-5/subway.pdf">poster</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-5/subway.svg">SVG</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-5/pulse.json">pulse</a> · published with this page</p>
+<p><b>Since version 5:</b> 2 status change(s), 0 new repo(s), 0 removed, 29 repo(s) at a new commit.</p>
+<ul><li>RAPP: not yet → certified</li><li>RAR: not yet → certified</li></ul>
+<p>0 lifecycle change(s), 0 version change(s), 0 channel change(s), 11 member card change(s), 0 repo(s) left the network.</p>
+<ul><li>hive-hub: member card added</li><li>hive-hub-join: member card added</li><li>hive-hub-mcp: member card added</li><li>lisppy: member card added</li><li>rapp-1: member card added</li><li>rapp-drift-lint: member card added</li><li>rapp-hive-hub: member card added</li><li>rapp-hive-hub-join: member card added</li><li>rapp-model-hive: member card added</li><li>rapp-work: member card added</li><li>RAR: member card added</li></ul>
+</article>
 <article>
 <h3>Version 5 · 2026-09-26 05:17 UTC <span class="seq">seq 4</span></h3>
 <p class="totals"><span>317 stations</span><span class="c">291 certified</span><span class="n">25 not yet</span><span class="u">1 unchecked</span></p>
 <p>payload_hash <code>92f562e7b3025e51bbdddaf50f071e59a112b2c2c5f2bd7cab10e5115e181c52</code><br>frame_hash <code>0af558a1ce370428c118493ebca5ff576194e23a3cc922515a3982d547fd0f56</code><br>prev <code>29c2f3e514133c2e1b17f2385a4721618de80fe2bf527a95fcb21b6ee62cdec2</code></p>
-<p><a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-4/subway.html">map</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-4/subway.pdf">poster</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-4/subway.svg">SVG</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-4/pulse.json">pulse</a> · published with this page</p>
+<p><a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-4/subway.html">map</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-4/subway.pdf">poster</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-4/subway.svg">SVG</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-26-4/pulse.json">pulse</a> · first published in <a href="https://github.com/kody-w/rapp-hive-public/commit/eafa6de7e04a3d536c21976c1d85e845a499cd7b">eafa6de</a></p>
 <p><b>Since version 4:</b> 0 status change(s), 0 new repo(s), 0 removed, 5 repo(s) at a new commit.</p>
 <p>0 lifecycle change(s), 0 version change(s), 0 channel change(s), 0 repo(s) left the network.</p>
 </article>
@@ -91,7 +101,7 @@ footer{color:#57606a;font-size:13px;margin-top:24px}</style>
 <p><a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-25-0/subway.html">map</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-25-0/subway.pdf">poster</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-25-0/subway.svg">SVG</a> · <a href="https://kody-w.github.io/rapp-hive-public/portfolio/versions/2026-09-25-0/pulse.json">pulse</a> · first published in <a href="https://github.com/kody-w/rapp-hive-public/commit/a8f4cd86f6248d07f98ce2c38d1a3c0f97307a31">a8f4cd8</a></p>
 <p>Genesis: the first pulse, 317 repos. Nothing before it to compare.</p>
 </article>
-<footer>Generated from the pulse frames by rapp1_network/timeline.py (source in <a href="https://github.com/kody-w/rapp-hive-public/blob/main/portfolio/tools">portfolio/tools</a>, SHA-256 <code>72b87709165cbf8bd78867db551a7a1814cd4700cf0c4722723038732e48f904</code>; the head pulse's generator names all 27 file(s) of that release).</footer>
+<footer>Generated from the pulse frames by rapp1_network/timeline.py (source in <a href="https://github.com/kody-w/rapp-hive-public/blob/main/portfolio/tools">portfolio/tools</a>, SHA-256 <code>3155b45d96a6dc06e0deba84857560768579c5405df106ab0a3f8c7d1e81340b</code>; the head pulse's generator names all 27 file(s) of that release).</footer>
 </main>
 </body>
 </html>

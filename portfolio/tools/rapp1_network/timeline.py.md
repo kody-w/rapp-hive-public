@@ -2,7 +2,7 @@
 
 The timeline: every pulse of the network's body stream, newest first, with its hashes, totals, files and what changed since the pulse before it. One static page (no script, a strict CSP whose one style is pinned by hash), served by GitHub Pages as portfolio/timeline.html from the Hive's timeline.html.md.
 
-Source: `rapp1_network/timeline.py` (rapp1-network 0.1.3). SHA-256 of the source below: `72b87709165cbf8bd78867db551a7a1814cd4700cf0c4722723038732e48f904` (14830 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/timeline.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/timeline.py` (rapp1-network 0.1.5). SHA-256 of the source below: `3155b45d96a6dc06e0deba84857560768579c5405df106ab0a3f8c7d1e81340b` (15078 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/timeline.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python
@@ -201,8 +201,11 @@ def _changes_2(before: Mapping, frame: Mapping) -> str:
     if diff["added"]:
         out.append("<p>New: " + ", ".join(f"{esc(n)} ({esc(payload['repos'][n]['status'])})" for n in diff["added"])
                    + "</p>\n")
+    cards = len(diff.get("cards", []))
     out.append(f'<p>{len(diff["lifecycle"])} lifecycle change(s), {len(diff["version"])} version change(s), '
-               f'{len(diff["channel"])} channel change(s), {len(diff["left"])} repo(s) left the network.'
+               f'{len(diff["channel"])} channel change(s), '
+               + (f'{cards} member card change(s), ' if cards else '')
+               + f'{len(diff["left"])} repo(s) left the network.'
                + (f" Version {since} recorded no versions or channels, so none are compared." if
                   schema_of(before["payload"]) < 2 else "") + "</p>\n")
     items = [f"<li>{esc(n)}: {esc(a)} → <b>{esc(b)}</b>" + (f": {esc(notice)}" if notice else "") + "</li>"
@@ -211,6 +214,7 @@ def _changes_2(before: Mapping, frame: Mapping) -> str:
     items += [f"<li>{esc(n)}: version {shown(a)} → {shown(b)}</li>" for n, a, b in diff["version"]]
     items += [f"<li>{esc(n)}: channel {esc(a)} → {esc(b)}</li>" for n, a, b in diff["channel"]]
     items += [f"<li>{esc(n)}: left the network on {esc(date)}</li>" for n, date in diff["left"]]
+    items += [f"<li>{esc(n)}: member card {'added' if has else 'removed'}</li>" for n, has in diff.get("cards", [])]
     if items:
         out.append("<ul>" + "".join(items) + "</ul>\n")
     return "".join(out)

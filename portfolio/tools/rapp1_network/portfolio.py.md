@@ -2,7 +2,7 @@
 
 The portfolio room (`<hive>/shared/organism/portfolio/`, published as `portfolio/`): one file per repo (`repos/<repo>.md`), its badge (`badges/<repo>.svg.md`), one file per line (`lines/<line>.md`) and `PORTFOLIO.md`, plus the public README's portfolio bullet. The subway map and the pulses are drawn from these files.
 
-Source: `rapp1_network/portfolio.py` (rapp1-network 0.1.3). SHA-256 of the source below: `d25ca5185c1073fabab01f6b8eae156406c9412b8bd3d940f66bc39b8fa1e913` (47140 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/portfolio.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/portfolio.py` (rapp1-network 0.1.5). SHA-256 of the source below: `8e80519fa73633df6ab1a34698bcd1c56298155a1fa50098fd9c5c489879bba5` (48628 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/portfolio.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python
@@ -170,7 +170,7 @@ def _evidence_lines(rec: dict, pr: dict | None, header: str, exceptions: dict) -
             f"- \"experimental\" mentions: {rec.get('experimental_mentions')} (whole word, any case, in "
             "tracked text files at the evidence commit; tracked, not a gate).",
             f"- Network header: {HEADER_WORDS[header]}"
-            + (f": {inert(held_reason(exceptions[repo]))}" if header == "held" else "")
+            + (f": {inert(held_reason(exceptions[repo])).rstrip('.')}" if header == "held" else "")
             + (f" ({pr['url']})" if pr and pr.get("url") and header in ("pr-open", "merged") else "")
             + (f" in {code(rec['readme'])}" if rec.get("readme") and header == "present" else "") + ".", ""]
 
@@ -441,7 +441,8 @@ def repo_meta2(rec: dict, pr: dict | None, exceptions: dict | None = None) -> li
              "lts_version": rec.get("lts_version"), "lts_commit": rec.get("lts_commit"),
              "lts_source": rec.get("lts_source"), "channel": rec.get("channel") or "newest",
              "lifecycle": rec.get("lifecycle") or "active", "since": rec.get("since"),
-             "superseded_by": rec.get("superseded_by"), "notice": rec.get("notice"), "left": rec.get("left")}
+             "superseded_by": rec.get("superseded_by"), "notice": rec.get("notice"), "left": rec.get("left"),
+             "member_card": "present" if rec.get("member_card") else None}
     return meta + [(key, _front_value(key, value)) for key, value in extra.items() if value]
 
 
@@ -477,7 +478,20 @@ def repo_body2(rec: dict, pr: dict | None, back=(), exceptions: dict | None = No
     at = body.index("") + 1  # after the title and its blank line: the badge, then the status lines
     status_end = at + 2 + len(_status_lines(rec))
     tail = [line.replace(EXPERIMENTAL_WORDS_1, EXPERIMENTAL_WORDS_2, 1) for line in body[status_end:]]
+    if rec.get("member_card"):
+        at_header = next((k for k, line in enumerate(tail) if line.startswith("- Network header:")), None)
+        if at_header is not None:
+            tail.insert(at_header + 1, card_line(rec))
     return notice_quote(rec) + body[:at] + [badge, ""] + body[at + 2:status_end] + version_line(rec) + tail
+
+
+def card_line(rec: dict) -> str:
+    """Edition 2: the repo's network card, at its evidence commit, and its pointer in the Hive's public copy."""
+    repo, commit = quote(rec["repo"], safe=""), rec["evidence_commit"]
+    return (f"- Member card: [`.rapp/member.md`](https://github.com/{OWNER}/{repo}/blob/{commit}/.rapp/member.md) at "
+            f"the evidence commit: this repo's card in the RAPP Hive, beside its pointer "
+            f"[`members/{inert(rec['repo'])}.md`](https://github.com/{OWNER}/rapp-hive-public/blob/main/members/"
+            f"{repo}.md).")
 
 
 def repo_file2(rec: dict, pr: dict | None, back=(), exceptions: dict | None = None) -> str:
@@ -590,6 +604,11 @@ def portfolio_md2(recs: dict, prs: dict, exceptions: dict | None = None, version
         "each repo's file says since when and why.\n"), 1)
     text = text.replace("Each repo's README carries one marked line:",
                         f"Each repo's README gets one marked line ({header_counts(recs, prs, exceptions)}):", 1)
+    cards = sum(1 for r in recs.values() if r.get("member_card"))
+    text = text.replace("A Hive holds only markdown, so each badge is", (
+        f"**Member cards:** {cards} of {len(recs)} repos carry their card in the RAPP Hive (`.rapp/member.md`, "
+        "the repo's own side of its pointer in `members/`); the file of each repo that has one links it.\n\n"
+        "A Hive holds only markdown, so each badge is"), 1)
     text = text.replace("stations are repos, filled by status;", "stations are repos, filled by status (hollow when "
                         "deprecated, superseded or archived);", 1)
     text = text.replace("It is drawn from these files by `rapp1_subway.py`, and the links",
@@ -626,6 +645,8 @@ def _changes_lines(recs: dict, left: dict, previous: dict | None) -> list[str]:
         lines.append(f"- {link(name)}: channel `{before}` → `{after}`.")
     for name, before, after in diff["version"]:
         lines.append(f"- {link(name)}: version {shown(before)} → {shown(after)}.")
+    for name, has in diff.get("cards", []):
+        lines.append(f"- {link(name)}: member card " + ("added (`.rapp/member.md`)." if has else "removed."))
     for name in diff["added"]:
         lines.append(f"- {link(name)}: added to the network ({cell(recs[name]['status'])}).")
     for name, date in diff["left"]:
@@ -635,7 +656,8 @@ def _changes_lines(recs: dict, left: dict, previous: dict | None) -> list[str]:
     if lifecycle.schema_of(previous) < 2:
         lines.append(f"- Version {previous.get('version')} recorded no versions or channels, so this is the first "
                      "version to record them; every repo counted as active then.")
-    return (lines or ["None: no lifecycle, channel or version changed, and no repo was added or left."]) + [""]
+    return (lines or ["None: no lifecycle, channel, version or member card changed, and no repo was added or left."]
+            ) + [""]
 
 
 def notices_md(recs: dict, left: dict | None, version: dict | None = None, previous: dict | None = None) -> str:

@@ -2,7 +2,7 @@
 
 The pinned release copy for the RAPP Hive's `portfolio/tools/`: the package's own sources, as data.
 
-Source: `rapp1_network/export.py` (rapp1-network 0.1.3). SHA-256 of the source below: `647634a2fa899aa92d4914cd54173d6c306550ff2a3630ffebcbc6e476ed23fd` (17048 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/export.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/export.py` (rapp1-network 0.1.5). SHA-256 of the source below: `0ce9bc90a6e7e81f4aa84b467ef4fc7859b655238de304398190854a19f29e59` (16940 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/export.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python
@@ -132,7 +132,7 @@ def release_md(files: Mapping[str, str], release: Mapping) -> str:
         "# Release copy", "",
         f"Package `{PACKAGE}`, rapp1-network {release['version']}"
         + (f" (tag `{release['tag']}`)" if release.get("tag") else " (no tag)") + f", made from {made}.", "",
-        f"Its {len(files)} source file(s), each in one markdown file of [{PACKAGE}/]({TOOLS_TREE}), with the SHA-256 and "
+        f"Its {len(files)} source file(s), each in one markdown file of `{PACKAGE}/` (linked below), with the SHA-256 and "
         "size of the source as the extractor in [README.md](README.md) writes it back:", "",
         "| Source | Markdown | SHA-256 | Bytes |", "|---|---|---|---|", *rows, "",
         "Every pulse this release cuts records exactly this `generator` in its payload:", "",
@@ -178,7 +178,6 @@ PY"""
 
 
 PUBLIC_TREE = f"https://github.com/{OWNER}/rapp-hive-public/tree"
-TOOLS_TREE = f"{PUBLIC_TREE}/main/portfolio/tools/{PACKAGE}"  # Pages lists no folders; GitHub does
 
 
 def _versions(numbers: list[int]) -> str:
@@ -193,8 +192,8 @@ def made_by(release: Mapping, history=None, current: Mapping | None = None) -> l
               "`rapp1_subway.py`, kept here unchanged ([rapp1_portfolio.py.md](rapp1_portfolio.py.md), "
               "[rapp1_subway.py.md](rapp1_subway.py.md)); version 1's pulse names their SHA-256 in `payload.generator`.")
     this = (f"made by the package `{PACKAGE}` (rapp1-network {release['version']}), every source file of it in "
-            f"[{PACKAGE}/]({TOOLS_TREE}). [RELEASE.md](RELEASE.md) lists each file with its SHA-256 and size, the release "
-            "and its commit, and the `generator` each of its pulses records.")
+            f"`{PACKAGE}/`: [RELEASE.md](RELEASE.md) links each file and lists its SHA-256 and size, the release and its "
+            "commit, and the `generator` each of its pulses records.")
     if not history:
         return [legacy, f"- **Package versions** are {this}"]
     lines, groups = [], []

@@ -2,7 +2,7 @@
 
 The pipeline: cut the next version into the RAPP Hive, save it, publish it, check what Pages serves, and the one command that reruns it all (`crawl`: discover, sweep, cut, publish, the Pages check, status).
 
-Source: `rapp1_network/pipeline.py` (rapp1-network 0.1.3). SHA-256 of the source below: `6807003cd7e817dfff055cfd4a8daa8876175fd9694f7ad70c738a5c9fde0be8` (41498 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/pipeline.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/pipeline.py` (rapp1-network 0.1.5). SHA-256 of the source below: `6807003cd7e817dfff055cfd4a8daa8876175fd9694f7ad70c738a5c9fde0be8` (41498 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/pipeline.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python

@@ -2,7 +2,7 @@
 
 The crawl: every portfolio repo checked by rapp-1's own rapp_check.py at the canon pin, outside the Hive.
 
-Source: `rapp1_network/crawl.py` (rapp1-network 0.1.3). SHA-256 of the source below: `4312e35f39ca7bdc95d2b0ab426f9020b80980e6df3114da4f7fda953119ab62` (30828 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/crawl.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/crawl.py` (rapp1-network 0.1.5). SHA-256 of the source below: `3041e2d46d9bae48616ee7e2e0efd2382d4cd6097f57a9d95fe665480c985b98` (31550 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/crawl.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python
@@ -276,6 +276,17 @@ def tracked(repo_dir, timeout: int = READ_TIMEOUT) -> list[str]:
     return [p for p in _git_read(repo_dir, "ls-files", "-z", timeout=timeout).split("\0") if p]
 
 
+def has_card(root, files, timeout: int = READ_TIMEOUT) -> bool:
+    """Whether the repo carries its network card: `.rapp/member.md` tracked at the evidence commit as a regular file
+    (index mode 100644 or 100755: never a link or a submodule, whatever the device's core.symlinks says) and a plain
+    file inside the checkout."""
+    if NETWORK_CARD not in set(files):
+        return False
+    entry = _git_read(root, "ls-files", "-s", "-z", "--", NETWORK_CARD, timeout=timeout).split("\0", 1)[0]
+    path = Path(root) / ".rapp" / "member.md"
+    return entry.split(" ", 1)[0] in ("100644", "100755") and not path.is_symlink() and path.is_file()
+
+
 def experimental_mentions(root, timeout: int = READ_TIMEOUT, *, public_copy: bool = False) -> int:
     """How many times "experimental" appears (whole word, any case) in the tracked text files, leaving out the
     network's own files: the repo's card (C11) and, in the network's public copy, its own folders (C10)."""
@@ -463,6 +474,7 @@ def _check(settings: Settings, clone: Path, repo: str, commit: str, known: dict,
     return {**derive(parse_result(raw), code, raw, stderr, timeout=check_timeout, redact=redact,
                      unverified=unverified),
             **({"version": version, "version_source": "VERSION"} if version else {}),
+            **({"member_card": True} if has_card(clone, files) else {}),
             "evidence_commit": commit,
             "experimental_mentions": experimental_mentions(clone, public_copy=repo.lower() == PUBLIC_REPO.lower()),
             "tracked_files": len(files),

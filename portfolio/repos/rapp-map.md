@@ -40,7 +40,7 @@ On the map: the **Learn & Docs** line ([subway map](https://kody-w.github.io/rap
 
 ## Links
 
-Linked from 19: [brainstem-harness](brainstem-harness.md), [RAPP-Bible](RAPP-Bible.md), [rapp-brainstem-sdk](rapp-brainstem-sdk.md), [rapp-demos](rapp-demos.md), [rapp-kite](rapp-kite.md), [rapp-kited-twin](rapp-kited-twin.md), [rapp-local-install](rapp-local-install.md), [rapp-monorepo](rapp-monorepo.md), [rapp-omarchy](rapp-omarchy.md), [rapp-overwatch](rapp-overwatch.md), [rapp-ratchet](rapp-ratchet.md), [rapp-release-train](rapp-release-train.md), [rapp-roadmap](rapp-roadmap.md), [rapp-second-brain](rapp-second-brain.md), [rapp-skill](rapp-skill.md), [rapp-spine](rapp-spine.md), [rapp-static-apis](rapp-static-apis.md), [rapp-tower](rapp-tower.md), [rio](rio.md).
+Linked from 20: [brainstem-harness](brainstem-harness.md), [RAPP-Bible](RAPP-Bible.md), [rapp-brainstem-sdk](rapp-brainstem-sdk.md), [rapp-demos](rapp-demos.md), [rapp-kite](rapp-kite.md), [rapp-kited-twin](rapp-kited-twin.md), [rapp-local-install](rapp-local-install.md), [rapp-model-hive](rapp-model-hive.md), [rapp-monorepo](rapp-monorepo.md), [rapp-omarchy](rapp-omarchy.md), [rapp-overwatch](rapp-overwatch.md), [rapp-ratchet](rapp-ratchet.md), [rapp-release-train](rapp-release-train.md), [rapp-roadmap](rapp-roadmap.md), [rapp-second-brain](rapp-second-brain.md), [rapp-skill](rapp-skill.md), [rapp-spine](rapp-spine.md), [rapp-static-apis](rapp-static-apis.md), [rapp-tower](rapp-tower.md), [rio](rio.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

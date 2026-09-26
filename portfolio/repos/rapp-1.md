@@ -5,7 +5,7 @@ line: RAPP/1 Core
 wave: 1
 status: certified
 verdict: COMPLIANT
-evidence_commit: e657140bf583e7caacea096af2f653cc8621f1a2
+evidence_commit: bae4e3cacc33e82e7fcf9fe73d2fd043da97801d
 checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
@@ -16,6 +16,7 @@ lts_commit: 591e014ad39e223b00ab343ae26e5d9a867ebeee
 lts_source: known
 channel: rapp1-lts
 lifecycle: active
+member_card: present
 links_to:
   - RAPP
   - rapp-installer
@@ -29,10 +30,11 @@ links_to:
 
 **Version:** none recorded (no root VERSION file and no GitHub release). **LTS:** [`591e014`](https://github.com/kody-w/rapp-1/tree/591e014ad39e223b00ab343ae26e5d9a867ebeee) (commit `591e014ad3`, from the network's built-in known pins, until the estate publishes its LTS pins). **Channel:** `rapp1-lts`: it has a long-term-support pin, so the network builds on that commit; its newer commits are the newest channel.
 
-- Evidence: [`kody-w/rapp-1` at `e657140bf5`](https://github.com/kody-w/rapp-1/tree/e657140bf583e7caacea096af2f653cc8621f1a2) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/rapp-1` at `bae4e3cacc`](https://github.com/kody-w/rapp-1/tree/bae4e3cacc33e82e7fcf9fe73d2fd043da97801d) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **COMPLIANT**, 18 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `051fb8de0af0ab55f21f7f2e6f842c5c39534618e2b61a4cf590e8d9369ebfe3`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: present in `README.md`.
+- Member card: [`.rapp/member.md`](https://github.com/kody-w/rapp-1/blob/bae4e3cacc33e82e7fcf9fe73d2fd043da97801d/.rapp/member.md) at the evidence commit: this repo's card in the RAPP Hive, beside its pointer [`members/rapp-1.md`](https://github.com/kody-w/rapp-hive-public/blob/main/members/rapp-1.md).
 
 On the map: the **RAPP/1 Core** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
 
@@ -45,4 +47,4 @@ Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<
 
 ## Check it yourself
 
-Clone `kody-w/rapp-1` at `e657140bf5` into `rapp-1` and again at `591e014` into `rapp-1-checker`, then run `python3 -B rapp-1-checker/rapp_check.py rapp-1 --json` from the folder that holds both.
+Clone `kody-w/rapp-1` at `bae4e3cacc` into `rapp-1` and again at `591e014` into `rapp-1-checker`, then run `python3 -B rapp-1-checker/rapp_check.py rapp-1 --json` from the folder that holds both.

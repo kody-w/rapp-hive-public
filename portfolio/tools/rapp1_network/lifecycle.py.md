@@ -2,7 +2,7 @@
 
 Versions, LTS pins, channels, lifecycles and notices: what portfolio edition 2 (version 2 onwards) says about each repo besides its earned RAPP/1 status. Pure functions of their inputs, except the crawl's two readers (a root VERSION file in a checkout, the latest GitHub release through gh) and the LTS pins file.
 
-Source: `rapp1_network/lifecycle.py` (rapp1-network 0.1.3). SHA-256 of the source below: `2660a8db6ef7ecd2948b4c1a458bc6b40ecbf60d9fe995431cbf0a1e655c67e7` (22409 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/lifecycle.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/lifecycle.py` (rapp1-network 0.1.5). SHA-256 of the source below: `1a6564a64f895f9dd12939de8ea09a8003d17b244234ddda9abb0cac1a5cc75c` (23023 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/lifecycle.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python
@@ -370,6 +370,8 @@ def entry(rec: Mapping, schema: int = 2) -> dict:
         for key in ("version", "lts_version", "superseded_by", "since", "notice"):
             if rec.get(key):
                 out[key] = nfc(rec[key])
+        if rec.get("member_card"):
+            out["card"] = True  # the repo carries its network card (.rapp/member.md) at the evidence commit
     return out
 
 
@@ -407,8 +409,9 @@ def schema_of(payload: Mapping) -> int:
 def changes(prev: Mapping, cur: Mapping) -> dict:
     """What changed from one payload to the next ({schema, repos, left}; a /1 payload has no left, and every repo in
     it was active): status, lifecycle (with the notice), version and channel changes (the last two only between /2
-    payloads, since /1 recorded neither), repos added, repos that left (with their date), how many others went (held
-    back by the privacy rule: never named) and how many are at a new evidence commit."""
+    payloads, since /1 recorded neither), member cards added or removed (only where both pulses checked the repo),
+    repos added, repos that left (with their date), how many others went (held back by the privacy rule: never named)
+    and how many are at a new evidence commit."""
     a, b = prev.get("repos", {}), cur.get("repos", {})
     order = lambda name: (name.lower(), name)
     both = sorted(a.keys() & b.keys(), key=order)
@@ -421,6 +424,11 @@ def changes(prev: Mapping, cur: Mapping) -> dict:
                        if compare and a[n].get("version") != b[n].get("version")],
            "channel": [(n, a[n].get("channel"), b[n].get("channel")) for n in both
                        if compare and a[n].get("channel") != b[n].get("channel")],
+           # a card is compared only where both pulses checked the repo: an unchecked entry (a failed clone)
+           # records no card, and that is not a card removed
+           "cards": [(n, bool(b[n].get("card"))) for n in both
+                     if a[n].get("evidence_commit") and b[n].get("evidence_commit")
+                     and bool(a[n].get("card")) != bool(b[n].get("card"))],
            "added": sorted(b.keys() - a.keys(), key=order),
            "left": [(n, left_now[n]) for n in sorted(left_now, key=order) if n not in left_before],
            "removed": len([n for n in a.keys() - b.keys() if n not in left_now]),

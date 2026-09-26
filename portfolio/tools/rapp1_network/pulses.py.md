@@ -2,7 +2,7 @@
 
 The pulse chain: every crawl of the RAPP/1 network is one RAPP/1 frame, a `body.pulse` on the network's body stream.
 
-Source: `rapp1_network/pulses.py` (rapp1-network 0.1.3). SHA-256 of the source below: `46fc947d7cd3b54a5ed2ba441ae1370b1aa85b5690adfd4415c7a6899dc31aef` (59077 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/pulses.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/pulses.py` (rapp1-network 0.1.5). SHA-256 of the source below: `b856462583fdb5ed61804259084f902817c42170b776456ae5fd1d6bb0baa653` (59511 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/pulses.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python
@@ -433,6 +433,8 @@ def _check_records(recs: Mapping, schema: int = 1) -> None:
             raise Refused(f"{where}: links_to must list repository names")
         if schema >= 2:
             _check_lifecycle(where, rec)
+        if rec.get("member_card", True) is not True:
+            raise Refused(f"{where}: member_card is recorded only as true (the repo carries .rapp/member.md)")
 
 
 def _check_lifecycle(where: str, rec: Mapping) -> None:
@@ -520,12 +522,13 @@ def pulse_payload(recs: Mapping, number: int, crawl: Mapping, artifacts: Mapping
                   checker, left: Mapping[str, str] | None = None) -> dict:
     """What one pulse records: when and with what it crawled, the totals per status, per wave and per line, each
     repo's line, status, verdict and evidence commit, a digest of the links between repos, the content hashes of
-    this version's files, and the tools that made it. Strings, integers and nulls only (the pinned rapp.py
-    canonicalizes no floats); every new string NFC (§4).
+    this version's files, and the tools that made it. Strings, integers, nulls and the one boolean `card: true` (the
+    pinned rapp.py canonicalizes no floats); every new string NFC (§4).
 
     From version 2 (rapp1-network-pulse/2, additive): each repo also its channel and lifecycle (and its version, LTS
-    label, successor, since and notice when present), totals.lifecycle {active, deprecated, superseded, archived,
-    left}, NOTICES.md among the artifacts, and `left` {repo: date} for the repos that left the network."""
+    label, successor, since and notice when present, and from v0.1.5 `card: true` when it carries its network card
+    `.rapp/member.md` at its evidence commit), totals.lifecycle {active, deprecated, superseded, archived, left},
+    NOTICES.md among the artifacts, and `left` {repo: date} for the repos that left the network."""
     reference = _reference(checker)
     schema = schema_for(number) if _uint(number) and number >= 1 else 1
     _check_records(recs, schema)
@@ -612,7 +615,7 @@ def _counts(value, where) -> None:
 
 
 ENTRY_1 = {"line", "status", "verdict", "evidence_commit"}
-ENTRY_2_OPTIONAL = {"version", "lts_version", "superseded_by", "since", "notice"}
+ENTRY_2_OPTIONAL = {"version", "lts_version", "superseded_by", "since", "notice", "card"}
 
 
 def _entry_ok(r, schema: int) -> bool:
@@ -622,7 +625,8 @@ def _entry_ok(r, schema: int) -> bool:
     if schema < 2:
         return keys == ENTRY_1
     return (ENTRY_1 | {"channel", "lifecycle"}) <= keys <= (ENTRY_1 | {"channel", "lifecycle"} | ENTRY_2_OPTIONAL) \
-        and r["channel"] in lifecycle.CHANNELS and r["lifecycle"] in lifecycle.LIFECYCLES
+        and r["channel"] in lifecycle.CHANNELS and r["lifecycle"] in lifecycle.LIFECYCLES \
+        and r.get("card", True) is True  # a card is recorded only as present: `card: true`
 
 
 def _check_shape(payload, checker) -> None:
@@ -896,7 +900,8 @@ def placement(certify: Mapping) -> str:
 
 def pulse_changes(prev: Mapping, cur: Mapping) -> dict:
     """What changed from one pulse to the next, /1 or /2 (lifecycle.changes): status, lifecycle (with the notice),
-    version and channel changes, repos added and left, how many others went, and how many moved commit."""
+    version and channel changes, member cards added or removed, repos added and left, how many others went, and how
+    many moved commit."""
     return lifecycle.changes(prev["payload"], cur["payload"])
 
 

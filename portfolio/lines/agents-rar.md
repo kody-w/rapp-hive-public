@@ -33,5 +33,5 @@ The agent registry, its stores, skills, cartridges and card binders.
 | [RAPP_Sense_Store](../repos/RAPP_Sense_Store.md) | certified |  |
 | [RAPP_Store](../repos/RAPP_Store.md) | not yet |  |
 | [RAPPcards](../repos/RAPPcards.md) | certified |  |
-| [RAR](../repos/RAR.md) | not yet |  |
+| [RAR](../repos/RAR.md) | certified |  |
 | [red-binder](../repos/red-binder.md) | certified |  |

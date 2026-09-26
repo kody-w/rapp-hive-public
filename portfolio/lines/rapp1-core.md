@@ -31,13 +31,13 @@ The Core line's stations, in layer order (the organism's layers 0 to 5), ending 
 | [rapp-model-hive](../repos/rapp-model-hive.md) | 3 Hive | not yet |
 | [rapp-workspace](../repos/rapp-workspace.md) | 4 Your device | certified |
 | [lisppy](../repos/lisppy.md) | 5 Brainstem | certified |
-| [RAPP](../repos/RAPP.md) | 5 Brainstem | not yet |
+| [RAPP](../repos/RAPP.md) | 5 Brainstem | certified |
 | [rapp-installer](../repos/rapp-installer.md) | Start here | certified |
 
 | Station | Status | Also on |
 |---|---|---|
 | [lisppy](../repos/lisppy.md) | certified |  |
-| [RAPP](../repos/RAPP.md) | not yet |  |
+| [RAPP](../repos/RAPP.md) | certified |  |
 | [rapp-1](../repos/rapp-1.md) | certified |  |
 | [rapp-drift-lint](../repos/rapp-drift-lint.md) | certified |  |
 | [rapp-installer](../repos/rapp-installer.md) | certified |  |
