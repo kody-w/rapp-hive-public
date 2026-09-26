@@ -1,5 +1,5 @@
 ---
-manifest: af50714ddd167d8326d1c480088b30cdee1408177abcd500ea0e379dfe1345a9
+manifest: 3ae96e4cc0b3af949db7e373ee5cd8f638b0323abeab634b86ddf3a7401737fb
 hive: af02504304365b6d8b068553156b5e6d
 ---
 
@@ -716,6 +716,7 @@ d561e8757733f6c26e7b7a8ce35f6c4de647c5ce9addc85022a92aaa08024dcf  portfolio/badg
 b70e8bc64fba26725b500427daadc64916ba0ae0af99759a1bee0f4a838255ea  portfolio/badges/vneighborhood-research-lab.svg.md
 472ab586d4197d0529bf48ec72c1c55a410d38a3b9756104d52de03c256e05be  portfolio/badges/wildhaven-ai-homes-twin.svg.md
 d7243dffc6ee9b26bfc5381e70a4bab4007f82b8fffb963274d0c0ad168948e9  portfolio/badges/workroom.svg.md
+f0beebf29ba23f2e1c45072938d96869089a1ebadb69559a9decfeddd6a096f0  portfolio/channel-notices.md
 fa7e14f97b44d489c897c2ad99db1b8dd5aa727f2dd439626d678cbe185db17c  portfolio/lifecycle.md
 c9cd64ec28be3075ffa54db9446436c6214a23134ebdeaeb0aea9c7c5c36cbeb  portfolio/lines/agents-rar.md
 23af96bd1e19f6cc09e19dcbc5138ac6abef96afa757c6a58db4f96dc333419e  portfolio/lines/brainstem.md
