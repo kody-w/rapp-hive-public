@@ -1,5 +1,5 @@
 ---
-permalink: /portfolio/subway.svg
+permalink: /portfolio/versions/2026-09-26-6/subway.svg
 layout: null
 ---
 {::nomarkdown}
