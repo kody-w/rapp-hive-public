@@ -20,7 +20,7 @@ lifecycle: active
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-herdr` at `e75b9b32d6`](https://github.com/kody-w/rapp-herdr/tree/e75b9b32d68cd7d37ee595b528136cb6c0ec7902) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `5d43ca95a6a0235ee78965178331549e979e098039ac7c2d4b74422d9b065fc4`.
@@ -31,7 +31,7 @@ On the map: the **Neighborhoods** line ([subway map](https://kody-w.github.io/ra
 
 ## Links
 
-Linked from 3: [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rapp-omarchy](rapp-omarchy.md).
+Linked from 2: [rapp-monorepo](rapp-monorepo.md), [rapp-omarchy](rapp-omarchy.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

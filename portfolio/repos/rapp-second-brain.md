@@ -24,7 +24,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-second-brain` at `c71de71f2e`](https://github.com/kody-w/rapp-second-brain/tree/c71de71f2ed4de039ba19725d0f3c407756e5fa0) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `265258e021a50e286d93ed7308a60feee8bfadba9221ddb132682899e797a3d5`.
@@ -36,7 +36,7 @@ On the map: the **Organism & Platform** line ([subway map](https://kody-w.github
 ## Links
 
 Links to 3 portfolio repo(s): [RAPP](RAPP.md) (markdown), [rapp-map](rapp-map.md) (markdown), [rapp-train](rapp-train.md) (markdown).
-Linked from 4: [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rapp-secondbrain](rapp-secondbrain.md), [rapp-tower](rapp-tower.md).
+Linked from 3: [rapp-monorepo](rapp-monorepo.md), [rapp-secondbrain](rapp-secondbrain.md), [rapp-tower](rapp-tower.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

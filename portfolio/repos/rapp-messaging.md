@@ -22,7 +22,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-messaging` at `0586678530`](https://github.com/kody-w/rapp-messaging/tree/0586678530bb16215f91104a11737bc69c6f0c48) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `895f3a3b860e89844a6f20dc828584f51b979ae2a199cf9300cc3f4a82462a65`.
@@ -34,7 +34,7 @@ On the map: the **Tools & Apps** line ([subway map](https://kody-w.github.io/rap
 ## Links
 
 Links to 1 portfolio repo(s): [openrappter](openrappter.md) (markdown).
-Linked from 6: [rapp-copilot-in-chrome](rapp-copilot-in-chrome.md), [rapp-copilot-in-edge](rapp-copilot-in-edge.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rapp-spine](rapp-spine.md), [rapp-stack-cubby](rapp-stack-cubby.md).
+Linked from 5: [rapp-copilot-in-chrome](rapp-copilot-in-chrome.md), [rapp-copilot-in-edge](rapp-copilot-in-edge.md), [rapp-monorepo](rapp-monorepo.md), [rapp-spine](rapp-spine.md), [rapp-stack-cubby](rapp-stack-cubby.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

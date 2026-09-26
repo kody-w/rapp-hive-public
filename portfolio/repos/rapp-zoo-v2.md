@@ -22,7 +22,7 @@ lifecycle: active
 
 **Not yet:** 1 finding(s) from rapp_check: §9 egg.
 
-**Version:** `v0.1.0`, from the tag of its latest GitHub release. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** `v0.1.0`, from the tag of its latest GitHub release. **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-zoo-v2` at `b394aa53aa`](https://github.com/kody-w/rapp-zoo-v2/tree/b394aa53aab5b2ec63b850fb4cf34f07c1965b41) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **DRIFT**, 1 finding(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `165d6d67c59d3e748bd99e3cc61ca9a73913fc9593b0c8214ecff37311e2f225`.
@@ -37,7 +37,7 @@ On the map: the **Worlds & Play** line ([subway map](https://kody-w.github.io/ra
 
 ## Links
 
-Linked from 2: [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md).
+Linked from 1: [rapp-monorepo](rapp-monorepo.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

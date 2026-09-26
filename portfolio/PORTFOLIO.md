@@ -12,10 +12,10 @@ Every public RAPP repo, each with an **earned** RAPP/1 status. RAPP/1 is the LTS
 
 - **certified**: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py) says COMPLIANT or CLEAN at the recorded commit.
 - **not yet**: drift or unverified; each file says why.
-- **unchecked**: the sweep has not run on it yet.
-- **rapp1-lts**: the repo has a long-term-support pin in RAPP/1 (the Version column shows `LTS` and its label); **newest**: no pin, so its newest commit is the one in use. **deprecated**, **superseded** and **archived** come first in the Status column; each repo's file says since when and why.
+- **unchecked**: it could not be cloned or checked (for example, an empty repository); its file says why.
+- **rapp1-lts**: the repo has a long-term-support pin (the network's built-in known pins, until the estate publishes its LTS pins; the Version column shows `LTS` and its label); **newest**: no pin, so its newest commit is the one in use. **deprecated**, **superseded** and **archived** come first in the Status column; each repo's file says since when and why.
 
-Each repo's README carries one marked line: its badge (served from this folder by GitHub Pages, so the URL never changes) and a link to [Start here](https://github.com/kody-w/rapp-installer#start-here) for anyone without a Brainstem yet. "experimental" mentions are tracked here as a metric; they are not a gate yet.
+Each repo's README gets one marked line (13 of 317 carry it today; the header pull requests bring it to the rest): its badge (served from this folder by GitHub Pages, so the URL never changes) and a link to [Start here](https://github.com/kody-w/rapp-installer#start-here) for anyone without a Brainstem yet. "experimental" mentions are tracked here as a metric; they are not a gate yet.
 
 A Hive holds only markdown, so each badge is `badges/<repo>.svg.md`: its front matter tells GitHub Pages to serve it as `https://kody-w.github.io/rapp-hive-public/portfolio/badges/<repo>.svg` (image/svg+xml).
 
@@ -25,7 +25,7 @@ A Hive holds only markdown, so each badge is `badges/<repo>.svg.md`: its front m
 
 Lines are the families below; stations are repos, filled by status (hollow when deprecated, superseded or archived); the RAPP/1 Core line runs in layer order and ends at `rapp-installer`, the Start here terminal. It is drawn from these files by the `rapp1_network` package (its release copy is in [`tools/`](https://github.com/kody-w/rapp-hive-public/blob/main/portfolio/tools)), and the links between repos come from each file's `links_to`.
 
-**Version 2**, crawled 2026-09-26 01:45 UTC. Every crawl is one RAPP/1 frame, a `body.pulse` on the network's body stream `rappid:@kody-w/rapp1-network:71216534f9d362c7af054e773d546dfd996f769b08bd38c1b90b9e36760c2def`. The [timeline](https://kody-w.github.io/rapp-hive-public/portfolio/timeline.html) lists every version with its pulse hashes and what changed, and each version's maps stay under `versions/`.
+**Version 3**, crawled 2026-09-26 03:00 UTC. Every crawl is one RAPP/1 frame, a `body.pulse` on the network's body stream `rappid:@kody-w/rapp1-network:71216534f9d362c7af054e773d546dfd996f769b08bd38c1b90b9e36760c2def`. The [timeline](https://kody-w.github.io/rapp-hive-public/portfolio/timeline.html) lists every version with its pulse hashes and what changed, and each version's maps stay under `versions/`.
 
 | Line | Stations | certified | not yet | unchecked |
 |---|---|---|---|---|
@@ -55,7 +55,7 @@ Lines are the families below; stations are repos, filled by status (hollow when 
 | Repo | Status | Version | Verdict | Commit | Checked | "experimental" | Header |
 |---|---|---|---|---|---|---|---|
 | [lisppy](repos/lisppy.md) | certified |  | CLEAN | addd6af | 2026-09-26 | 1 | present |
-| [RAPP](repos/RAPP.md) | not yet | v1.0.0 | DRIFT | a879530 | 2026-09-26 | 157 | present |
+| [RAPP](repos/RAPP.md) | not yet | v1.0.0 | DRIFT | e045fc3 | 2026-09-26 | 160 | present |
 | [rapp-1](repos/rapp-1.md) | certified | LTS 591e014 | COMPLIANT | e657140 | 2026-09-26 | 0 | present |
 | [rapp-drift-lint](repos/rapp-drift-lint.md) | certified |  | CLEAN | fccad33 | 2026-09-26 | 0 | present |
 | [rapp-installer](repos/rapp-installer.md) | certified | v1.0.0 · LTS brainstem-v0.6.9 | CLEAN | 49db80c | 2026-09-26 | 11 | PR open |
@@ -71,14 +71,14 @@ Lines are the families below; stations are repos, filled by status (hollow when 
 | [hive-hub-mcp](repos/hive-hub-mcp.md) | certified |  | CLEAN | b877a83 | 2026-09-26 | 0 | present |
 | [rapp-hive-hub](repos/rapp-hive-hub.md) | certified |  | COMPLIANT | c1b3775 | 2026-09-26 | 7 | present |
 | [rapp-hive-hub-join](repos/rapp-hive-hub-join.md) | certified |  | CLEAN | 24de83c | 2026-09-26 | 0 | present |
-| [rapp-hive-public](repos/rapp-hive-public.md) | certified |  | CLEAN | a8f4cd8 | 2026-09-26 | 383 | present |
+| [rapp-hive-public](repos/rapp-hive-public.md) | certified |  | CLEAN | b92a97c | 2026-09-26 | 393 | present |
 | [rapp-model-hive](repos/rapp-model-hive.md) | not yet |  | DRIFT | 113b739 | 2026-09-26 | 16 | present |
 
 ### Agents (RAR) (1)
 
 | Repo | Status | Version | Verdict | Commit | Checked | "experimental" | Header |
 |---|---|---|---|---|---|---|---|
-| [RAR](repos/RAR.md) | not yet | v1.0.0 | DRIFT | d75415a | 2026-09-26 | 161 | present |
+| [RAR](repos/RAR.md) | not yet | v1.0.0 | DRIFT | e3031fc | 2026-09-26 | 161 | present |
 
 ## Wave 2: the rest of the RAPP family (302)
 
@@ -133,7 +133,7 @@ Lines are the families below; stations are repos, filled by status (hollow when 
 | [rapp-light](repos/rapp-light.md) | certified |  | CLEAN | 01a7e1b | 2026-09-26 | 5 | not yet added |
 | [rapp-petri](repos/rapp-petri.md) | certified |  | CLEAN | b1f953c | 2026-09-26 | 0 | not yet added |
 | [rapp-quests](repos/rapp-quests.md) | certified |  | CLEAN | d2eb2e2 | 2026-09-26 | 0 | not yet added |
-| [rapp-static-brainstem](repos/rapp-static-brainstem.md) | certified | v1.1.0 | CLEAN | 0173eb8 | 2026-09-26 | 0 | not yet added |
+| [rapp-static-brainstem](repos/rapp-static-brainstem.md) | certified | v1.2.0 | CLEAN | 0173eb8 | 2026-09-26 | 0 | not yet added |
 | [rapp-vscode-extension](repos/rapp-vscode-extension.md) | certified | v1.0.0 | CLEAN | 774e9f4 | 2026-09-26 | 0 | no README (skipped) |
 | [skillstem](repos/skillstem.md) | certified |  | CLEAN | 385e40e | 2026-09-26 | 0 | not yet added |
 | [stemcell](repos/stemcell.md) | certified |  | CLEAN | 7cc90dd | 2026-09-26 | 6 | not yet added |
@@ -226,7 +226,7 @@ Lines are the families below; stations are repos, filled by status (hollow when 
 |---|---|---|---|---|---|---|---|
 | [mars-barn](repos/mars-barn.md) | certified |  | CLEAN | 2203505 | 2026-09-26 | 14 | not yet added |
 | [rappbook-admin](repos/rappbook-admin.md) | certified |  | CLEAN | 33f9f0d | 2026-09-26 | 0 | not yet added |
-| [rappterbook](repos/rappterbook.md) | not yet | v1.0.0 | DRIFT | 55475a1 | 2026-09-26 | 4160 | not yet added |
+| [rappterbook](repos/rappterbook.md) | not yet | v1.0.0 | DRIFT | 8d29c4f | 2026-09-26 | 4160 | not yet added |
 | [rappterbook-agent](repos/rappterbook-agent.md) | certified |  | CLEAN | 8d15842 | 2026-09-26 | 2 | not yet added |
 | [rappterbook-agent-dna](repos/rappterbook-agent-dna.md) | certified |  | CLEAN | b054f18 | 2026-09-26 | 0 | not yet added |
 | [rappterbook-agent-exchange](repos/rappterbook-agent-exchange.md) | certified |  | CLEAN | 101c750 | 2026-09-26 | 4 | not yet added |
@@ -356,7 +356,7 @@ Lines are the families below; stations are repos, filled by status (hollow when 
 | [rapp-hippocampus](repos/rapp-hippocampus.md) | certified |  | CLEAN | 45005c0 | 2026-09-26 | 1 | not yet added |
 | [rapp-membrane](repos/rapp-membrane.md) | certified |  | CLEAN | 62da93d | 2026-09-26 | 0 | not yet added |
 | [rapp-nervous-system](repos/rapp-nervous-system.md) | certified |  | CLEAN | 4068ccf | 2026-09-26 | 1 | not yet added |
-| [rapp-organism](repos/rapp-organism.md) | certified |  | CLEAN | 21890b9 | 2026-09-26 | 206 | not yet added |
+| [rapp-organism](repos/rapp-organism.md) | certified |  | CLEAN | c53e4f0 | 2026-09-26 | 206 | not yet added |
 | [rapp-platform](repos/rapp-platform.md) | certified |  | CLEAN | d7f3f7d | 2026-09-26 | 1 | not yet added |
 | [rapp-second-brain](repos/rapp-second-brain.md) | certified |  | CLEAN | c71de71 | 2026-09-26 | 6 | not yet added |
 | [rapp-secondbrain](repos/rapp-secondbrain.md) | certified |  | CLEAN | 7846dfd | 2026-09-26 | 0 | not yet added |
@@ -368,7 +368,7 @@ Lines are the families below; stations are repos, filled by status (hollow when 
 
 | Repo | Status | Version | Verdict | Commit | Checked | "experimental" | Header |
 |---|---|---|---|---|---|---|---|
-| [dogg](repos/dogg.md) | not yet |  | DRIFT | a3c5967 | 2026-09-26 | 0 | not yet added |
+| [dogg](repos/dogg.md) | not yet |  | DRIFT | 29ad564 | 2026-09-26 | 0 | not yet added |
 | [dogg-canon](repos/dogg-canon.md) | certified |  | COMPLIANT | 7bdae25 | 2026-09-26 | 0 | not yet added |
 | [dogg-markets](repos/dogg-markets.md) | certified |  | COMPLIANT | 410682a | 2026-09-26 | 0 | not yet added |
 | [dogg-planet](repos/dogg-planet.md) | certified |  | COMPLIANT | 53edf46 | 2026-09-26 | 0 | not yet added |

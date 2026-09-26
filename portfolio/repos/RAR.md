@@ -5,7 +5,7 @@ line: Agents (RAR)
 wave: 1
 status: not yet
 verdict: DRIFT
-evidence_commit: d75415a2169b770d3b595a293572fb1bae6bf864
+evidence_commit: e3031fc2d298763da0e4fe810772fc0493ef9eb0
 checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 161
@@ -47,9 +47,9 @@ links_to:
 
 **Not yet:** 3 finding(s) from rapp_check: §9 egg ×2, verification unavailable; 1 of them unverified.
 
-**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
-- Evidence: [`kody-w/RAR` at `d75415a216`](https://github.com/kody-w/RAR/tree/d75415a2169b770d3b595a293572fb1bae6bf864) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/RAR` at `e3031fc2d2`](https://github.com/kody-w/RAR/tree/e3031fc2d298763da0e4fe810772fc0493ef9eb0) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **DRIFT**, 3 finding(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `a9b0d3583b30c89a05aafc7f3f2a84a479193db4548e407d046c8662544ebc04`.
 - "experimental" mentions: 161 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: present in `README.md`.
@@ -71,4 +71,4 @@ Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<
 
 ## Check it yourself
 
-Clone `kody-w/RAR` at `d75415a216` and `kody-w/rapp-1` at `591e014`, then run `python3 -B rapp-1/rapp_check.py RAR --json` from the folder that holds both.
+Clone `kody-w/RAR` at `e3031fc2d2` and `kody-w/rapp-1` at `591e014`, then run `python3 -B rapp-1/rapp_check.py RAR --json` from the folder that holds both.

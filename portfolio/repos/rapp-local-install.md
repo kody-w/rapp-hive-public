@@ -22,7 +22,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-local-install` at `8795f5b03a`](https://github.com/kody-w/rapp-local-install/tree/8795f5b03a2da7243c26cec6f3be48284c9f71ce) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `439b34563920a84e05e2a6eb6dc8a230a4000a05d5cdb2f1278ef57551a72e75`.
@@ -34,7 +34,6 @@ On the map: the **Tools & Apps** line ([subway map](https://kody-w.github.io/rap
 ## Links
 
 Links to 1 portfolio repo(s): [rapp-map](rapp-map.md) (markdown).
-Linked from 1: [rapp-hive-public](rapp-hive-public.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

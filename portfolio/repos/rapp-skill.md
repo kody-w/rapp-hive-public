@@ -31,7 +31,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-skill` at `ff36d917d3`](https://github.com/kody-w/rapp-skill/tree/ff36d917d3a20b459cd37404fdf16ebd9d0a15a0) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `4e4f71525188d045b8ef5457097bf0cfb6d1102d121eedbfaa6cc2bb04e640d9`.
@@ -43,7 +43,7 @@ On the map: the **Agents (RAR)** line ([subway map](https://kody-w.github.io/rap
 ## Links
 
 Links to 10 portfolio repo(s): [RAPP](RAPP.md) (markdown), [rapp-1](rapp-1.md) (markdown), [rapp-brainstem](rapp-brainstem.md) (markdown), [rapp-installer](rapp-installer.md) (markdown), [rapp-map](rapp-map.md) (markdown), [rapp-skills](rapp-skills.md) (markdown), [rapp-toaster](rapp-toaster.md) (markdown), [rapp-twin](rapp-twin.md) (markdown), [RAPP_Store](RAPP_Store.md) (markdown), [RAR](RAR.md) (markdown).
-Linked from 2: [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md).
+Linked from 1: [rapp-monorepo](rapp-monorepo.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

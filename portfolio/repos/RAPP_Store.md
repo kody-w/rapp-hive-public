@@ -34,7 +34,7 @@ links_to:
 
 **Not yet:** 26 finding(s) from rapp_check: §9 egg ×26.
 
-**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/RAPP_Store` at `c979a60e21`](https://github.com/kody-w/RAPP_Store/tree/c979a60e21b74d17b0ec1421821220721acd39e8) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **DRIFT**, 26 finding(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `0de37196bfaec192374ae2f7db8b2a42db568457e406f0a78dff668d3775ecc7`.
@@ -62,7 +62,7 @@ On the map: the **Agents (RAR)** line ([subway map](https://kody-w.github.io/rap
 ## Links
 
 Links to 11 portfolio repo(s): [RAPP](RAPP.md) (markdown), [rapp-1](rapp-1.md) (markdown), [rapp-brainstem-sdk](rapp-brainstem-sdk.md) (markdown), [rapp-commons](rapp-commons.md) (markdown), [rapp-egg-hub](rapp-egg-hub.md) (markdown), [rapp-god-forum](rapp-god-forum.md) (markdown), [rapp-mcp](rapp-mcp.md) (markdown), [rapp-neighborhood-protocol](rapp-neighborhood-protocol.md) (markdown), [rapp-zoo](rapp-zoo.md) (markdown), [RAPP_Sense_Store](RAPP_Sense_Store.md) (markdown), [RAR](RAR.md) (markdown).
-Linked from 20: [cowork-cookbook-rapp](cowork-cookbook-rapp.md), [echo-brainstem](echo-brainstem.md), [lumen-brainstem](lumen-brainstem.md), [microsoft-se-team-neighborhood](microsoft-se-team-neighborhood.md), [RAPP](RAPP.md), [RAPP-Bible](RAPP-Bible.md), [rapp-brainfreeze-studio](rapp-brainfreeze-studio.md), [rapp-carts](rapp-carts.md), [rapp-egg-hub](rapp-egg-hub.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rapp-skill](rapp-skill.md), [rapp-spine](rapp-spine.md), [rapp-store-archive](rapp-store-archive.md), [rapp-tools](rapp-tools.md), [RAPP_Desktop](RAPP_Desktop.md), [RAPP_Hub](RAPP_Hub.md), [RAPP_Sense_Store](RAPP_Sense_Store.md), [RAR](RAR.md), [tide-brainstem](tide-brainstem.md).
+Linked from 19: [cowork-cookbook-rapp](cowork-cookbook-rapp.md), [echo-brainstem](echo-brainstem.md), [lumen-brainstem](lumen-brainstem.md), [microsoft-se-team-neighborhood](microsoft-se-team-neighborhood.md), [RAPP](RAPP.md), [RAPP-Bible](RAPP-Bible.md), [rapp-brainfreeze-studio](rapp-brainfreeze-studio.md), [rapp-carts](rapp-carts.md), [rapp-egg-hub](rapp-egg-hub.md), [rapp-monorepo](rapp-monorepo.md), [rapp-skill](rapp-skill.md), [rapp-spine](rapp-spine.md), [rapp-store-archive](rapp-store-archive.md), [rapp-tools](rapp-tools.md), [RAPP_Desktop](RAPP_Desktop.md), [RAPP_Hub](RAPP_Hub.md), [RAPP_Sense_Store](RAPP_Sense_Store.md), [RAR](RAR.md), [tide-brainstem](tide-brainstem.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

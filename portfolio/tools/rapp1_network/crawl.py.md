@@ -2,7 +2,7 @@
 
 The crawl: every portfolio repo checked by rapp-1's own rapp_check.py at the canon pin, outside the Hive.
 
-Source: `rapp1_network/crawl.py` (rapp1-network 0.1.0). SHA-256 of the source below: `b4162073f2882c8838f23b807645e1bc196b6da17d0f733246cb2dbb5a1e3eae` (29606 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/crawl.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/crawl.py` (rapp1-network 0.1.1). SHA-256 of the source below: `8eaf332aa230fc09f895270bd0b2ab2586da913f7395fcc50869d494a3421146` (30002 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/crawl.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python
@@ -30,7 +30,7 @@ from pathlib import Path
 
 from . import checker, lifecycle, util
 from .config import Settings
-from .constants import CANON_RAPP1, END, MAX_WORKERS, OWNER, REPO_URL, START
+from .constants import CANON_RAPP1, END, MAX_WORKERS, OWNER, PUBLIC_REPO, REPO_URL, START
 from .headers import header_present
 from .inventory import family
 
@@ -214,6 +214,8 @@ def _link_names(kind: str, patterns, text: str, self_name: str):
             yield match.group(1)
 
 
+NETWORK_FOLDERS = ("portfolio/", "members/", "notices/")  # the network's own, in its public copy (C10)
+
 def crawl_links(root, files, self_name: str, known: dict) -> dict[str, set[str]]:
     """{portfolio repo: {kinds}} this checkout references. `known` maps each portfolio repo's lower-case name to
     its name; nothing else counts, and neither does the repo itself.
@@ -224,10 +226,14 @@ def crawl_links(root, files, self_name: str, known: dict) -> dict[str, set[str]]
         workflow   `uses:` and `repository:` lines in .github/workflows/
         submodule  .gitmodules URLs, absolute or relative (../<repo>.git sits beside this repo on GitHub)
 
-    The network header block is left out: its links are the network's, not the repo's."""
+    The network header block is left out: its links are the network's, not the repo's. So are the network's own
+    folders in its public copy (portfolio/, members/, notices/ and PUBLISHED.md in rapp-hive-public)."""
     found: dict[str, set[str]] = {}
+    own = self_name.lower() == PUBLIC_REPO.lower()
     for rel_path in files:
         low = rel_path.lower()
+        if own and (low.startswith(NETWORK_FOLDERS) or low == "published.md"):
+            continue
         base = low.rsplit("/", 1)[-1]
         stem, _, ext = base.rpartition(".")
         kinds = []

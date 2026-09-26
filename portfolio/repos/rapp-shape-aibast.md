@@ -22,7 +22,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-shape-aibast` at `e8a66b055d`](https://github.com/kody-w/rapp-shape-aibast/tree/e8a66b055d20ec27141ea7d4e6095c6f338d6a8b) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `eda5d39a3e7e7f4c8032a7972a35de626a4d293eab21b7ab5d54a7305333feb9`.
@@ -34,7 +34,6 @@ On the map: the **Release Channels** line ([subway map](https://kody-w.github.io
 ## Links
 
 Links to 1 portfolio repo(s): [CommunityRAPP](CommunityRAPP.md) (markdown).
-Linked from 1: [rapp-hive-public](rapp-hive-public.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

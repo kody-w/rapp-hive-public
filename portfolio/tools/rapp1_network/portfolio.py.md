@@ -2,7 +2,7 @@
 
 The portfolio room (`<hive>/shared/organism/portfolio/`, published as `portfolio/`): one file per repo (`repos/<repo>.md`), its badge (`badges/<repo>.svg.md`), one file per line (`lines/<line>.md`) and `PORTFOLIO.md`, plus the public README's portfolio bullet. The subway map and the pulses are drawn from these files.
 
-Source: `rapp1_network/portfolio.py` (rapp1-network 0.1.0). SHA-256 of the source below: `9c4c6d73e27e81fe6d8b24b0622b88020cf9f537dcec62301e6cdfa9f53285ca` (44341 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/portfolio.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/portfolio.py` (rapp1-network 0.1.1). SHA-256 of the source below: `f47181f380521df55c94394bbf9e7f43c57cf8103a2a2c36e203ce2b03846d18` (45251 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/portfolio.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python
@@ -205,6 +205,10 @@ def _links_lines(rec: dict, back) -> list[str]:
 def _check_lines(rec: dict) -> list[str]:
     repo, commit = rec["repo"], rec["evidence_commit"]
     itself = repo == "rapp-1" and commit == CANON_RAPP1
+    if repo == "rapp-1" and not itself:  # the checked copy and the checker are both rapp-1: two folder names
+        return ["## Check it yourself", "", f"Clone `{OWNER}/rapp-1` at `{commit[:10]}` into `rapp-1` and again at "
+                f"`{CANON_RAPP1[:7]}` into `rapp-1-checker`, then run `python3 -B rapp-1-checker/rapp_check.py rapp-1 "
+                "--json` from the folder that holds both.", ""]
     clone = (f"Clone `{OWNER}/rapp-1` at `{CANON_RAPP1[:7]}`" if itself
              else f"Clone `{OWNER}/{repo}` at `{commit[:10]}` and `{OWNER}/rapp-1` at `{CANON_RAPP1[:7]}`")
     return ["## Check it yourself", "", f"{clone}, then run `python3 -B rapp-1/rapp_check.py {repo} --json` from the "
@@ -395,9 +399,9 @@ def portfolio_files(recs: dict, prs: dict, exceptions: dict | None, version: dic
 # ---- edition 2: versions, channels, lifecycles and notices -----------------------------------------------------------
 
 LIFE_WORDS = {"deprecated": "Deprecated", "superseded": "Superseded", "archived": "Archived"}
-CHANNEL_WORDS = {"rapp1-lts": "RAPP/1 names a long-term-support pin for it, so the network builds on that commit; its "
-                              "newer commits are the newest channel",
-                 "newest": "RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use"}
+CHANNEL_WORDS = {"rapp1-lts": "it has a long-term-support pin, so the network builds on that commit; its newer commits "
+                              "are the newest channel",
+                 "newest": "it has no long-term-support pin, so its newest commit is the one in use"}
 
 
 def successor_link(name: str, prefix: str = "") -> str:
@@ -545,10 +549,15 @@ def portfolio_md2(recs: dict, prs: dict, exceptions: dict | None = None, version
     intro_end = "recorded commit.\n\n"
     text = text.replace(intro_end, intro_end + notices + "\n\n", 1)
     legend = "- **unchecked**: the sweep has not run on it yet.\n"
-    text = text.replace(legend, legend + (
-        "- **rapp1-lts**: the repo has a long-term-support pin in RAPP/1 (the Version column shows `LTS` and its "
-        "label); **newest**: no pin, so its newest commit is the one in use. **deprecated**, **superseded** and "
-        "**archived** come first in the Status column; each repo's file says since when and why.\n"), 1)
+    text = text.replace(legend, (
+        "- **unchecked**: it could not be cloned or checked (for example, an empty repository); its file says why.\n"
+        "- **rapp1-lts**: the repo has a long-term-support pin (the network's built-in known pins, until the estate "
+        "publishes its LTS pins; the Version column shows `LTS` and its label); **newest**: no pin, so its newest "
+        "commit is the one in use. **deprecated**, **superseded** and **archived** come first in the Status column; "
+        "each repo's file says since when and why.\n"), 1)
+    carried = sum(header_state(r, prs.get(r["repo"]), exceptions) == "present" for r in recs.values())
+    text = text.replace("Each repo's README carries one marked line:", f"Each repo's README gets one marked line "
+                        f"({carried} of {len(recs)} carry it today; the header pull requests bring it to the rest):", 1)
     text = text.replace("stations are repos, filled by status;", "stations are repos, filled by status (hollow when "
                         "deprecated, superseded or archived);", 1)
     text = text.replace("It is drawn from these files by `rapp1_subway.py`, and the links",

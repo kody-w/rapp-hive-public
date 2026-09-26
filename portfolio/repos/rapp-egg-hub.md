@@ -31,7 +31,7 @@ links_to:
 
 **Not yet:** 6 finding(s) from rapp_check: §9 egg ×6.
 
-**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-egg-hub` at `4c49318fca`](https://github.com/kody-w/rapp-egg-hub/tree/4c49318fcafe526c56802c50131699006501e3e1) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **DRIFT**, 6 finding(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `31a4529db16f3bc6f8567b7d6873101dc7b365445742ebfdce9d026c9a1fdffa`.
@@ -52,7 +52,7 @@ On the map: the **Agents (RAR)** line ([subway map](https://kody-w.github.io/rap
 ## Links
 
 Links to 8 portfolio repo(s): [RAPP](RAPP.md) (markdown), [rapp-1](rapp-1.md) (markdown), [rapp-drift-lint](rapp-drift-lint.md) (workflow), [rapp-installer](rapp-installer.md) (markdown), [rapp-moment](rapp-moment.md) (markdown), [RAPP_Store](RAPP_Store.md) (markdown), [rappterbox](rappterbox.md) (markdown), [RAR](RAR.md) (markdown).
-Linked from 12: [cowork-cookbook-rapp](cowork-cookbook-rapp.md), [RAPP](RAPP.md), [RAPP-Bible](RAPP-Bible.md), [rapp-brainfreeze-studio](rapp-brainfreeze-studio.md), [rapp-carts](rapp-carts.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rapp-rock-tumbler](rapp-rock-tumbler.md), [rapp-spine](rapp-spine.md), [rapp-vision-neighborhood](rapp-vision-neighborhood.md), [RAPP_Store](RAPP_Store.md), [RAR](RAR.md).
+Linked from 11: [cowork-cookbook-rapp](cowork-cookbook-rapp.md), [RAPP](RAPP.md), [RAPP-Bible](RAPP-Bible.md), [rapp-brainfreeze-studio](rapp-brainfreeze-studio.md), [rapp-carts](rapp-carts.md), [rapp-monorepo](rapp-monorepo.md), [rapp-rock-tumbler](rapp-rock-tumbler.md), [rapp-spine](rapp-spine.md), [rapp-vision-neighborhood](rapp-vision-neighborhood.md), [RAPP_Store](RAPP_Store.md), [RAR](RAR.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

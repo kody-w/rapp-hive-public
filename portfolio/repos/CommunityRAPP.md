@@ -24,7 +24,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** `v1.0.0`, from its root VERSION file at the evidence commit. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** `v1.0.0`, from its root VERSION file at the evidence commit. **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/CommunityRAPP` at `4931285ffb`](https://github.com/kody-w/CommunityRAPP/tree/4931285ffb04bf7e9dcdeecdfadb80e352f5ea09) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `84cda5c83d7df8d16c362a24bdbb6d28f579bca36ef4a5096a6f9a6f348c9412`.
@@ -36,7 +36,7 @@ On the map: the **Organism & Platform** line ([subway map](https://kody-w.github
 ## Links
 
 Links to 1 portfolio repo(s): [rapp-installer](rapp-installer.md) (markdown).
-Linked from 25: [ez-rapp](ez-rapp.md), [RAPP](RAPP.md), [rapp-ai](rapp-ai.md), [rapp-alpha](rapp-alpha.md), [rapp-beta](rapp-beta.md), [RAPP-Bible](RAPP-Bible.md), [rapp-brainstem-beta](rapp-brainstem-beta.md), [rapp-brainstem-walkthrough](rapp-brainstem-walkthrough.md), [rapp-canary](rapp-canary.md), [rapp-claude-skills](rapp-claude-skills.md), [rapp-hive-public](rapp-hive-public.md), [rapp-installer](rapp-installer.md), [rapp-installer-canary](rapp-installer-canary.md), [rapp-installer-dev](rapp-installer-dev.md), [rapp-monorepo](rapp-monorepo.md), [rapp-nightly](rapp-nightly.md), [rapp-shape-aibast](rapp-shape-aibast.md), [rapp-spine](rapp-spine.md), [rapp-version-selector](rapp-version-selector.md), [RAPP_hippo](RAPP_hippo.md), [rapp_orion](rapp_orion.md), [RAPPsquared](RAPPsquared.md), [rappterverse](rappterverse.md), [RAR](RAR.md), [vbrainstem](vbrainstem.md).
+Linked from 24: [ez-rapp](ez-rapp.md), [RAPP](RAPP.md), [rapp-ai](rapp-ai.md), [rapp-alpha](rapp-alpha.md), [rapp-beta](rapp-beta.md), [RAPP-Bible](RAPP-Bible.md), [rapp-brainstem-beta](rapp-brainstem-beta.md), [rapp-brainstem-walkthrough](rapp-brainstem-walkthrough.md), [rapp-canary](rapp-canary.md), [rapp-claude-skills](rapp-claude-skills.md), [rapp-installer](rapp-installer.md), [rapp-installer-canary](rapp-installer-canary.md), [rapp-installer-dev](rapp-installer-dev.md), [rapp-monorepo](rapp-monorepo.md), [rapp-nightly](rapp-nightly.md), [rapp-shape-aibast](rapp-shape-aibast.md), [rapp-spine](rapp-spine.md), [rapp-version-selector](rapp-version-selector.md), [RAPP_hippo](RAPP_hippo.md), [rapp_orion](rapp_orion.md), [RAPPsquared](RAPPsquared.md), [rappterverse](rappterverse.md), [RAR](RAR.md), [vbrainstem](vbrainstem.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

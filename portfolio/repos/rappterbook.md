@@ -5,7 +5,7 @@ line: Rappterbook
 wave: 2
 status: not yet
 verdict: DRIFT
-evidence_commit: 55475a1af935063702cb35c72c5c61a4d852f2bb
+evidence_commit: 8d29c4f00dca757540ac6e50491d69f48393a70d
 checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 4160
@@ -32,9 +32,9 @@ links_to:
 
 **Not yet:** 12 finding(s) from rapp_check: §9 egg ×10, §12 schema label, verification unavailable; 1 of them unverified.
 
-**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
-- Evidence: [`kody-w/rappterbook` at `55475a1af9`](https://github.com/kody-w/rappterbook/tree/55475a1af935063702cb35c72c5c61a4d852f2bb) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/rappterbook` at `8d29c4f00d`](https://github.com/kody-w/rappterbook/tree/8d29c4f00dca757540ac6e50491d69f48393a70d) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **DRIFT**, 12 finding(s), 6 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `e2cb0fa4c99f38b4095595de3d07f0d530141dede828eb385a2849e73d28f6f9`.
 - "experimental" mentions: 4160 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
@@ -59,10 +59,10 @@ On the map: the **Rappterbook** line ([subway map](https://kody-w.github.io/rapp
 ## Links
 
 Links to 9 portfolio repo(s): [lisppy](lisppy.md) (markdown), [lisppy-shepherd](lisppy-shepherd.md) (markdown), [mars-barn](mars-barn.md) (markdown), [openrappter](openrappter.md) (markdown), [RAPP](RAPP.md) (markdown), [rapp-installer](rapp-installer.md) (markdown), [rappterbook-knowledge-graph](rappterbook-knowledge-graph.md) (markdown), [rappterbook-mars-barn](rappterbook-mars-barn.md) (markdown), [RAR](RAR.md) (markdown).
-Linked from 21: [lisppy](lisppy.md), [lisppy-shepherd](lisppy-shepherd.md), [mars-barn](mars-barn.md), [RAPP](RAPP.md), [RAPP-Bible](RAPP-Bible.md), [rapp-hive-public](rapp-hive-public.md), [rapp-leviathan-hub](rapp-leviathan-hub.md), [rapp-monorepo](rapp-monorepo.md), [rapp-spine](rapp-spine.md), [rappter-factory](rappter-factory.md), [rappterbook-agent](rappterbook-agent.md), [rappterbook-agent-dna](rappterbook-agent-dna.md), [rappterbook-governance](rappterbook-governance.md), [rappterbook-knowledge-graph](rappterbook-knowledge-graph.md), [rappterbook-market-maker](rappterbook-market-maker.md), [rappterbook-mars-barn](rappterbook-mars-barn.md), [rappterbook-phantom](rappterbook-phantom.md), [rappterbook-social-graph](rappterbook-social-graph.md), [rappterbook-v2-state](rappterbook-v2-state.md), [rappterbook-vm](rappterbook-vm.md), [RAR](RAR.md).
+Linked from 20: [lisppy](lisppy.md), [lisppy-shepherd](lisppy-shepherd.md), [mars-barn](mars-barn.md), [RAPP](RAPP.md), [RAPP-Bible](RAPP-Bible.md), [rapp-leviathan-hub](rapp-leviathan-hub.md), [rapp-monorepo](rapp-monorepo.md), [rapp-spine](rapp-spine.md), [rappter-factory](rappter-factory.md), [rappterbook-agent](rappterbook-agent.md), [rappterbook-agent-dna](rappterbook-agent-dna.md), [rappterbook-governance](rappterbook-governance.md), [rappterbook-knowledge-graph](rappterbook-knowledge-graph.md), [rappterbook-market-maker](rappterbook-market-maker.md), [rappterbook-mars-barn](rappterbook-mars-barn.md), [rappterbook-phantom](rappterbook-phantom.md), [rappterbook-social-graph](rappterbook-social-graph.md), [rappterbook-v2-state](rappterbook-v2-state.md), [rappterbook-vm](rappterbook-vm.md), [RAR](RAR.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 
-Clone `kody-w/rappterbook` at `55475a1af9` and `kody-w/rapp-1` at `591e014`, then run `python3 -B rapp-1/rapp_check.py rappterbook --json` from the folder that holds both.
+Clone `kody-w/rappterbook` at `8d29c4f00d` and `kody-w/rapp-1` at `591e014`, then run `python3 -B rapp-1/rapp_check.py rappterbook --json` from the folder that holds both.

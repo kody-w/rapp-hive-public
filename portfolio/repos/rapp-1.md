@@ -27,7 +27,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **COMPLIANT** (every RAPP artifact passes) at the evidence commit.
 
-**Version:** none recorded (no root VERSION file and no GitHub release). **LTS:** [`591e014`](https://github.com/kody-w/rapp-1/tree/591e014ad39e223b00ab343ae26e5d9a867ebeee) (commit `591e014ad3`, from the known pins RAPP/1 names in public). **Channel:** `rapp1-lts`: RAPP/1 names a long-term-support pin for it, so the network builds on that commit; its newer commits are the newest channel.
+**Version:** none recorded (no root VERSION file and no GitHub release). **LTS:** [`591e014`](https://github.com/kody-w/rapp-1/tree/591e014ad39e223b00ab343ae26e5d9a867ebeee) (commit `591e014ad3`, from the network's built-in known pins, until the estate publishes its LTS pins). **Channel:** `rapp1-lts`: it has a long-term-support pin, so the network builds on that commit; its newer commits are the newest channel.
 
 - Evidence: [`kody-w/rapp-1` at `e657140bf5`](https://github.com/kody-w/rapp-1/tree/e657140bf583e7caacea096af2f653cc8621f1a2) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **COMPLIANT**, 18 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `051fb8de0af0ab55f21f7f2e6f842c5c39534618e2b61a4cf590e8d9369ebfe3`.
@@ -45,4 +45,4 @@ Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<
 
 ## Check it yourself
 
-Clone `kody-w/rapp-1` at `e657140bf5` and `kody-w/rapp-1` at `591e014`, then run `python3 -B rapp-1/rapp_check.py rapp-1 --json` from the folder that holds both.
+Clone `kody-w/rapp-1` at `e657140bf5` into `rapp-1` and again at `591e014` into `rapp-1-checker`, then run `python3 -B rapp-1-checker/rapp_check.py rapp-1 --json` from the folder that holds both.

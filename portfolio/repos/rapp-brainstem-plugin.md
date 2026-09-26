@@ -22,7 +22,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-brainstem-plugin` at `1fb89ff2d6`](https://github.com/kody-w/rapp-brainstem-plugin/tree/1fb89ff2d6e47cc29ee09580278451e915da2577) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `b905fb62a752a70b7335009fd3a89fd46cef147e47326f4374b8768a14c1d63d`.
@@ -34,7 +34,6 @@ On the map: the **Brainstem Connect** line ([subway map](https://kody-w.github.i
 ## Links
 
 Links to 1 portfolio repo(s): [rapp-work](rapp-work.md) (pin).
-Linked from 1: [rapp-hive-public](rapp-hive-public.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

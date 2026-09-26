@@ -24,7 +24,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/twin-egg-hatcher` at `6e96a7ed24`](https://github.com/kody-w/twin-egg-hatcher/tree/6e96a7ed24b3f70a8568543510792236d5a53a8d) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `3f38f4b663c089560b4d8e020b7a8e090e07a108107370f962fa85fce46fdb18`.
@@ -36,7 +36,7 @@ On the map: the **Twins** line ([subway map](https://kody-w.github.io/rapp-hive-
 ## Links
 
 Links to 3 portfolio repo(s): [heimdall](heimdall.md) (markdown), [RAPP](RAPP.md) (markdown), [rapp-installer](rapp-installer.md) (markdown).
-Linked from 7: [heimdall](heimdall.md), [RAPP](RAPP.md), [RAPP-Bible](RAPP-Bible.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rapp-spine](rapp-spine.md), [RAR](RAR.md).
+Linked from 6: [heimdall](heimdall.md), [RAPP](RAPP.md), [RAPP-Bible](RAPP-Bible.md), [rapp-monorepo](rapp-monorepo.md), [rapp-spine](rapp-spine.md), [RAR](RAR.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

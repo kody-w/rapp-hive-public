@@ -2,7 +2,7 @@
 
 Versions, LTS pins, channels, lifecycles and notices: what portfolio edition 2 (version 2 onwards) says about each repo besides its earned RAPP/1 status. Pure functions of their inputs, except the crawl's two readers (a root VERSION file in a checkout, the latest GitHub release through gh) and the LTS pins file.
 
-Source: `rapp1_network/lifecycle.py` (rapp1-network 0.1.0). SHA-256 of the source below: `6c97350e29474c2c0ee75a38a7037fe6d444f624e3c007da06192cc7fa4c4260` (22357 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/lifecycle.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/lifecycle.py` (rapp1-network 0.1.1). SHA-256 of the source below: `2660a8db6ef7ecd2948b4c1a458bc6b40ecbf60d9fe995431cbf0a1e655c67e7` (22409 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/lifecycle.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python
@@ -46,7 +46,8 @@ COLORS = {"deprecated": "#cf222e", "superseded": "#8250df", "archived": "#57606a
 VERSION_COLOR = "#0969da"
 VERSION_SOURCES = {"VERSION": "its root VERSION file at the evidence commit",
                    "release": "the tag of its latest GitHub release"}
-PIN_SOURCES = {"lts-pins": "the estate's LTS pins", "known": "the known pins RAPP/1 names in public"}
+PIN_SOURCES = {"lts-pins": "the estate's LTS pins",
+               "known": "the network's built-in known pins, until the estate publishes its LTS pins"}
 NOTICES = f"{ROOM}/notices"  # in the Hive; notices/<repo>.md in the public copy
 NOTICE_KEYS = ("repo", "lifecycle", "since", "superseded_by", "notice")
 MAX_NOTICE = 200

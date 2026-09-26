@@ -26,7 +26,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-static-apis` at `6d0d094696`](https://github.com/kody-w/rapp-static-apis/tree/6d0d094696187816f80cb7449528ac5cec373fdb) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `e3341ad052e00b3a9430279ea34b591ba0806d66be28a3982e88530eba6fbba5`.
@@ -38,7 +38,7 @@ On the map: the **Tools & Apps** line ([subway map](https://kody-w.github.io/rap
 ## Links
 
 Links to 3 portfolio repo(s): [rapp-map](rapp-map.md) (markdown), [rapp-mcp](rapp-mcp.md) (markdown), [RAR](RAR.md) (markdown).
-Linked from 17: [rapp-ai](rapp-ai.md), [rapp-basket](rapp-basket.md), [RAPP-Bible](RAPP-Bible.md), [rapp-commons](rapp-commons.md), [rapp-dataverse](rapp-dataverse.md), [rapp-hive-public](rapp-hive-public.md), [rapp-lantern](rapp-lantern.md), [rapp-mcp](rapp-mcp.md), [rapp-monorepo](rapp-monorepo.md), [rapp-release-train](rapp-release-train.md), [rapp-skills](rapp-skills.md), [rapp-snap](rapp-snap.md), [rapp-spine](rapp-spine.md), [rapp-static-brainstem](rapp-static-brainstem.md), [rapp-static-mcp](rapp-static-mcp.md), [rappter-prompts](rappter-prompts.md), [rappter-vui](rappter-vui.md).
+Linked from 16: [rapp-ai](rapp-ai.md), [rapp-basket](rapp-basket.md), [RAPP-Bible](RAPP-Bible.md), [rapp-commons](rapp-commons.md), [rapp-dataverse](rapp-dataverse.md), [rapp-lantern](rapp-lantern.md), [rapp-mcp](rapp-mcp.md), [rapp-monorepo](rapp-monorepo.md), [rapp-release-train](rapp-release-train.md), [rapp-skills](rapp-skills.md), [rapp-snap](rapp-snap.md), [rapp-spine](rapp-spine.md), [rapp-static-brainstem](rapp-static-brainstem.md), [rapp-static-mcp](rapp-static-mcp.md), [rappter-prompts](rappter-prompts.md), [rappter-vui](rappter-vui.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

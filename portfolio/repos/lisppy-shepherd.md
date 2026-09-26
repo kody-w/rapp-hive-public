@@ -23,7 +23,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/lisppy-shepherd` at `b0d5a8d283`](https://github.com/kody-w/lisppy-shepherd/tree/b0d5a8d283c8198c23bf3317a9fffce3cd447e9b) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `abc711e7c6aa39a40d4d708d9ac0c2c8a83041bfe6fc6321d791159b6b194eac`.
@@ -35,7 +35,7 @@ On the map: the **Tools & Apps** line ([subway map](https://kody-w.github.io/rap
 ## Links
 
 Links to 2 portfolio repo(s): [lisppy](lisppy.md) (markdown), [rappterbook](rappterbook.md) (markdown).
-Linked from 3: [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rappterbook](rappterbook.md).
+Linked from 2: [rapp-monorepo](rapp-monorepo.md), [rappterbook](rappterbook.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

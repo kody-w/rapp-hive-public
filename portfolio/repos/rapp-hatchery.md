@@ -24,7 +24,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-hatchery` at `9af32d0507`](https://github.com/kody-w/rapp-hatchery/tree/9af32d050773ea696d9e611183526b9ebb336956) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `f4d41c5b71be473ec729ef0e00299fcee514fd3f4895d4c9e5e5fd104339317f`.
@@ -36,7 +36,6 @@ On the map: the **Agents (RAR)** line ([subway map](https://kody-w.github.io/rap
 ## Links
 
 Links to 3 portfolio repo(s): [rapp-brainfreeze](rapp-brainfreeze.md) (markdown), [rapp-brainfreeze-studio](rapp-brainfreeze-studio.md) (markdown), [rapp-installer](rapp-installer.md) (markdown).
-Linked from 1: [rapp-hive-public](rapp-hive-public.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

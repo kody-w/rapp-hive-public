@@ -22,7 +22,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/leviathan` at `42d02ad1b0`](https://github.com/kody-w/leviathan/tree/42d02ad1b041b328540b30d54c7b2a68b9d961aa) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `366570e0fd267e381e81e7e78c9bb56bdf42ade0a23908477907b362ef59c428`.
@@ -34,7 +34,7 @@ On the map: the **Worlds & Play** line ([subway map](https://kody-w.github.io/ra
 ## Links
 
 Links to 1 portfolio repo(s): [rapp-leviathan-hub](rapp-leviathan-hub.md) (markdown).
-Linked from 4: [rapp-hive-public](rapp-hive-public.md), [rapp-leviathan-hub](rapp-leviathan-hub.md), [rapp-monorepo](rapp-monorepo.md), [rapp-spine](rapp-spine.md).
+Linked from 3: [rapp-leviathan-hub](rapp-leviathan-hub.md), [rapp-monorepo](rapp-monorepo.md), [rapp-spine](rapp-spine.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

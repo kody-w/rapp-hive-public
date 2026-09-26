@@ -25,7 +25,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** `v0.1.0`, from its root VERSION file at the evidence commit. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** `v0.1.0`, from its root VERSION file at the evidence commit. **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-keyring` at `89386724e9`](https://github.com/kody-w/rapp-keyring/tree/89386724e9bf8b365ce3bd2847fbcc06365953d5) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `cbeec080845a605eac7628a023f99b8ef171d3c73e0d8baafd38732d55569e00`.
@@ -37,7 +37,7 @@ On the map: the **Tools & Apps** line ([subway map](https://kody-w.github.io/rap
 ## Links
 
 Links to 2 portfolio repo(s): [rapp-light](rapp-light.md) (markdown), [rapp-train](rapp-train.md) (markdown).
-Linked from 4: [rapp-docs](rapp-docs.md), [rapp-hive-public](rapp-hive-public.md), [rapp-light](rapp-light.md), [rapp-monorepo](rapp-monorepo.md).
+Linked from 3: [rapp-docs](rapp-docs.md), [rapp-light](rapp-light.md), [rapp-monorepo](rapp-monorepo.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

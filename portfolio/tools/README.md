@@ -3,7 +3,7 @@
 The standard-library Python tools that made this portfolio, as data: a Hive holds only markdown, so each source file is one `.md` file with the source in a fenced block and its SHA-256 above it. Code in a Hive is never run from the Hive; copy it out first.
 
 - **Version 1** (pulse 0) was made by the two single-file tools `rapp1_portfolio.py` and `rapp1_subway.py`, kept here unchanged ([rapp1_portfolio.py.md](rapp1_portfolio.py.md), [rapp1_subway.py.md](rapp1_subway.py.md)); version 1's pulse names their SHA-256 in `payload.generator`.
-- **Version 2 onwards** are made by the package `rapp1_network` (rapp1-network 0.1.0), every source file of it in [rapp1_network/](rapp1_network/). [RELEASE.md](RELEASE.md) lists each file with its SHA-256 and size, the release and its commit, and the `generator` each of its pulses records.
+- **Version 2 onwards** are made by the package `rapp1_network` (rapp1-network 0.1.1), every source file of it in [rapp1_network/](rapp1_network/). [RELEASE.md](RELEASE.md) lists each file with its SHA-256 and size, the release and its commit, and the `generator` each of its pulses records.
 
 Rebuild the package from the markdown, check every file against its hash and RELEASE.md, and verify the published chain with it (run this in a clone of `kody-w/rapp-hive-public`, inside `portfolio/tools/`; it needs git and Python 3.12, writes the package to `release/`, and clones `kody-w/rapp-1` at the canon pin into `release/checker/rapp-1` unless `RAPP1_CHECKER` names a checkout at the pin):
 

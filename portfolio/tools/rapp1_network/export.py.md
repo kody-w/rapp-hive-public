@@ -2,7 +2,7 @@
 
 The pinned release copy for the RAPP Hive's `portfolio/tools/`: the package's own sources, as data.
 
-Source: `rapp1_network/export.py` (rapp1-network 0.1.0). SHA-256 of the source below: `8ea18eca38dbf1c5c1fba486a228f4cc144048b33253a03397a9db5d55a99f18` (14652 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/export.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/export.py` (rapp1-network 0.1.1). SHA-256 of the source below: `8ea18eca38dbf1c5c1fba486a228f4cc144048b33253a03397a9db5d55a99f18` (14652 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/export.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python

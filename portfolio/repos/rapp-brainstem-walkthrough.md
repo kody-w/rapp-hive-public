@@ -29,7 +29,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** `v0.6.16`, from its root VERSION file at the evidence commit. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** `v0.6.16`, from its root VERSION file at the evidence commit. **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-brainstem-walkthrough` at `8393e67a9d`](https://github.com/kody-w/rapp-brainstem-walkthrough/tree/8393e67a9d7226147eedfd20d96dc6d7e21cab20) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `0530ac954fff78bdc0f050648a9a300998effb9933c2a5646817924542be0240`.
@@ -41,7 +41,7 @@ On the map: the **Learn & Docs** line, and also Brainstem ([subway map](https://
 ## Links
 
 Links to 4 portfolio repo(s): [CommunityRAPP](CommunityRAPP.md) (markdown), [rapp-installer](rapp-installer.md) (markdown), [rapp-video](rapp-video.md) (markdown), [vbrainstem](vbrainstem.md) (markdown).
-Linked from 3: [brainstem-bootcamp](brainstem-bootcamp.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md).
+Linked from 2: [brainstem-bootcamp](brainstem-bootcamp.md), [rapp-monorepo](rapp-monorepo.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

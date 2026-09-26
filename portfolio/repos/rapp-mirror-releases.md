@@ -22,7 +22,7 @@ lifecycle: active
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** `v0.2.0`, from the tag of its latest GitHub release. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** `v0.2.0`, from the tag of its latest GitHub release. **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-mirror-releases` at `f10ff84702`](https://github.com/kody-w/rapp-mirror-releases/tree/f10ff84702eeb534856a602f08c0cf2555f45296) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `bdec2b38162b86d47cd74bc4888871654a2a9f4a5b42193b3a3656894abf9791`.
@@ -30,12 +30,6 @@ lifecycle: active
 - Network header: not yet added.
 
 On the map: the **Release Channels** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
-
-## Links
-
-Linked from 1: [rapp-hive-public](rapp-hive-public.md).
-
-Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 

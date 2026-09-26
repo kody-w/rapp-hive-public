@@ -27,7 +27,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-brainstem-sdk` at `418fd69d76`](https://github.com/kody-w/rapp-brainstem-sdk/tree/418fd69d76e8fc6a494782b669560f4212292fb5) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `4e2dd54742eed36dc773f8a0012f242355e2dfdd48d0f9bb886cee7d87457a42`.
@@ -39,7 +39,7 @@ On the map: the **Brainstem** line ([subway map](https://kody-w.github.io/rapp-h
 ## Links
 
 Links to 4 portfolio repo(s): [rapp-map](rapp-map.md) (markdown), [rapp-mcp](rapp-mcp.md) (markdown), [RAR](RAR.md) (markdown), [vbrainstem](vbrainstem.md) (markdown).
-Linked from 7: [cowork-cookbook-rapp](cowork-cookbook-rapp.md), [RAPP](RAPP.md), [RAPP-Bible](RAPP-Bible.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rapp-spine](rapp-spine.md), [RAPP_Store](RAPP_Store.md).
+Linked from 6: [cowork-cookbook-rapp](cowork-cookbook-rapp.md), [RAPP](RAPP.md), [RAPP-Bible](RAPP-Bible.md), [rapp-monorepo](rapp-monorepo.md), [rapp-spine](rapp-spine.md), [RAPP_Store](RAPP_Store.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

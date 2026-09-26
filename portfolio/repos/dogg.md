@@ -5,7 +5,7 @@ line: DOGG & Commons
 wave: 2
 status: not yet
 verdict: DRIFT
-evidence_commit: a3c5967ec81fab89706551f6ec3fffa20be0bde4
+evidence_commit: 29ad56434968594a6f6ea2ba511e96eb55217f65
 checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
@@ -26,9 +26,9 @@ links_to:
 
 **Not yet:** 3 finding(s) from rapp_check: §7.4 chain gap ×3.
 
-**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
-- Evidence: [`kody-w/dogg` at `a3c5967ec8`](https://github.com/kody-w/dogg/tree/a3c5967ec81fab89706551f6ec3fffa20be0bde4) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/dogg` at `29ad564349`](https://github.com/kody-w/dogg/tree/29ad56434968594a6f6ea2ba511e96eb55217f65) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **DRIFT**, 3 finding(s), 37 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `e4bfa3609054f89280c50e5b08083e1a4683d742a37bc46eb0b5e4238bc79b0d`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: not yet added.
@@ -44,10 +44,10 @@ On the map: the **DOGG & Commons** line ([subway map](https://kody-w.github.io/r
 ## Links
 
 Links to 5 portfolio repo(s): [dogg-markets](dogg-markets.md) (markdown), [dogg-planet](dogg-planet.md) (markdown), [rapp-1](rapp-1.md) (markdown), [rapp-organism](rapp-organism.md) (markdown), [RAR](RAR.md) (markdown).
-Linked from 9: [dogg-canon](dogg-canon.md), [dogg-markets](dogg-markets.md), [dogg-planet](dogg-planet.md), [rapp-brain](rapp-brain.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rapp-organism](rapp-organism.md), [rapp-specs](rapp-specs.md), [vbrainstem](vbrainstem.md).
+Linked from 8: [dogg-canon](dogg-canon.md), [dogg-markets](dogg-markets.md), [dogg-planet](dogg-planet.md), [rapp-brain](rapp-brain.md), [rapp-monorepo](rapp-monorepo.md), [rapp-organism](rapp-organism.md), [rapp-specs](rapp-specs.md), [vbrainstem](vbrainstem.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
 ## Check it yourself
 
-Clone `kody-w/dogg` at `a3c5967ec8` and `kody-w/rapp-1` at `591e014`, then run `python3 -B rapp-1/rapp_check.py dogg --json` from the folder that holds both.
+Clone `kody-w/dogg` at `29ad564349` and `kody-w/rapp-1` at `591e014`, then run `python3 -B rapp-1/rapp_check.py dogg --json` from the folder that holds both.

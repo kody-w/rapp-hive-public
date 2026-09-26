@@ -10,7 +10,7 @@ checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: missing
-version: "v1.1.0"
+version: "v1.2.0"
 version_source: release
 channel: newest
 lifecycle: active
@@ -20,11 +20,11 @@ links_to:
 
 # rapp-static-brainstem: certified
 
-![RAPP/1: certified, version v1.1.0](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-static-brainstem.svg)
+![RAPP/1: certified, version v1.2.0](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-static-brainstem.svg)
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** `v1.1.0`, from the tag of its latest GitHub release. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** `v1.2.0`, from the tag of its latest GitHub release. **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-static-brainstem` at `0173eb8ee0`](https://github.com/kody-w/rapp-static-brainstem/tree/0173eb8ee0c8846dad9a93a938af077ca5acae43) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `56086db6b6b7f8ab69f1562f4cc4a620e50951535db4e059d8493f51b46816fa`.
@@ -36,7 +36,6 @@ On the map: the **Brainstem** line ([subway map](https://kody-w.github.io/rapp-h
 ## Links
 
 Links to 1 portfolio repo(s): [rapp-static-apis](rapp-static-apis.md) (markdown).
-Linked from 1: [rapp-hive-public](rapp-hive-public.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

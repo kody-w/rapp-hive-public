@@ -2,7 +2,7 @@
 
 The timeline: every pulse of the network's body stream, newest first, with its hashes, totals, files and what changed since the pulse before it. One static page (no script, a strict CSP whose one style is pinned by hash), served by GitHub Pages as portfolio/timeline.html from the Hive's timeline.html.md.
 
-Source: `rapp1_network/timeline.py` (rapp1-network 0.1.0). SHA-256 of the source below: `40f48c806fa3fd9300ce97851a7a3b7a8327686dec8f78e887c4763570e9e641` (14320 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/timeline.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/timeline.py` (rapp1-network 0.1.1). SHA-256 of the source below: `72b87709165cbf8bd78867db551a7a1814cd4700cf0c4722723038732e48f904` (14830 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/timeline.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python
@@ -102,8 +102,14 @@ def timeline_html(sid: str, record: Mapping, frames: Sequence, public: bool, fac
     public_copy = f'<a href="https://github.com/{OWNER}/rapp-hive-public">kody-w/rapp-hive-public</a>'
     identity = (f'<a href="{PAGES}/rappid.json">rappid.json</a> · <a href="{PAGES}/{INDEX_NAME}">frame index</a>'
                 if public else "its rappid.json and frame index wait in the private RAPP Hive with the pulses")
-    attribution = (f"published it in a signed commit of {public_copy}" if public else
-                   f"{public_copy} publishes this page and the maps in signed commits, not the pulses")
+    if len(frames) >= 3:  # from version 3: say whose signature it is (GitHub cannot check a Hive's key)
+        attribution = (f"published it in a commit of {public_copy} signed by the RAPP Hive's own key (only the Hive "
+                       "can check that signature; GitHub shows these commits as unverified)" if public else
+                       f"{public_copy} publishes this page and the maps in commits signed by the RAPP Hive's own key, "
+                       "not the pulses")
+    else:
+        attribution = (f"published it in a signed commit of {public_copy}" if public else
+                       f"{public_copy} publishes this page and the maps in signed commits, not the pulses")
     where = (f"in public. Every pulse is served as JSON beside its maps, and rapp_check.py still certifies this public copy: "
              f"{facts['certify']['files']['verdict']} on its files as they are (the Hive holds only markdown) and "
              f"{facts['certify']['served']['verdict']} on the files as GitHub Pages serves them, where each unsigned pulse "

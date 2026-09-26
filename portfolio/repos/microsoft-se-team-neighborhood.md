@@ -31,7 +31,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **COMPLIANT** (every RAPP artifact passes) at the evidence commit.
 
-**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/microsoft-se-team-neighborhood` at `6f00b05c1e`](https://github.com/kody-w/microsoft-se-team-neighborhood/tree/6f00b05c1ed7202f471ec01a70800bcf7f80bdcb) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **COMPLIANT**, 1 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `5e96d82c02c991a82e935c0d4b95efd8afb9741619c9ca71c29b62dfa2186945`.
@@ -43,7 +43,7 @@ On the map: the **Neighborhoods** line ([subway map](https://kody-w.github.io/ra
 ## Links
 
 Links to 8 portfolio repo(s): [heimdall](heimdall.md) (markdown), [RAPP](RAPP.md) (markdown), [rapp-1](rapp-1.md) (markdown), [rapp-neighborhood-protocol](rapp-neighborhood-protocol.md) (markdown), [rapp-vneighborhood](rapp-vneighborhood.md) (markdown), [RAPP_Sense_Store](RAPP_Sense_Store.md) (markdown), [RAPP_Store](RAPP_Store.md) (markdown), [RAPPcards](RAPPcards.md) (markdown).
-Linked from 3: [RAPP](RAPP.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md).
+Linked from 2: [RAPP](RAPP.md), [rapp-monorepo](rapp-monorepo.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

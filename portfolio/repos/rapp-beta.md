@@ -25,7 +25,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-beta` at `562b5e18f0`](https://github.com/kody-w/rapp-beta/tree/562b5e18f0e6f9dd63d95d8691c3ed1e9afabd52) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `ef5bb34075a7a0b8d8313f225571ed2b8e06df912adffe5672eae0bbadc6b8ca`.
@@ -37,7 +37,7 @@ On the map: the **Release Channels** line ([subway map](https://kody-w.github.io
 ## Links
 
 Links to 4 portfolio repo(s): [CommunityRAPP](CommunityRAPP.md) (markdown), [rapp-alpha](rapp-alpha.md) (pin), [rapp-installer](rapp-installer.md) (markdown), [RAR](RAR.md) (markdown).
-Linked from 3: [rapp-canary](rapp-canary.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md).
+Linked from 2: [rapp-canary](rapp-canary.md), [rapp-monorepo](rapp-monorepo.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

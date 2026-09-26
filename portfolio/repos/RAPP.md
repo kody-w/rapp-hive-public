@@ -5,10 +5,10 @@ line: RAPP/1 Core
 wave: 1
 status: not yet
 verdict: DRIFT
-evidence_commit: a8795306a9d7edac4dc7ff680f1b03e1073f9652
+evidence_commit: e045fc3acd5febf9423ad4a41510e467e0160d52
 checked: 2026-09-26
 checker: kody-w/rapp-1 rapp_check.py at 591e014
-experimental_mentions: 157
+experimental_mentions: 160
 header: present
 header_pr: https://github.com/kody-w/RAPP/pull/120
 version: "v1.0.0"
@@ -72,11 +72,11 @@ links_to:
 
 **Not yet:** 3 finding(s) from rapp_check: §9 egg ×3.
 
-**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
-- Evidence: [`kody-w/RAPP` at `a8795306a9`](https://github.com/kody-w/RAPP/tree/a8795306a9d7edac4dc7ff680f1b03e1073f9652) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/RAPP` at `e045fc3acd`](https://github.com/kody-w/RAPP/tree/e045fc3acd5febf9423ad4a41510e467e0160d52) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **DRIFT**, 3 finding(s), 6 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `717dfb4c96ffb882c8e44bb4c353a1e952348b678309375257c939ccb6b60ab8`.
-- "experimental" mentions: 157 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
+- "experimental" mentions: 160 (whole word, any case, in tracked text files at the evidence commit; tracked, not a gate).
 - Network header: present in `README.md`.
 
 ## Findings (3)
@@ -96,4 +96,4 @@ Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<
 
 ## Check it yourself
 
-Clone `kody-w/RAPP` at `a8795306a9` and `kody-w/rapp-1` at `591e014`, then run `python3 -B rapp-1/rapp_check.py RAPP --json` from the folder that holds both.
+Clone `kody-w/RAPP` at `e045fc3acd` and `kody-w/rapp-1` at `591e014`, then run `python3 -B rapp-1/rapp_check.py RAPP --json` from the folder that holds both.

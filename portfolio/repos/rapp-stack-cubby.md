@@ -28,7 +28,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **COMPLIANT** (every RAPP artifact passes) at the evidence commit.
 
-**Version:** `v0.1.0rc11`, from its root VERSION file at the evidence commit. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** `v0.1.0rc11`, from its root VERSION file at the evidence commit. **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-stack-cubby` at `1fee389609`](https://github.com/kody-w/rapp-stack-cubby/tree/1fee3896099e634bc90f50d2c4fac3e971379ec2) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **COMPLIANT**, 1 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `f47d9f7da8ca2edf6fce428dfc53c2b450a70d4b9f7e001be2aa5cdf3e23ffd7`.
@@ -40,7 +40,7 @@ On the map: the **Agents (RAR)** line ([subway map](https://kody-w.github.io/rap
 ## Links
 
 Links to 5 portfolio repo(s): [openrappter](openrappter.md) (markdown, pin), [RAPP](RAPP.md) (markdown, pin), [rapp-installer](rapp-installer.md) (markdown, pin), [rapp-messaging](rapp-messaging.md) (markdown, pin), [rapp-neighborhood-protocol](rapp-neighborhood-protocol.md) (markdown, pin).
-Linked from 2: [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md).
+Linked from 1: [rapp-monorepo](rapp-monorepo.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

@@ -10,4 +10,4 @@ lifecycle: active
 
 # rappterbook-v2
 
-The RAPP Hive reads this station at `HEAD`, the newest channel: it has no LTS commit yet.
+The RAPP Hive reads it at `HEAD` only.

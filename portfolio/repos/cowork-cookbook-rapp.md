@@ -28,7 +28,7 @@ links_to:
 
 **Not yet:** 1 finding(s) from rapp_check: §9 egg.
 
-**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** `v1.0.0`, from the tag of its latest GitHub release. **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/cowork-cookbook-rapp` at `2e2a3929c6`](https://github.com/kody-w/cowork-cookbook-rapp/tree/2e2a3929c699cb6552ea8213c7a44f5a83acd389) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **DRIFT**, 1 finding(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `257db8edaa3d37ee7b713f789195858216c2d7801b06d37ebcde749a306bfa24`.
@@ -44,7 +44,7 @@ On the map: the **Agents (RAR)** line ([subway map](https://kody-w.github.io/rap
 ## Links
 
 Links to 5 portfolio repo(s): [rapp-brainstem-sdk](rapp-brainstem-sdk.md) (markdown), [rapp-egg-hub](rapp-egg-hub.md) (markdown), [rapp-neighborhood-protocol](rapp-neighborhood-protocol.md) (markdown), [rapp-zoo](rapp-zoo.md) (markdown), [RAPP_Store](RAPP_Store.md) (markdown).
-Linked from 5: [racon](racon.md), [RAPP](RAPP.md), [rapp-carts](rapp-carts.md), [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md).
+Linked from 4: [racon](racon.md), [RAPP](RAPP.md), [rapp-carts](rapp-carts.md), [rapp-monorepo](rapp-monorepo.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 

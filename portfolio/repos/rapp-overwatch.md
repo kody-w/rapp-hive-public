@@ -24,7 +24,7 @@ links_to:
 
 **Certified:** rapp-1's own checker gave **CLEAN** (no RAPP artifacts, found by a complete bounded scan) at the evidence commit.
 
-**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: RAPP/1 names no long-term-support pin for it, so its newest commit is the one in use.
+**Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
 - Evidence: [`kody-w/rapp-overwatch` at `8205512ba9`](https://github.com/kody-w/rapp-overwatch/tree/8205512ba970be3bb08157d85fa0d6491694afd2) on `main`, checked 2026-09-26.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `c7e7a9e560986dfc0f2342a2a76e1b52ce32c5bc14015c640c809eb945336999`.
@@ -36,7 +36,7 @@ On the map: the **Twins** line ([subway map](https://kody-w.github.io/rapp-hive-
 ## Links
 
 Links to 3 portfolio repo(s): [rapp-1](rapp-1.md) (markdown), [rapp-map](rapp-map.md) (markdown), [rapp-sentinel](rapp-sentinel.md) (markdown).
-Linked from 4: [rapp-hive-public](rapp-hive-public.md), [rapp-monorepo](rapp-monorepo.md), [rapp-ratchet](rapp-ratchet.md), [rapp-sentinel](rapp-sentinel.md).
+Linked from 3: [rapp-monorepo](rapp-monorepo.md), [rapp-ratchet](rapp-ratchet.md), [rapp-sentinel](rapp-sentinel.md).
 
 Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<repo>`, pin files, workflow `uses:` and `repository:` lines, and submodules, at the evidence commit; only public repos in this portfolio count.
 
