@@ -1,5 +1,5 @@
 ---
-permalink: /portfolio/subway.pdf
+permalink: /portfolio/versions/2026-09-27-9/subway.pdf
 layout: null
 printed_from: c8d734e28572d2f7507a4fcd38bcd84ceef95a09afd69bbaf01d37c4ad65334c
 ---
