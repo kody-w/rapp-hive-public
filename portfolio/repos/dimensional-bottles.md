@@ -6,7 +6,7 @@ wave: 2
 status: certified
 verdict: COMPLIANT
 evidence_commit: 66d4681bf288b4d84e812833f19ac3c61a7a1fc6
-checked: 2026-09-26
+checked: 2026-09-27
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: present
@@ -27,7 +27,7 @@ links_to:
 
 **Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
-- Evidence: [`kody-w/dimensional-bottles` at `66d4681bf2`](https://github.com/kody-w/dimensional-bottles/tree/66d4681bf288b4d84e812833f19ac3c61a7a1fc6) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/dimensional-bottles` at `66d4681bf2`](https://github.com/kody-w/dimensional-bottles/tree/66d4681bf288b4d84e812833f19ac3c61a7a1fc6) on `main`, checked 2026-09-27.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **COMPLIANT**, 1 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `ce345c68153bed37ecaf2276de673f749759c1cb4a1cf2ce7e7c2c0f541f16ad`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: present in `README.md`.

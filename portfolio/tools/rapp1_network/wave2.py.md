@@ -2,7 +2,7 @@
 
 Wave 2 of the network header: a dry run now, the pull requests only after the owner approves (from legacy/rapp1_wave2.py).
 
-Source: `rapp1_network/wave2.py` (rapp1-network 0.1.7). SHA-256 of the source below: `7f6d71e2d08ee41c0a4adba40ef1d42094e4bd3c78e63bfd179a976bc61d637f` (39604 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/wave2.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/wave2.py` (rapp1-network 0.1.9). SHA-256 of the source below: `7f6d71e2d08ee41c0a4adba40ef1d42094e4bd3c78e63bfd179a976bc61d637f` (39604 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/wave2.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python

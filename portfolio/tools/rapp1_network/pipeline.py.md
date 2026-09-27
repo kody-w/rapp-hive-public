@@ -2,7 +2,7 @@
 
 The pipeline: cut the next version into the RAPP Hive, save it, publish it, check what Pages serves, and the one command that reruns it all (`crawl`: discover, sweep, cut, publish, the Pages check, status).
 
-Source: `rapp1_network/pipeline.py` (rapp1-network 0.1.7). SHA-256 of the source below: `de9d053ddba19df940bb36201d039c8b5ad7d04792399ac95d0d5a2c854b589c` (47229 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/pipeline.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/pipeline.py` (rapp1-network 0.1.9). SHA-256 of the source below: `11316452ef86e7a3ca58947ca7e16b5f7a4d800350eb9067be09a714be305845` (48619 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/pipeline.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python
@@ -52,6 +52,7 @@ IMMUTABLE = (f"{PORTFOLIO}/versions/", *(f"{PORTFOLIO}/tools/{name}.md" for name
 LEAVES = (f"{PORTFOLIO}/repos/", f"{PORTFOLIO}/badges/", f"{PORTFOLIO}/lines/")  # go when their repo or line goes
 PAGES_STATE = '.status + " " + .commit'
 POINTER_TOOL = "member_cards.py"
+CARD_TOOLS_COMMIT = "e991c135b7a94e62c215422eaf07fa8a98b7db22"
 
 
 # ---- one writer ------------------------------------------------------------------------------------------------
@@ -237,7 +238,13 @@ def _pointer_tools(settings: Settings) -> Path | None:
     """The folder that holds member_cards.py, from settings or the worktree's refs copy."""
     folder = settings.card_tools or settings.work / "refs" / "rapp1-distributed-hive"
     folder = Path(folder).expanduser()
-    return folder if (folder / POINTER_TOOL).is_file() else None
+    if not (folder / POINTER_TOOL).is_file():
+        return None
+    if (folder / ".git").exists():
+        head = util.run("git", "-C", str(folder), "rev-parse", "HEAD").stdout.strip()
+        if head != CARD_TOOLS_COMMIT:
+            raise SystemExit(f"{folder}: card tools must be pinned to {CARD_TOOLS_COMMIT}, not {head or 'unknown'}")
+    return folder
 
 
 def _pins_file(settings: Settings, pins: Mapping[str, Mapping], source: str) -> Path:
@@ -250,27 +257,45 @@ def _pins_file(settings: Settings, pins: Mapping[str, Mapping], source: str) -> 
     return path
 
 
-def _ensure_lts_clones(settings: Settings, pins: Mapping[str, Mapping]) -> Path:
-    """A local clone per pinned repo, holding the pinned commit so member_cards.py can build LTS manifests."""
+def _ensure_pointer_clones(settings: Settings, names: Iterable[str], pins: Mapping[str, Mapping]) -> Path:
+    """A local clone per station, holding HEAD to decide card presence and each pinned commit for LTS manifests."""
     clones = settings.cache / "pointer-clones"
     clones.mkdir(parents=True, exist_ok=True)
-    for repo, pin in sorted(pins.items()):
-        commit = pin["commit"]
+    family = {entry["repo"]: entry for entry in inventory.family(settings)}
+
+    def placeholder_empty(clone: Path) -> None:
+        util.remove_tree(clone)
+        clone.mkdir(parents=True, exist_ok=True)
+        util.run("git", "-C", str(clone), "init", "-q", "-b", "main", check=True)
+        util.run("git", "-C", str(clone), "-c", "user.name=rapp1-network",
+                 "-c", "user.email=rapp1-network@invalid", "commit", "--allow-empty", "-q", "-m",
+                 "empty repository placeholder", check=True)
+
+    for repo in sorted(set(names) | set(pins)):
         clone = clones / repo
         if not (clone / ".git").exists():
             done = util.run("git", "clone", "-q", "--filter=blob:none", "--no-tags", f"{REPO_URL}{repo}.git",
                             str(clone), env={"GIT_LFS_SKIP_SMUDGE": "1", "GIT_TERMINAL_PROMPT": "0"},
                             timeout=1800)
             if done.returncode:
-                raise SystemExit(f"{repo}: cannot clone for member pointer LTS manifest: "
-                                 f"{done.stderr.strip()[-300:]}")
-        has = util.run("git", "-C", str(clone), "rev-parse", "-q", "--verify", f"{commit}^{{commit}}")
-        if has.returncode:
-            fetched = util.run("git", "-C", str(clone), "fetch", "-q", "--depth", "1", "origin", commit,
-                               timeout=1800)
-            if fetched.returncode:
-                raise SystemExit(f"{repo}: clone does not hold LTS commit {commit}: "
-                                 f"{fetched.stderr.strip()[-300:]}")
+                if family.get(repo, {}).get("empty"):
+                    placeholder_empty(clone)
+                else:
+                    raise SystemExit(f"{repo}: cannot clone for member pointer generation: "
+                                     f"{done.stderr.strip()[-300:]}")
+        elif family.get(repo, {}).get("empty") and util.run(
+                "git", "-C", str(clone), "rev-parse", "-q", "--verify", "HEAD").returncode:
+            placeholder_empty(clone)
+        pin = pins.get(repo)
+        if pin:
+            commit = pin["commit"]
+            has = util.run("git", "-C", str(clone), "rev-parse", "-q", "--verify", f"{commit}^{{commit}}")
+            if has.returncode:
+                fetched = util.run("git", "-C", str(clone), "fetch", "-q", "--depth", "1", "origin", commit,
+                                   timeout=1800)
+                if fetched.returncode:
+                    raise SystemExit(f"{repo}: clone does not hold LTS commit {commit}: "
+                                     f"{fetched.stderr.strip()[-300:]}")
     return clones
 
 
@@ -311,7 +336,8 @@ def regenerate_member_pointers(settings: Settings, recs: Mapping[str, dict]) -> 
         return {"added": [], "changed": [], "unchanged": [], "removed": []}
     pins, source = lifecycle.pins_for(settings)
     pins_file = _pins_file(settings, pins, source)
-    clones = _ensure_lts_clones(settings, pins)
+    clone_names = recs if (tools / ".git").exists() else pins
+    clones = _ensure_pointer_clones(settings, clone_names, pins)
     out = settings.cache / "member-pointers"
     util.remove_tree(out)
     done = util.run(sys.executable, "-B", str(tools / POINTER_TOOL), "pointers",

@@ -6,7 +6,7 @@ wave: 2
 status: not yet
 verdict: DRIFT
 evidence_commit: 0f1755ec8b023062b3705eb580d3c69a4de00ad2
-checked: 2026-09-26
+checked: 2026-09-27
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 4381
 header: missing
@@ -339,7 +339,7 @@ links_to:
 
 **Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
-- Evidence: [`kody-w/rapp-monorepo` at `0f1755ec8b`](https://github.com/kody-w/rapp-monorepo/tree/0f1755ec8b023062b3705eb580d3c69a4de00ad2) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/rapp-monorepo` at `0f1755ec8b`](https://github.com/kody-w/rapp-monorepo/tree/0f1755ec8b023062b3705eb580d3c69a4de00ad2) on `main`, checked 2026-09-27.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **DRIFT**, 96 finding(s), 256 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `7448cf171fb10a6d8e793b904e33296f71f2c0af22c3cd76bada05a52ff2fde5`.
 - "experimental" mentions: 4381 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: not yet added.

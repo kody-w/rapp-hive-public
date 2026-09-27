@@ -6,7 +6,7 @@ wave: 2
 status: certified
 verdict: COMPLIANT
 evidence_commit: dcf6048e74a00165b7c9eb02a9ba272ae3cf0633
-checked: 2026-09-26
+checked: 2026-09-27
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 1
 header: present
@@ -28,7 +28,7 @@ links_to:
 
 **Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
-- Evidence: [`kody-w/sim-art-collective` at `dcf6048e74`](https://github.com/kody-w/sim-art-collective/tree/dcf6048e74a00165b7c9eb02a9ba272ae3cf0633) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/sim-art-collective` at `dcf6048e74`](https://github.com/kody-w/sim-art-collective/tree/dcf6048e74a00165b7c9eb02a9ba272ae3cf0633) on `main`, checked 2026-09-27.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **COMPLIANT**, 1 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `8f31db655d78b814fdb26bf1d19e21dd8522a8685f3ea61ee22d00b5fb683b0c`.
 - "experimental" mentions: 1 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: present in `README.md`.

@@ -6,7 +6,7 @@ wave: 2
 status: certified
 verdict: CLEAN
 evidence_commit: c284d0633edcab12412b79b8c98d4059f83d47d1
-checked: 2026-09-26
+checked: 2026-09-27
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: present
@@ -24,7 +24,7 @@ member_card: present
 
 **Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
-- Evidence: [`kody-w/rapp-wiki-observatory` at `c284d0633e`](https://github.com/kody-w/rapp-wiki-observatory/tree/c284d0633edcab12412b79b8c98d4059f83d47d1) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/rapp-wiki-observatory` at `c284d0633e`](https://github.com/kody-w/rapp-wiki-observatory/tree/c284d0633edcab12412b79b8c98d4059f83d47d1) on `main`, checked 2026-09-27.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `86132d970403b6afe65241a8f2faf6831556cd08cd58135a55778540622479e0`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: present in `README.md`.

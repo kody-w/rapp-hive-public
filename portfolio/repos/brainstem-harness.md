@@ -6,7 +6,7 @@ wave: 2
 status: certified
 verdict: CLEAN
 evidence_commit: cc3a13180dbee923be7f117bdb5ea054f878d9e4
-checked: 2026-09-26
+checked: 2026-09-27
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: present
@@ -26,7 +26,7 @@ links_to:
 
 **Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
-- Evidence: [`kody-w/brainstem-harness` at `cc3a13180d`](https://github.com/kody-w/brainstem-harness/tree/cc3a13180dbee923be7f117bdb5ea054f878d9e4) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/brainstem-harness` at `cc3a13180d`](https://github.com/kody-w/brainstem-harness/tree/cc3a13180dbee923be7f117bdb5ea054f878d9e4) on `main`, checked 2026-09-27.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `9a0fa04752ac06027647c17fb4bde3a35571c6ac8f0ed52ce0dec9e207e630e2`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: present in `README.md`.

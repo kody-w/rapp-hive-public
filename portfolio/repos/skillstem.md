@@ -6,7 +6,7 @@ wave: 2
 status: certified
 verdict: CLEAN
 evidence_commit: 9e13b5a4494c34215e0248e20dfcf29092d952e7
-checked: 2026-09-26
+checked: 2026-09-27
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: present
@@ -24,7 +24,7 @@ member_card: present
 
 **Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
-- Evidence: [`kody-w/skillstem` at `9e13b5a449`](https://github.com/kody-w/skillstem/tree/9e13b5a4494c34215e0248e20dfcf29092d952e7) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/skillstem` at `9e13b5a449`](https://github.com/kody-w/skillstem/tree/9e13b5a4494c34215e0248e20dfcf29092d952e7) on `main`, checked 2026-09-27.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `694ae3118b4dbc505fec3bf63e1427f2456313eb497ffc457e52415aeba5b2b5`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: present in `README.md`.

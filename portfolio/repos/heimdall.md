@@ -6,7 +6,7 @@ wave: 2
 status: certified
 verdict: COMPLIANT
 evidence_commit: 4faa05f741768a3fda22b5d7dc56ee2b7e68d245
-checked: 2026-09-26
+checked: 2026-09-27
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 2
 header: present
@@ -29,7 +29,7 @@ links_to:
 
 **Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
-- Evidence: [`kody-w/heimdall` at `4faa05f741`](https://github.com/kody-w/heimdall/tree/4faa05f741768a3fda22b5d7dc56ee2b7e68d245) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/heimdall` at `4faa05f741`](https://github.com/kody-w/heimdall/tree/4faa05f741768a3fda22b5d7dc56ee2b7e68d245) on `main`, checked 2026-09-27.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **COMPLIANT**, 1 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `c65f2d572f3fc27623af81c1586bf615046f9e47be73108b19231ba034de940d`.
 - "experimental" mentions: 2 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: present in `README.md`.

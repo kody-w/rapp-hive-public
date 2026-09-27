@@ -6,7 +6,7 @@ wave: 1
 status: certified
 verdict: CLEAN
 evidence_commit: 0e43ee580e78c150b1c59002456822d2e779388e
-checked: 2026-09-26
+checked: 2026-09-27
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 11
 header: held
@@ -31,7 +31,7 @@ links_to:
 
 **Version:** `v1.0.0`, from the tag of its latest GitHub release. **LTS:** [`brainstem-v0.6.9`](https://github.com/kody-w/rapp-installer/tree/bded0e1d5044d293f465e3850758f4b012d95078) (commit `bded0e1d50`, from the network's built-in known pins, until the estate publishes its LTS pins). **Channel:** `rapp1-lts`: it has a long-term-support pin, so the network builds on that commit; its newer commits are the newest channel.
 
-- Evidence: [`kody-w/rapp-installer` at `0e43ee580e`](https://github.com/kody-w/rapp-installer/tree/0e43ee580e78c150b1c59002456822d2e779388e) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/rapp-installer` at `0e43ee580e`](https://github.com/kody-w/rapp-installer/tree/0e43ee580e78c150b1c59002456822d2e779388e) on `main`, checked 2026-09-27.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `cc5f82f00d3b6c37e663e985ab947441b5460d676ab2bfd6e6104f2ea571f6b3`.
 - "experimental" mentions: 11 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: held back: the owner holds every change to kody-w/rapp-installer, the grail repo that carries the Brainstem kernel, so its header PR (https://github.com/kody-w/rapp-installer/pull/48) stays open and unmerged until the owner decides. Every other repo's Start here link still works: it opens the installer's README at the top.

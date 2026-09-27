@@ -5,8 +5,8 @@ line: DOGG & Commons
 wave: 2
 status: certified
 verdict: COMPLIANT
-evidence_commit: dc2736e90d09dfc12794fce4b79e158ebf381709
-checked: 2026-09-26
+evidence_commit: 3c3c1a10ba5f688c223acfae9e13d3575721e1ce
+checked: 2026-09-27
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: present
@@ -27,11 +27,11 @@ links_to:
 
 **Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
-- Evidence: [`kody-w/dogg-markets` at `dc2736e90d`](https://github.com/kody-w/dogg-markets/tree/dc2736e90d09dfc12794fce4b79e158ebf381709) on `main`, checked 2026-09-26.
-- Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **COMPLIANT**, 219 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `d2eaadd6febd839bf508d9d5de778120fbf6f656c3192f8779971e82b4b04da1`.
+- Evidence: [`kody-w/dogg-markets` at `3c3c1a10ba`](https://github.com/kody-w/dogg-markets/tree/3c3c1a10ba5f688c223acfae9e13d3575721e1ce) on `main`, checked 2026-09-27.
+- Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **COMPLIANT**, 220 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `4da5ee7eed318be005369d8eeafa4154c5693014a6d5f980d6b7331c7cfd8d37`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: present in `README.md`.
-- Member card: [`.rapp/member.md`](https://github.com/kody-w/dogg-markets/blob/dc2736e90d09dfc12794fce4b79e158ebf381709/.rapp/member.md) at the evidence commit: this repo's card in the RAPP Hive, beside its pointer [`members/dogg-markets.md`](https://github.com/kody-w/rapp-hive-public/blob/main/members/dogg-markets.md).
+- Member card: [`.rapp/member.md`](https://github.com/kody-w/dogg-markets/blob/3c3c1a10ba5f688c223acfae9e13d3575721e1ce/.rapp/member.md) at the evidence commit: this repo's card in the RAPP Hive, beside its pointer [`members/dogg-markets.md`](https://github.com/kody-w/rapp-hive-public/blob/main/members/dogg-markets.md).
 
 On the map: the **DOGG & Commons** line ([subway map](https://kody-w.github.io/rapp-hive-public/portfolio/subway.html)).
 
@@ -44,4 +44,4 @@ Counted from markdown links to `github.com/kody-w/<repo>` or `kody-w.github.io/<
 
 ## Check it yourself
 
-Clone `kody-w/dogg-markets` at `dc2736e90d` and `kody-w/rapp-1` at `591e014`, then run `python3 -B rapp-1/rapp_check.py dogg-markets --json` from the folder that holds both.
+Clone `kody-w/dogg-markets` at `3c3c1a10ba` and `kody-w/rapp-1` at `591e014`, then run `python3 -B rapp-1/rapp_check.py dogg-markets --json` from the folder that holds both.

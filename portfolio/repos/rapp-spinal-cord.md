@@ -6,7 +6,7 @@ wave: 2
 status: certified
 verdict: CLEAN
 evidence_commit: 43741e3e480f3de1a54e04ba37101e63bd985875
-checked: 2026-09-26
+checked: 2026-09-27
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 1
 header: present
@@ -29,7 +29,7 @@ links_to:
 
 **Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
-- Evidence: [`kody-w/rapp-spinal-cord` at `43741e3e48`](https://github.com/kody-w/rapp-spinal-cord/tree/43741e3e480f3de1a54e04ba37101e63bd985875) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/rapp-spinal-cord` at `43741e3e48`](https://github.com/kody-w/rapp-spinal-cord/tree/43741e3e480f3de1a54e04ba37101e63bd985875) on `main`, checked 2026-09-27.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `12bf36d7d8d0f900d1183b3d7b7976e22439622843be4123d1be858587f8c5c2`.
 - "experimental" mentions: 1 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: present in `README.md`.

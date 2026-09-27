@@ -6,7 +6,7 @@ wave: 2
 status: certified
 verdict: COMPLIANT
 evidence_commit: 734c69ddaf21f25eeab5b0aeb21f829f259a67eb
-checked: 2026-09-26
+checked: 2026-09-27
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 24
 header: merged
@@ -31,7 +31,7 @@ links_to:
 
 **Version:** `v0.12.2`, from its root VERSION file at the evidence commit. **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
-- Evidence: [`kody-w/rappterbox` at `734c69ddaf`](https://github.com/kody-w/rappterbox/tree/734c69ddaf21f25eeab5b0aeb21f829f259a67eb) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/rappterbox` at `734c69ddaf`](https://github.com/kody-w/rappterbox/tree/734c69ddaf21f25eeab5b0aeb21f829f259a67eb) on `main`, checked 2026-09-27.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **COMPLIANT**, 1 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `9b813d9ef347cb14572eaec77aa1c91c3de663c49619861f7138b3a47850a132`.
 - "experimental" mentions: 24 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: merged, awaiting the next sweep (https://github.com/kody-w/rappterbox/pull/5).

@@ -2,7 +2,7 @@
 
 Settings: each one from its flag, then its environment variable, then <work>/local/settings.json, then a default.
 
-Source: `rapp1_network/config.py` (rapp1-network 0.1.7). SHA-256 of the source below: `a81286d8c4acf08ae369187ac1678e0b912c474c84fb9c735470f08d7856ce6f` (4515 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/config.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
+Source: `rapp1_network/config.py` (rapp1-network 0.1.9). SHA-256 of the source below: `a81286d8c4acf08ae369187ac1678e0b912c474c84fb9c735470f08d7856ce6f` (4515 bytes). Every pulse this release cuts records it in `payload.generator` as `rapp1_network/config.py`. Copy it out with the extractor in [../README.md](../README.md); code in a Hive is data, never run from the Hive.
 
 {% raw %}
 `````python

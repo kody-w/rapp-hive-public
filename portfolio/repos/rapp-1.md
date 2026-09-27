@@ -6,7 +6,7 @@ wave: 1
 status: certified
 verdict: COMPLIANT
 evidence_commit: bae4e3cacc33e82e7fcf9fe73d2fd043da97801d
-checked: 2026-09-26
+checked: 2026-09-27
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: present
@@ -30,7 +30,7 @@ links_to:
 
 **Version:** none recorded (no root VERSION file and no GitHub release). **LTS:** [`591e014`](https://github.com/kody-w/rapp-1/tree/591e014ad39e223b00ab343ae26e5d9a867ebeee) (commit `591e014ad3`, from the network's built-in known pins, until the estate publishes its LTS pins). **Channel:** `rapp1-lts`: it has a long-term-support pin, so the network builds on that commit; its newer commits are the newest channel.
 
-- Evidence: [`kody-w/rapp-1` at `bae4e3cacc`](https://github.com/kody-w/rapp-1/tree/bae4e3cacc33e82e7fcf9fe73d2fd043da97801d) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/rapp-1` at `bae4e3cacc`](https://github.com/kody-w/rapp-1/tree/bae4e3cacc33e82e7fcf9fe73d2fd043da97801d) on `main`, checked 2026-09-27.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **COMPLIANT**, 18 passing artifact(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `051fb8de0af0ab55f21f7f2e6f842c5c39534618e2b61a4cf590e8d9369ebfe3`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: present in `README.md`.

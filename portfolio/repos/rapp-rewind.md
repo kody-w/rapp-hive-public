@@ -6,7 +6,7 @@ wave: 2
 status: not yet
 verdict: DRIFT
 evidence_commit: ebd89a65e8b73fb5e56be376db2b8e840e96f5e2
-checked: 2026-09-26
+checked: 2026-09-27
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: present
@@ -29,7 +29,7 @@ links_to:
 
 **Version:** `v1.2.1`, from the tag of its latest GitHub release. **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
-- Evidence: [`kody-w/rapp-rewind` at `ebd89a65e8`](https://github.com/kody-w/rapp-rewind/tree/ebd89a65e8b73fb5e56be376db2b8e840e96f5e2) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/rapp-rewind` at `ebd89a65e8`](https://github.com/kody-w/rapp-rewind/tree/ebd89a65e8b73fb5e56be376db2b8e840e96f5e2) on `main`, checked 2026-09-27.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **DRIFT**, 1 finding(s). The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `93fe8c40a0c3d373f3f76923f51691f7d345f3d4afaa27372475115de20d4922`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: present in `README.md`.

@@ -6,7 +6,7 @@ wave: 2
 status: certified
 verdict: CLEAN
 evidence_commit: e52fe2c2186ef43571d4f51577aced8097970e62
-checked: 2026-09-26
+checked: 2026-09-27
 checker: kody-w/rapp-1 rapp_check.py at 591e014
 experimental_mentions: 0
 header: present
@@ -24,7 +24,7 @@ member_card: present
 
 **Version:** none recorded (no root VERSION file and no GitHub release). **Channel:** `newest`: it has no long-term-support pin, so its newest commit is the one in use.
 
-- Evidence: [`kody-w/rapp-bake-off` at `e52fe2c218`](https://github.com/kody-w/rapp-bake-off/tree/e52fe2c2186ef43571d4f51577aced8097970e62) on `main`, checked 2026-09-26.
+- Evidence: [`kody-w/rapp-bake-off` at `e52fe2c218`](https://github.com/kody-w/rapp-bake-off/tree/e52fe2c2186ef43571d4f51577aced8097970e62) on `main`, checked 2026-09-27.
 - Checker: [`rapp_check.py` at `591e014`](https://github.com/kody-w/rapp-1/blob/591e014ad39e223b00ab343ae26e5d9a867ebeee/rapp_check.py), verdict **CLEAN**. The raw output stays in the maintainer's sweep folder, outside the Hive; its SHA-256 is `1e4632acf16dd4f3aa7126c3e6877fcf6d4aebf44e17290909cc1917377fdba6`.
 - "experimental" mentions: 0 (whole word, any case, in tracked text files at the evidence commit, leaving out the network's own files: the repo's card `.rapp/member.md` and, in the network's public copy, `portfolio/`, `members/`, `notices/` and `PUBLISHED.md`; tracked, not a gate).
 - Network header: present in `README.md`.
